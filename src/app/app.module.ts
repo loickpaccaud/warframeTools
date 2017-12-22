@@ -8,6 +8,7 @@ import { MyApp } from './app.component';
 
 import { HomePage } from '../pages/home/home';
 import { TestPage } from '../pages/test/test';
+import { RiflesProvider } from '../providers/rifles/rifles';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { TestPage } from '../pages/test/test';
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    RiflesProvider
   ]
 })
 export class AppModule {}
