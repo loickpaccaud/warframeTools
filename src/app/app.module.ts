@@ -13,6 +13,7 @@ import { TestPage } from '../pages/test/test';
 import { RiflePage } from '../pages/rifle/rifle';
 
 import { RiflesProvider } from '../providers/rifles/rifles';
+import { HomeProvider } from '../providers/home/home';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { RiflesProvider } from '../providers/rifles/rifles';
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    RiflesProvider
+    RiflesProvider,
+    HomeProvider
   ]
 })
 export class AppModule {}
