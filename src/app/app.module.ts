@@ -10,7 +10,11 @@ import { MyApp } from './app.component';
 
 import { HomePage } from '../pages/home/home';
 import { EventPage } from '../pages/event/event';
-import { TestPage } from '../pages/test/test';
+import { AlertPage } from '../pages/alert/alert';
+import { SortiePage } from '../pages/sortie/sortie';
+import { InvasionPage } from '../pages/invasion/invasion';
+import { VoidTraderPage } from '../pages/voidTrader/voidTrader';
+
 import { RiflePage } from '../pages/rifle/rifle';
 
 import { RiflesProvider } from '../providers/rifles/rifles';
@@ -21,7 +25,10 @@ import { HomeProvider } from '../providers/home/home';
     MyApp,
     HomePage,
     EventPage,
-    TestPage,
+    AlertPage,
+    SortiePage,
+    InvasionPage,
+    VoidTraderPage,
     RiflePage
   ],
   imports: [
@@ -35,7 +42,10 @@ import { HomeProvider } from '../providers/home/home';
     MyApp,
     HomePage,
     EventPage,
-    TestPage,
+    AlertPage,
+    SortiePage,
+    InvasionPage,
+    VoidTraderPage,
     RiflePage
   ],
   providers: [

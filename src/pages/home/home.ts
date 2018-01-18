@@ -1,8 +1,11 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
-import { TestPage } from '../test/test';
 import { EventPage } from '../event/event';
+import { AlertPage } from '../alert/alert';
+import { SortiePage } from '../sortie/sortie';
+import { InvasionPage } from '../invasion/invasion';
+import { VoidTraderPage } from '../voidTrader/voidTrader';
 
 import { HomeProvider} from '../../providers/home/home';
 
@@ -11,44 +14,34 @@ import { HomeProvider} from '../../providers/home/home';
   templateUrl: 'home.html'
 })
 export class HomePage {
-  worldState: any;
-  events: any;
   items;
 
   constructor(public navCtrl: NavController, public homeProvider: HomeProvider) {
     this.items = [
       {
-        'title': 'Events',
-        'page': 'EventPage'
+        title: 'Events',
+        page: EventPage
       },
       {
-        'title': 'Alerts',
-        'page': 'TestPage'
+        title: 'Alerts',
+        page: AlertPage
       },
       {
-        'title': 'Sorties',
-        'page': 'TestPage'
+        title: 'Sorties',
+        page: SortiePage
       },
       {
-        'title': 'Invasions',
-        'page': 'TestPage'
+        title: 'Invasions',
+        page: InvasionPage
       },
       {
-        'title': 'Void trader',
-        'page': 'TestPage'
+        title: 'Void trader',
+        page: VoidTraderPage
       }
     ];
   }
 
-  openNavDetailsPage(page:string) {
-    switch (page) {
-      case "EventPage":
-        this.navCtrl.push(EventPage);
-        break;
-      
-      default:
-        this.navCtrl.push(TestPage);
-        break;
-    }
+  openNavDetailsPage(page) {
+    this.navCtrl.push(page);
   }
 }
