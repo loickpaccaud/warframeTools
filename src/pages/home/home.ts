@@ -1,8 +1,11 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
-import { TestPage } from '../test/test';
 import { EventPage } from '../event/event';
+import { AlertPage } from '../alert/alert';
+import { SortiePage } from '../sortie/sortie';
+import { InvasionPage } from '../invasion/invasion';
+import { VoidTraderPage } from '../voidTrader/voidTrader';
 
 import { HomeProvider} from '../../providers/home/home';
 
@@ -23,19 +26,19 @@ export class HomePage {
       },
       {
         'title': 'Alerts',
-        'page': 'TestPage'
+        'page': 'AlertPage'
       },
       {
         'title': 'Sorties',
-        'page': 'TestPage'
+        'page': 'SortiePage'
       },
       {
         'title': 'Invasions',
-        'page': 'TestPage'
+        'page': 'InvasionPage'
       },
       {
         'title': 'Void trader',
-        'page': 'TestPage'
+        'page': 'VoidTraderPage'
       }
     ];
   }
@@ -45,9 +48,25 @@ export class HomePage {
       case "EventPage":
         this.navCtrl.push(EventPage);
         break;
-      
+
+      case "AlertPage":
+        this.navCtrl.push(AlertPage);
+        break;
+
+      case "SortiePage":
+        this.navCtrl.push(SortiePage);
+        break;
+
+      case "InvasionPage":
+        this.navCtrl.push(InvasionPage);
+        break;
+
+      case "VoidTraderPage":
+        this.navCtrl.push(VoidTraderPage);
+        break;
+
       default:
-        this.navCtrl.push(TestPage);
+        this.navCtrl.push(HomePage);
         break;
     }
   }
