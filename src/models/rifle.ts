@@ -56,4 +56,25 @@ export class Rifle{
 	secondary_status:Float32Array;
 	secondary_power_strength:Float32Array;
 
+
+	// Constructors
+
+	constructor(){}
+
+	// Methods
+
+	/*fromJson = function (json){
+    var r = JSON.parse (json);
+    return new Rifle (json.NAME);
+	}*/
+
+	//Getters and Setters
+
+	getName(){
+		return name;
+	}
+
+	setName(str){
+		this.name = str;
+	}
 }

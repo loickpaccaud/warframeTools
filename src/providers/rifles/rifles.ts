@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Rifle } from '../../models/rifle';
+import 'rxjs/Rx';
+import { Observable } from "rxjs/Observable";
 
 /*
   Generated class for the RiflesProvider provider.
@@ -11,8 +12,16 @@ import { Rifle } from '../../models/rifle';
 @Injectable()
 export class RiflesProvider {
 
+  headers: any;
+  options: any;
+
   constructor(public http: HttpClient) {
     console.log('Hello RiflesProvider Provider');
+    this.headers = new Headers();
+    this.headers.append('Content-Type', 'application/json');
   }
 
+  getData(): Observable<any> {
+      return this.http.get('assets/data/weapons/rifles.json', this.headers);
+  }
 }

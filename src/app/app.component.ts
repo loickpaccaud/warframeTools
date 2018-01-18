@@ -6,6 +6,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { HomePage } from '../pages/home/home';
 import { EventPage } from '../pages/event/event';
 import { TestPage } from '../pages/test/test';
+import { RiflePage } from '../pages/rifle/rifle';
+
 @Component({
   templateUrl: 'app.html'
 })
@@ -21,7 +23,8 @@ export class MyApp {
     this.pages = [
       { title: 'Home', component: HomePage },
       { title: 'Event', component: EventPage },
-      { title: 'Test', component: TestPage }
+      { title: 'Test', component: TestPage },
+      { title: 'Rifle', component: RiflePage }
     ];
   }
 
@@ -40,4 +43,3 @@ export class MyApp {
     this.nav.setRoot(page.component);
   }
 }
-
