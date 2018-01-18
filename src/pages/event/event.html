@@ -9,10 +9,10 @@
 
 <ion-content padding>
 
-    <ion-list inset>
-        <ion-item *ngFor="let event of events">
-          <h2><a href={{event.Prop}}>{{event.Messages[0]['Message']}}</a></h2>
-          <p>plop</p>
-        </ion-item>
-      </ion-list>
+  <ion-list inset>
+    <ion-item *ngFor="let event of events">
+      <h2><a href={{event.url}}>{{event.name}}</a></h2>
+      <p>{{event.date}}</p>
+    </ion-item>
+  </ion-list>
 </ion-content>
