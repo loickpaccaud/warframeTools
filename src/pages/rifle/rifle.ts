@@ -10,27 +10,29 @@ import {Rifle} from '../../models/rifle';
 })
 export class RiflePage {
 
-  private jsonResponse;
-  private rifles;
+  jsonResponse:any;
+  riflesJSON:any;
+  weaponsList:any;
 
   constructor(public navCtrl: NavController, public riflesProvider: RiflesProvider) {
 
     this.riflesProvider.getData().subscribe(
+
           data => {
-              this.jsonResponse = JSON.parse(JSON.stringify(data));
-              console.log(this.jsonResponse);
+              this.jsonResponse = JSON.stringify(data);
+              this.riflesJSON = JSON.parse(this.jsonResponse);
+              this.fillWeapons();
+              //console.log(this.weaponsList);
       });
-
-      for(var i in this.jsonResponse) {
-
-        var item = this.jsonResponse[i];
-        var r = new Rifle();
-
-        r.setName(item.NAME);
-
-        this.rifles.push(r);
     }
 
-    console.log(this.rifles);
+    fillWeapons(){
+      var tempList = [];
+      this.riflesJSON.Weapons.forEach(function(element) {
+
+        tempList.push(new Rifle(element));
+        //console.log(tempList);
+    });
+    this.weaponsList = tempList;
   }
 }

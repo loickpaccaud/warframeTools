@@ -8,8 +8,9 @@
 </ion-header>
 
 <ion-content padding>
-  <h2>This is a rifle</h2>
-  <p>
-    {{rifles | json}}
-  </p>
+  <ion-list>
+    <button ion-item *ngFor="let item of weaponsList">
+      {{item.name}}
+    </button>
+  </ion-list>
 </ion-content>
