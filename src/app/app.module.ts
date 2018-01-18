@@ -8,7 +8,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { MyApp } from './app.component';
 
 import { HomePage } from '../pages/home/home';
+import { EventPage } from '../pages/event/event';
 import { TestPage } from '../pages/test/test';
+
 import { RiflesProvider } from '../providers/rifles/rifles';
 import { HomeProvider } from '../providers/home/home';
 
@@ -16,6 +18,7 @@ import { HomeProvider } from '../providers/home/home';
   declarations: [
     MyApp,
     HomePage,
+    EventPage,
     TestPage
   ],
   imports: [
@@ -27,6 +30,7 @@ import { HomeProvider } from '../providers/home/home';
   entryComponents: [
     MyApp,
     HomePage,
+    EventPage,
     TestPage
   ],
   providers: [
