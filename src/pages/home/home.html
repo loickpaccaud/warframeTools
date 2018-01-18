@@ -3,18 +3,14 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Home</ion-title>
+    <ion-title>Warframe tracker</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-
-    <ion-list inset>
-        <ion-item *ngFor="let event of events">
-          <h2><a href={{event.Prop}}>{{event.Messages[0]['Message']}}</a></h2>
-          <p>plop</p>
-        </ion-item>
-      </ion-list>
-
-  <button (click)="openTest()" ion-button color="secondary">Test</button>
+  <ion-list>
+    <button ion-item *ngFor="let item of items" (click)="openNavDetailsPage(item.page)">
+      {{ item.title }}
+    </button>  
+  </ion-list>
 </ion-content>

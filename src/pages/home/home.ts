@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
 import { TestPage } from '../test/test';
+import { EventPage } from '../event/event';
 
 import { HomeProvider} from '../../providers/home/home';
 
@@ -12,20 +13,42 @@ import { HomeProvider} from '../../providers/home/home';
 export class HomePage {
   worldState: any;
   events: any;
+  items;
 
   constructor(public navCtrl: NavController, public homeProvider: HomeProvider) {
-    this.getWorldState();
+    this.items = [
+      {
+        'title': 'Events',
+        'page': 'EventPage'
+      },
+      {
+        'title': 'Alerts',
+        'page': 'TestPage'
+      },
+      {
+        'title': 'Sorties',
+        'page': 'TestPage'
+      },
+      {
+        'title': 'Invasions',
+        'page': 'TestPage'
+      },
+      {
+        'title': 'Void trader',
+        'page': 'TestPage'
+      }
+    ];
   }
 
-  getWorldState() {
-    this.homeProvider.getworldState()
-    .then(data => {
-      this.worldState = data;
-      this.events = this.worldState.Events;
-    });
-  }
-
-  openTest() {
-  	this.navCtrl.push(TestPage)
+  openNavDetailsPage(page:string) {
+    switch (page) {
+      case "EventPage":
+        this.navCtrl.push(EventPage);
+        break;
+      
+      default:
+        this.navCtrl.push(TestPage);
+        break;
+    }
   }
 }
