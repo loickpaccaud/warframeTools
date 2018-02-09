@@ -91,7 +91,7 @@ export class Rifle{
         "ZENURIK",
         "PENJAGA",
         "UNAIRU",
-				"SECONDARY",
+		"SECONDARY",
         "SECONDARY_NOISE_LEVEL",
         "SECONDARY_FIRE_RATE",
         "SECONDARY_CHARGE_TIME",
@@ -117,11 +117,9 @@ export class Rifle{
         "SECONDARY_STATUS",
         "SECONDARY_POWER_STRENGTH"
     ]
-
-		stats.forEach(function(element){
+		stats.forEach(element =>{
 			var statname = '' + element.toLowerCase();
-			//console.log(statname + " : " + jsonObject[element]);
-			[statname] = jsonObject[element];
+			this[statname] = jsonObject[element];
 		});
 	}
 

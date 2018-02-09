@@ -3,14 +3,10 @@
   	<button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Test</ion-title>
+    <ion-title>{{rifle.name}}</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <ion-list>
-    <button ion-item *ngFor="let item of weaponsList">
-      {{item.name}}
-    </button>
-  </ion-list>
+  <img src="../../assets/imgs/weapons/{{rifle.name | lowercase}}.png">
 </ion-content>

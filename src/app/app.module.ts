@@ -15,10 +15,13 @@ import { SortiePage } from '../pages/sortie/sortie';
 import { InvasionPage } from '../pages/invasion/invasion';
 import { VoidTraderPage } from '../pages/voidTrader/voidTrader';
 
+import { RiflesPage } from '../pages/rifles/rifles';
 import { RiflePage } from '../pages/rifle/rifle';
 
 import { RiflesProvider } from '../providers/rifles/rifles';
 import { HomeProvider } from '../providers/home/home';
+
+import { LocalNotifications } from '@ionic-native/local-notifications';
 
 @NgModule({
   declarations: [
@@ -29,6 +32,7 @@ import { HomeProvider } from '../providers/home/home';
     SortiePage,
     InvasionPage,
     VoidTraderPage,
+    RiflesPage,
     RiflePage
   ],
   imports: [
@@ -46,6 +50,7 @@ import { HomeProvider } from '../providers/home/home';
     SortiePage,
     InvasionPage,
     VoidTraderPage,
+    RiflesPage,
     RiflePage
   ],
   providers: [
@@ -53,7 +58,8 @@ import { HomeProvider } from '../providers/home/home';
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     RiflesProvider,
-    HomeProvider
+    HomeProvider,
+    LocalNotifications
   ]
 })
 export class AppModule {}

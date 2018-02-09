@@ -4,8 +4,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
-
-import { RiflePage } from '../pages/rifle/rifle';
+import {RiflesPage} from "../pages/rifles/rifles";
 
 @Component({
   templateUrl: 'app.html'
@@ -21,7 +20,7 @@ export class MyApp {
     // used for an example of ngFor and navigation
     this.pages = [
       { title: 'Warframe tracker', component: HomePage },
-      { title: 'Rifle', component: RiflePage }
+      { title: 'Rifles', component: RiflesPage }
     ];
   }
 
