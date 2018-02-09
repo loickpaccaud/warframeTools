@@ -53,6 +53,10 @@
       {{rifle.fire}}&nbsp;<img src="../../assets/imgs/elements/icone_feu.png" alt="" title="">&nbsp;heat
     </div>
 
+    <div class="ligne_stat glace" *ngIf="rifle.ice>0">
+      {{rifle.ice}}&nbsp;<img src="../../assets/imgs/elements/icone_glace.png" alt="" title="">&nbsp;ice
+    </div>
+
     <div class="ligne_stat electrique" *ngIf="rifle.electricity>0">
       {{rifle.electricity}}&nbsp;<img src="../../assets/imgs/elements/icone_electrique.png" alt="" title="">&nbsp;electric
     </div>
