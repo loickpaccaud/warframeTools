@@ -10,7 +10,7 @@ export class EventPage {
   worldState: any;
   eventDate:number;
   timestamp:number;
-  events=[];
+  events:Event[]=[];
 
   constructor(public homeProvider: HomeProvider) {
     this.getWorldState();
@@ -28,7 +28,6 @@ export class EventPage {
   parseEvents(events:any){
     events.forEach((event) => {
       this.eventDate = event.Date.$date.$numberLong/1000;
-      //console.log(this.timestamp - this.eventDate);
       this.eventDate = (this.timestamp - this.eventDate)/60; // minutes
       if(this.eventDate < 60) this.events.push(new Event(event.Messages[0].Message, "["+Math.floor(this.eventDate)+"m]", event.Prop));
       else {

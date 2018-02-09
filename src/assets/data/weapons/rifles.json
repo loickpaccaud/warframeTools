@@ -1161,7 +1161,7 @@
             "SECONDARY_POWER_STRENGTH": ""
         },
         {
-            "NAME": "GRINLOK",
+            "NAME": "GRINLOCK",
             "WEAPON_TYPE": "ASSAULT_RIFLE",
             "NOISE_LEVEL": "ALARMING",
             "FIRE_RATE": "1.67",
@@ -2437,7 +2437,7 @@
             "SECONDARY_POWER_STRENGTH": ""
         },
         {
-            "NAME": "TETRA_PRISMA",
+            "NAME": "PRISMA_TETRA",
             "WEAPON_TYPE": "ASSAULT_RIFLE",
             "NOISE_LEVEL": "ALARMING",
             "FIRE_RATE": "7.08",
@@ -3191,7 +3191,7 @@
             "SECONDARY_POWER_STRENGTH": ""
         },
         {
-            "NAME": "SOURGE",
+            "NAME": "SCOURGE",
             "WEAPON_TYPE": "SPEARGUN",
             "NOISE_LEVEL": "ALARMING",
             "FIRE_RATE": "2.67",
