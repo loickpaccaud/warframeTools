@@ -1,0 +1,2741 @@
+{
+    "Mods": [
+        {
+            "Name": "Ammo Drum",
+            "Type": "Rifle",
+            "Polarity": "Naramon",
+            "Stats": [
+                "Rank",
+                "Effect",
+                "Cost"
+            ],
+            "Mod": [
+                {
+                    "Rank": "0",
+                    "Effect": "+5%",
+                    "Cost": "2"
+                },
+                {
+                    "Rank": "1",
+                    "Effect": "+10%",
+                    "Cost": "3"
+                },
+                {
+                    "Rank": "2",
+                    "Effect": "+15%",
+                    "Cost": "4"
+                },
+                {
+                    "Rank": "3",
+                    "Effect": "+20%",
+                    "Cost": "5"
+                },
+                {
+                    "Rank": "4",
+                    "Effect": "+25%",
+                    "Cost": "6"
+                },
+                {
+                    "Rank": "5",
+                    "Effect": "+30%",
+                    "Cost": "7"
+                }
+            ]
+        },
+        {
+            "Name": "Argon Scope",
+            "Type": "Rifle",
+            "Polarity": "Madurai",
+            "Stats": [
+                "Rank",
+                "Critical Chance",
+                "Duration",
+                "Cost"
+            ],
+            "Mod": [
+                {
+                    "Rank": "0",
+                    "Critical Chance": "+22.5%",
+                    "Duration": "1.5s",
+                    "Cost": "2"
+                },
+                {
+                    "Rank": "1",
+                    "Critical Chance": "+45%",
+                    "Duration": "3s",
+                    "Cost": "3"
+                },
+                {
+                    "Rank": "2",
+                    "Critical Chance": "+67.5%",
+                    "Duration": "4.5s",
+                    "Cost": "4"
+                },
+                {
+                    "Rank": "3",
+                    "Critical Chance": "+90%",
+                    "Duration": "6s",
+                    "Cost": "5"
+                },
+                {
+                    "Rank": "4",
+                    "Critical Chance": "+112.5%",
+                    "Duration": "7.5s",
+                    "Cost": "6"
+                },
+                {
+                    "Rank": "5",
+                    "Critical Chance": "+135%",
+                    "Duration": "9s",
+                    "Cost": "7"
+                }
+            ]
+        },
+        {
+            "Name": "Bane of Corpus",
+            "Type": "Rifle",
+            "Polarity": "Madurai",
+            "Stats": [
+                "Rank",
+                "Effect",
+                "Cost"
+            ],
+            "Mod": [
+                {
+                    "Rank": "0",
+                    "Effect": "+5%",
+                    "Cost": "4"
+                },
+                {
+                    "Rank": "1",
+                    "Effect": "+10%",
+                    "Cost": "5"
+                },
+                {
+                    "Rank": "2",
+                    "Effect": "+15%",
+                    "Cost": "6"
+                },
+                {
+                    "Rank": "3",
+                    "Effect": "+20%",
+                    "Cost": "7"
+                },
+                {
+                    "Rank": "4",
+                    "Effect": "+25%",
+                    "Cost": "8"
+                },
+                {
+                    "Rank": "5",
+                    "Effect": "+30%",
+                    "Cost": "9"
+                }
+            ]
+        },
+        {
+            "Name": "Bane of Corrupted",
+            "Type": "Rifle",
+            "Polarity": "Madurai",
+            "Stats": [
+                "Rank",
+                "Effect",
+                "Cost"
+            ],
+            "Mod": [
+                {
+                    "Rank": "0",
+                    "Effect": "+5%",
+                    "Cost": "4"
+                },
+                {
+                    "Rank": "1",
+                    "Effect": "+10%",
+                    "Cost": "5"
+                },
+                {
+                    "Rank": "2",
+                    "Effect": "+15%",
+                    "Cost": "6"
+                },
+                {
+                    "Rank": "3",
+                    "Effect": "+20%",
+                    "Cost": "7"
+                },
+                {
+                    "Rank": "4",
+                    "Effect": "+25%",
+                    "Cost": "8"
+                },
+                {
+                    "Rank": "5",
+                    "Effect": "+30%",
+                    "Cost": "9"
+                }
+            ]
+        },
+        {
+            "Name": "Bane of Grineer",
+            "Type": "Rifle",
+            "Polarity": "Madurai",
+            "Stats": [
+                "Rank",
+                "Effect",
+                "Cost"
+            ],
+            "Mod": [
+                {
+                    "Rank": "0",
+                    "Effect": "+5%",
+                    "Cost": "4"
+                },
+                {
+                    "Rank": "1",
+                    "Effect": "+10%",
+                    "Cost": "5"
+                },
+                {
+                    "Rank": "2",
+                    "Effect": "+15%",
+                    "Cost": "6"
+                },
+                {
+                    "Rank": "3",
+                    "Effect": "+20%",
+                    "Cost": "7"
+                },
+                {
+                    "Rank": "4",
+                    "Effect": "+25%",
+                    "Cost": "8"
+                },
+                {
+                    "Rank": "5",
+                    "Effect": "+30%",
+                    "Cost": "9"
+                }
+            ]
+        },
+        {
+            "Name": "Bane of Infested",
+            "Type": "Rifle",
+            "Polarity": "Madurai",
+            "Stats": [
+                "Rank",
+                "Effect",
+                "Cost"
+            ],
+            "Mod": [
+                {
+                    "Rank": "0",
+                    "Effect": "+5%",
+                    "Cost": "4"
+                },
+                {
+                    "Rank": "1",
+                    "Effect": "+10%",
+                    "Cost": "5"
+                },
+                {
+                    "Rank": "2",
+                    "Effect": "+15%",
+                    "Cost": "6"
+                },
+                {
+                    "Rank": "3",
+                    "Effect": "+20%",
+                    "Cost": "7"
+                },
+                {
+                    "Rank": "4",
+                    "Effect": "+25%",
+                    "Cost": "8"
+                },
+                {
+                    "Rank": "5",
+                    "Effect": "+30%",
+                    "Cost": "9"
+                }
+            ]
+        },
+        {
+            "Name": "Bladed Rounds",
+            "Type": "Rifle",
+            "Polarity": "Madurai",
+            "Stats": [
+                "Rank",
+                "Crit Damage",
+                "Duration",
+                "Cost"
+            ],
+            "Mod": [
+                {
+                    "Rank": "0",
+                    "Crit Damage": "+20%",
+                    "Duration": "1.5s",
+                    "Cost": "4"
+                },
+                {
+                    "Rank": "1",
+                    "Crit Damage": "+40%",
+                    "Duration": "3s",
+                    "Cost": "5"
+                },
+                {
+                    "Rank": "2",
+                    "Crit Damage": "+60%",
+                    "Duration": "4.5s",
+                    "Cost": "6"
+                },
+                {
+                    "Rank": "3",
+                    "Crit Damage": "+80%",
+                    "Duration": "6s",
+                    "Cost": "7"
+                },
+                {
+                    "Rank": "4",
+                    "Crit Damage": "+100%",
+                    "Duration": "7.5s",
+                    "Cost": "8"
+                },
+                {
+                    "Rank": "5",
+                    "Crit Damage": "+120%",
+                    "Duration": "9s",
+                    "Cost": "9"
+                }
+            ]
+        },
+        {
+            "Name": "Catalyzer Link",
+            "Type": "Rifle",
+            "Polarity": "Madurai",
+            "Stats": [
+                "Rank",
+                "Status Chance",
+                "Duration",
+                "Cost"
+            ],
+            "Mod": [
+                {
+                    "Rank": "0",
+                    "Status Chance": "+10%",
+                    "Duration": "1.5s",
+                    "Cost": "4"
+                },
+                {
+                    "Rank": "1",
+                    "Status Chance": "+20%",
+                    "Duration": "3s",
+                    "Cost": "5"
+                },
+                {
+                    "Rank": "2",
+                    "Status Chance": "+30%",
+                    "Duration": "4.5s",
+                    "Cost": "6"
+                },
+                {
+                    "Rank": "3",
+                    "Status Chance": "+40%",
+                    "Duration": "6s",
+                    "Cost": "7"
+                },
+                {
+                    "Rank": "4",
+                    "Status Chance": "+50%",
+                    "Duration": "7.5s",
+                    "Cost": "8"
+                },
+                {
+                    "Rank": "5",
+                    "Status Chance": "+60%",
+                    "Duration": "9s",
+                    "Cost": "9"
+                }
+            ]
+        },
+        {
+            "Name": "Continuous Misery",
+            "Type": "Rifle",
+            "Polarity": "Madurai",
+            "Stats": [
+                "Rank",
+                "Effect",
+                "Cost"
+            ],
+            "Mod": [
+                {
+                    "Rank": "0",
+                    "Effect": "+25%",
+                    "Cost": "4"
+                },
+                {
+                    "Rank": "1",
+                    "Effect": "+50%",
+                    "Cost": "5"
+                },
+                {
+                    "Rank": "2",
+                    "Effect": "+75%",
+                    "Cost": "6"
+                },
+                {
+                    "Rank": "3",
+                    "Effect": "+100%",
+                    "Cost": "7"
+                }
+            ]
+        },
+        {
+            "Name": "Crash Course",
+            "Type": "Rifle",
+            "Polarity": "Naramon",
+            "Stats": [
+                "Rank",
+                "Effect",
+                "Cost"
+            ],
+            "Mod": [
+                {
+                    "Rank": "0",
+                    "Effect": "+20%",
+                    "Cost": "6"
+                },
+                {
+                    "Rank": "1",
+                    "Effect": "+40%",
+                    "Cost": "7"
+                },
+                {
+                    "Rank": "2",
+                    "Effect": "+60%",
+                    "Cost": "8"
+                },
+                {
+                    "Rank": "3",
+                    "Effect": "+80%",
+                    "Cost": "9"
+                },
+                {
+                    "Rank": "4",
+                    "Effect": "+100%",
+                    "Cost": "10"
+                },
+                {
+                    "Rank": "5",
+                    "Effect": "+120%",
+                    "Cost": "11"
+                }
+            ]
+        },
+        {
+            "Name": "Critical Delay",
+            "Type": "Rifle",
+            "Polarity": "Naramon",
+            "Stats": [
+                "Rank",
+                "Critical Chance",
+                "Fire Rate (Rifles)",
+                "Fire Rate (Bows)",
+                "Cost"
+            ],
+            "Mod": [
+                {
+                    "Rank": "0",
+                    "Critical Chance": "+8%",
+                    "Fire Rate (Rifles)": "-6%",
+                    "Fire Rate (Bows)": "-12%",
+                    "Cost": "4"
+                },
+                {
+                    "Rank": "1",
+                    "Critical Chance": "+16%",
+                    "Fire Rate (Rifles)": "-12%",
+                    "Fire Rate (Bows)": "-24%",
+                    "Cost": "5"
+                },
+                {
+                    "Rank": "2",
+                    "Critical Chance": "+24%",
+                    "Fire Rate (Rifles)": "-18%",
+                    "Fire Rate (Bows)": "-36%",
+                    "Cost": "6"
+                },
+                {
+                    "Rank": "3",
+                    "Critical Chance": "+32%",
+                    "Fire Rate (Rifles)": "-24%",
+                    "Fire Rate (Bows)": "-48%",
+                    "Cost": "7"
+                },
+                {
+                    "Rank": "4",
+                    "Critical Chance": "+40%",
+                    "Fire Rate (Rifles)": "-30%",
+                    "Fire Rate (Bows)": "-60%",
+                    "Cost": "8"
+                },
+                {
+                    "Rank": "5",
+                    "Critical Chance": "+48%",
+                    "Fire Rate (Rifles)": "-36%",
+                    "Fire Rate (Bows)": "-72%",
+                    "Cost": "9"
+                }
+            ]
+        },
+        {
+            "Name": "Cryo Rounds",
+            "Type": "Rifle",
+            "Polarity": "Vazarin",
+            "Stats": [
+                "Rank",
+                "Effect",
+                "Cost"
+            ],
+            "Mod": [
+                {
+                    "Rank": "0",
+                    "Effect": "+15%",
+                    "Cost": "6"
+                },
+                {
+                    "Rank": "1",
+                    "Effect": "+30%",
+                    "Cost": "7"
+                },
+                {
+                    "Rank": "2",
+                    "Effect": "+45%",
+                    "Cost": "8"
+                },
+                {
+                    "Rank": "3",
+                    "Effect": "+60%",
+                    "Cost": "9"
+                },
+                {
+                    "Rank": "4",
+                    "Effect": "+75%",
+                    "Cost": "10"
+                },
+                {
+                    "Rank": "5",
+                    "Effect": "+90%",
+                    "Cost": "11"
+                }
+            ]
+        },
+        {
+            "Name": "Eagle Eye",
+            "Type": "Rifle",
+            "Polarity": "Naramon",
+            "Stats": [
+                "Rank",
+                "Effect",
+                "Cost"
+            ],
+            "Mod": [
+                {
+                    "Rank": "0",
+                    "Effect": "+10%",
+                    "Cost": "4"
+                },
+                {
+                    "Rank": "1",
+                    "Effect": "+20%",
+                    "Cost": "5"
+                },
+                {
+                    "Rank": "2",
+                    "Effect": "+30%",
+                    "Cost": "6"
+                },
+                {
+                    "Rank": "3",
+                    "Effect": "+40%",
+                    "Cost": "7"
+                }
+            ]
+        },
+        {
+            "Name": "Fanged Fusillade",
+            "Type": "Rifle",
+            "Polarity": "Naramon",
+            "Stats": [
+                "Rank",
+                "Effect",
+                "Cost"
+            ],
+            "Mod": [
+                {
+                    "Rank": "0",
+                    "Effect": "+20%",
+                    "Cost": "6"
+                },
+                {
+                    "Rank": "1",
+                    "Effect": "+40%",
+                    "Cost": "7"
+                },
+                {
+                    "Rank": "2",
+                    "Effect": "+60%",
+                    "Cost": "8"
+                },
+                {
+                    "Rank": "3",
+                    "Effect": "+80%",
+                    "Cost": "9"
+                },
+                {
+                    "Rank": "4",
+                    "Effect": "+100%",
+                    "Cost": "10"
+                },
+                {
+                    "Rank": "5",
+                    "Effect": "+120%",
+                    "Cost": "11"
+                }
+            ]
+        },
+        {
+            "Name": "Fast Hands",
+            "Type": "Rifle",
+            "Polarity": "Naramon",
+            "Stats": [
+                "Rank",
+                "Effect",
+                "Cost"
+            ],
+            "Mod": [
+                {
+                    "Rank": "0",
+                    "Effect": "+5%",
+                    "Cost": "2"
+                },
+                {
+                    "Rank": "1",
+                    "Effect": "+10%",
+                    "Cost": "3"
+                },
+                {
+                    "Rank": "2",
+                    "Effect": "+15%",
+                    "Cost": "4"
+                },
+                {
+                    "Rank": "3",
+                    "Effect": "+20%",
+                    "Cost": "5"
+                },
+                {
+                    "Rank": "4",
+                    "Effect": "+25%",
+                    "Cost": "6"
+                },
+                {
+                    "Rank": "5",
+                    "Effect": "+30%",
+                    "Cost": "7"
+                }
+            ]
+        },
+        {
+            "Name": "Hammer Shot",
+            "Type": "Rifle",
+            "Polarity": "Vazarin",
+            "Stats": [
+                "Rank",
+                "Crit Damage",
+                "Status Chance",
+                "Cost"
+            ],
+            "Mod": [
+                {
+                    "Rank": "0",
+                    "Crit Damage": "+15%",
+                    "Status Chance": "+10%",
+                    "Cost": "6"
+                },
+                {
+                    "Rank": "1",
+                    "Crit Damage": "+30%",
+                    "Status Chance": "+20%",
+                    "Cost": "7"
+                },
+                {
+                    "Rank": "2",
+                    "Crit Damage": "+45%",
+                    "Status Chance": "+30%",
+                    "Cost": "8"
+                },
+                {
+                    "Rank": "3",
+                    "Crit Damage": "+60%",
+                    "Status Chance": "+40%",
+                    "Cost": "9"
+                }
+            ]
+        },
+        {
+            "Name": "Heavy Caliber",
+            "Type": "Rifle",
+            "Polarity": "Madurai",
+            "Stats": [
+                "Rank",
+                "Damage",
+                "Accuracy",
+                "Cost"
+            ],
+            "Mod": [
+                {
+                    "Rank": "0",
+                    "Damage": "+15%",
+                    "Accuracy": "-5%",
+                    "Cost": "6"
+                },
+                {
+                    "Rank": "1",
+                    "Damage": "+30%",
+                    "Accuracy": "-10%",
+                    "Cost": "7"
+                },
+                {
+                    "Rank": "2",
+                    "Damage": "+45%",
+                    "Accuracy": "-15%",
+                    "Cost": "8"
+                },
+                {
+                    "Rank": "3",
+                    "Damage": "+60%",
+                    "Accuracy": "-20%",
+                    "Cost": "9"
+                },
+                {
+                    "Rank": "4",
+                    "Damage": "+75%",
+                    "Accuracy": "-25%",
+                    "Cost": "10"
+                },
+                {
+                    "Rank": "5",
+                    "Damage": "+90%",
+                    "Accuracy": "-30%",
+                    "Cost": "11"
+                },
+                {
+                    "Rank": "6",
+                    "Damage": "+105%",
+                    "Accuracy": "-35%",
+                    "Cost": "12"
+                },
+                {
+                    "Rank": "7",
+                    "Damage": "+120%",
+                    "Accuracy": "-40%",
+                    "Cost": "13"
+                },
+                {
+                    "Rank": "8",
+                    "Damage": "+135%",
+                    "Accuracy": "-45%",
+                    "Cost": "14"
+                },
+                {
+                    "Rank": "9",
+                    "Damage": "+150%",
+                    "Accuracy": "-50%",
+                    "Cost": "15"
+                },
+                {
+                    "Rank": "10",
+                    "Damage": "+165%",
+                    "Accuracy": "-55%",
+                    "Cost": "16"
+                }
+            ]
+        },
+        {
+            "Name": "Hellfire",
+            "Type": "Rifle",
+            "Polarity": "Naramon",
+            "Stats": [
+                "Rank",
+                "Effect",
+                "Cost"
+            ],
+            "Mod": [
+                {
+                    "Rank": "0",
+                    "Effect": "+15%",
+                    "Cost": "6"
+                },
+                {
+                    "Rank": "1",
+                    "Effect": "+30%",
+                    "Cost": "7"
+                },
+                {
+                    "Rank": "2",
+                    "Effect": "+45%",
+                    "Cost": "8"
+                },
+                {
+                    "Rank": "3",
+                    "Effect": "+60%",
+                    "Cost": "9"
+                },
+                {
+                    "Rank": "4",
+                    "Effect": "+75%",
+                    "Cost": "10"
+                },
+                {
+                    "Rank": "5",
+                    "Effect": "+90%",
+                    "Cost": "11"
+                }
+            ]
+        },
+        {
+            "Name": "High Voltage",
+            "Type": "Rifle",
+            "Polarity": "Madurai",
+            "Stats": [
+                "Rank",
+                "Electricity Damage",
+                "Status Chance",
+                "Cost"
+            ],
+            "Mod": [
+                {
+                    "Rank": "0",
+                    "Electricity Damage": "+15%",
+                    "Status Chance": "+15%",
+                    "Cost": "4"
+                },
+                {
+                    "Rank": "1",
+                    "Electricity Damage": "+30%",
+                    "Status Chance": "+30%",
+                    "Cost": "5"
+                },
+                {
+                    "Rank": "2",
+                    "Electricity Damage": "+45%",
+                    "Status Chance": "+45%",
+                    "Cost": "6"
+                },
+                {
+                    "Rank": "3",
+                    "Electricity Damage": "+60%",
+                    "Status Chance": "+60%",
+                    "Cost": "7"
+                }
+            ]
+        },
+        {
+            "Name": "Hush",
+            "Type": "Rifle",
+            "Polarity": "Naramon",
+            "Stats": [
+                "Rank",
+                "Noise Reduction",
+                "Cost"
+            ],
+            "Mod": [
+                {
+                    "Rank": "0",
+                    "Noise Reduction": "+25%",
+                    "Cost": "2"
+                },
+                {
+                    "Rank": "1",
+                    "Noise Reduction": "+50%",
+                    "Cost": "3"
+                },
+                {
+                    "Rank": "2",
+                    "Noise Reduction": "+75%",
+                    "Cost": "4"
+                },
+                {
+                    "Rank": "3",
+                    "Noise Reduction": "+100%",
+                    "Cost": "5"
+                }
+            ]
+        },
+        {
+            "Name": "Infected Clip",
+            "Type": "Rifle",
+            "Polarity": "Naramon",
+            "Stats": [
+                "Rank",
+                "Effect",
+                "Cost"
+            ],
+            "Mod": [
+                {
+                    "Rank": "0",
+                    "Effect": "+15%",
+                    "Cost": "6"
+                },
+                {
+                    "Rank": "1",
+                    "Effect": "+30%",
+                    "Cost": "7"
+                },
+                {
+                    "Rank": "2",
+                    "Effect": "+45%",
+                    "Cost": "8"
+                },
+                {
+                    "Rank": "3",
+                    "Effect": "+60%",
+                    "Cost": "9"
+                },
+                {
+                    "Rank": "4",
+                    "Effect": "+75%",
+                    "Cost": "10"
+                },
+                {
+                    "Rank": "5",
+                    "Effect": "+90%",
+                    "Cost": "11"
+                }
+            ]
+        },
+        {
+            "Name": "Magazine Warp",
+            "Type": "Rifle",
+            "Polarity": "Naramon",
+            "Stats": [
+                "Rank",
+                "Effect",
+                "Cost"
+            ],
+            "Mod": [
+                {
+                    "Rank": "0",
+                    "Effect": "+5%",
+                    "Cost": "4"
+                },
+                {
+                    "Rank": "1",
+                    "Effect": "+10%",
+                    "Cost": "5"
+                },
+                {
+                    "Rank": "2",
+                    "Effect": "+15%",
+                    "Cost": "6"
+                },
+                {
+                    "Rank": "3",
+                    "Effect": "+20%",
+                    "Cost": "7"
+                },
+                {
+                    "Rank": "4",
+                    "Effect": "+25%",
+                    "Cost": "8"
+                },
+                {
+                    "Rank": "5",
+                    "Effect": "+30%",
+                    "Cost": "9"
+                }
+            ]
+        },
+        {
+            "Name": "Malignant Force",
+            "Type": "Rifle",
+            "Polarity": "Madurai",
+            "Stats": [
+                "Rank",
+                "Poison Damage",
+                "Status Chance",
+                "Cost"
+            ],
+            "Mod": [
+                {
+                    "Rank": "0",
+                    "Poison Damage": "+15%",
+                    "Status Chance": "+15%",
+                    "Cost": "4"
+                },
+                {
+                    "Rank": "1",
+                    "Poison Damage": "+30%",
+                    "Status Chance": "+30%",
+                    "Cost": "5"
+                },
+                {
+                    "Rank": "2",
+                    "Poison Damage": "+45%",
+                    "Status Chance": "+45%",
+                    "Cost": "6"
+                },
+                {
+                    "Rank": "3",
+                    "Poison Damage": "+60%",
+                    "Status Chance": "+60%",
+                    "Cost": "7"
+                }
+            ]
+        },
+        {
+            "Name": "Metal Auger",
+            "Type": "Rifle",
+            "Polarity": "Naramon",
+            "Stats": [
+                "Rank",
+                "Effect",
+                "Cost"
+            ],
+            "Mod": [
+                {
+                    "Rank": "0",
+                    "Effect": "0.4",
+                    "Cost": "10"
+                },
+                {
+                    "Rank": "1",
+                    "Effect": "0.7",
+                    "Cost": "11"
+                },
+                {
+                    "Rank": "2",
+                    "Effect": "1.1",
+                    "Cost": "12"
+                },
+                {
+                    "Rank": "3",
+                    "Effect": "1.4",
+                    "Cost": "13"
+                },
+                {
+                    "Rank": "4",
+                    "Effect": "1.8",
+                    "Cost": "14"
+                },
+                {
+                    "Rank": "5",
+                    "Effect": "2.1",
+                    "Cost": "15"
+                }
+            ]
+        },
+        {
+            "Name": "Overview",
+            "Type": "Rifle",
+            "Polarity": "Naramon",
+            "Stats": [
+                "Rank",
+                "Zoom",
+                "Cost"
+            ],
+            "Mod": [
+                {
+                    "Rank": "0",
+                    "Zoom": "-10%",
+                    "Cost": "2"
+                },
+                {
+                    "Rank": "1",
+                    "Zoom": "-20%",
+                    "Cost": "3"
+                },
+                {
+                    "Rank": "2",
+                    "Zoom": "-30%",
+                    "Cost": "4"
+                },
+                {
+                    "Rank": "3",
+                    "Zoom": "-40%",
+                    "Cost": "5"
+                },
+                {
+                    "Rank": "4",
+                    "Zoom": "-50%",
+                    "Cost": "6"
+                },
+                {
+                    "Rank": "5",
+                    "Zoom": "-60%",
+                    "Cost": "7"
+                }
+            ]
+        },
+        {
+            "Name": "Piercing Caliber",
+            "Type": "Rifle",
+            "Polarity": "Naramon",
+            "Stats": [
+                "Rank",
+                "Effect",
+                "Cost"
+            ],
+            "Mod": [
+                {
+                    "Rank": "0",
+                    "Effect": "+20%",
+                    "Cost": "6"
+                },
+                {
+                    "Rank": "1",
+                    "Effect": "+40%",
+                    "Cost": "7"
+                },
+                {
+                    "Rank": "2",
+                    "Effect": "+60%",
+                    "Cost": "8"
+                },
+                {
+                    "Rank": "3",
+                    "Effect": "+80%",
+                    "Cost": "9"
+                },
+                {
+                    "Rank": "4",
+                    "Effect": "+100%",
+                    "Cost": "10"
+                },
+                {
+                    "Rank": "5",
+                    "Effect": "+120%",
+                    "Cost": "11"
+                }
+            ]
+        },
+        {
+            "Name": "Piercing Hit",
+            "Type": "Rifle",
+            "Polarity": "Naramon",
+            "Stats": [
+                "Rank",
+                "Effect",
+                "Cost"
+            ],
+            "Mod": [
+                {
+                    "Rank": "0",
+                    "Effect": "+5%",
+                    "Cost": "4"
+                },
+                {
+                    "Rank": "1",
+                    "Effect": "+10%",
+                    "Cost": "5"
+                },
+                {
+                    "Rank": "2",
+                    "Effect": "+15%",
+                    "Cost": "6"
+                },
+                {
+                    "Rank": "3",
+                    "Effect": "+20%",
+                    "Cost": "7"
+                },
+                {
+                    "Rank": "4",
+                    "Effect": "+25%",
+                    "Cost": "8"
+                },
+                {
+                    "Rank": "5",
+                    "Effect": "+30%",
+                    "Cost": "9"
+                }
+            ]
+        },
+        {
+            "Name": "Point Strike",
+            "Type": "Rifle",
+            "Polarity": "Madurai",
+            "Stats": [
+                "Rank",
+                "Effect",
+                "Cost"
+            ],
+            "Mod": [
+                {
+                    "Rank": "0",
+                    "Effect": "+25%",
+                    "Cost": "4"
+                },
+                {
+                    "Rank": "1",
+                    "Effect": "+50%",
+                    "Cost": "5"
+                },
+                {
+                    "Rank": "2",
+                    "Effect": " +75%",
+                    "Cost": "6"
+                },
+                {
+                    "Rank": "3",
+                    "Effect": "+100%",
+                    "Cost": "7"
+                },
+                {
+                    "Rank": "4",
+                    "Effect": "+125%",
+                    "Cost": "8"
+                },
+                {
+                    "Rank": "5",
+                    "Effect": "+150%",
+                    "Cost": "9"
+                }
+            ]
+        },
+        {
+            "Name": "Primed Bane of Corpus",
+            "Type": "Rifle",
+            "Polarity": "Voidtraderplaceholdert",
+            "Stats": [
+                "Rank",
+                "Effect",
+                "Cost"
+            ],
+            "Mod": [
+                {
+                    "Rank": "0",
+                    "Effect": "+5%",
+                    "Cost": "4"
+                },
+                {
+                    "Rank": "1",
+                    "Effect": "+10%",
+                    "Cost": "5"
+                },
+                {
+                    "Rank": "2",
+                    "Effect": "+15%",
+                    "Cost": "6"
+                },
+                {
+                    "Rank": "3",
+                    "Effect": "+20%",
+                    "Cost": "7"
+                },
+                {
+                    "Rank": "4",
+                    "Effect": "+25%",
+                    "Cost": "8"
+                },
+                {
+                    "Rank": "5",
+                    "Effect": "+30%",
+                    "Cost": "9"
+                },
+                {
+                    "Rank": "6",
+                    "Effect": "+35",
+                    "Cost": "10"
+                },
+                {
+                    "Rank": "7",
+                    "Effect": "+40%",
+                    "Cost": "11"
+                },
+                {
+                    "Rank": "8",
+                    "Effect": "+45%",
+                    "Cost": "12"
+                },
+                {
+                    "Rank": "9",
+                    "Effect": "+50%",
+                    "Cost": "13"
+                },
+                {
+                    "Rank": "10",
+                    "Effect": "+55%",
+                    "Cost": "14"
+                }
+            ]
+        },
+        {
+            "Name": "Primed Bane of Corrupted",
+            "Type": "Rifle",
+            "Polarity": "Voidtraderplaceholdert",
+            "Stats": [
+                "Rank",
+                "Effect",
+                "Cost"
+            ],
+            "Mod": [
+                {
+                    "Rank": "0",
+                    "Effect": "+5%",
+                    "Cost": "4"
+                },
+                {
+                    "Rank": "1",
+                    "Effect": "+10%",
+                    "Cost": "5"
+                },
+                {
+                    "Rank": "2",
+                    "Effect": "+15%",
+                    "Cost": "6"
+                },
+                {
+                    "Rank": "3",
+                    "Effect": "+20%",
+                    "Cost": "7"
+                },
+                {
+                    "Rank": "4",
+                    "Effect": "+25%",
+                    "Cost": "8"
+                },
+                {
+                    "Rank": "5",
+                    "Effect": "+30%",
+                    "Cost": "9"
+                },
+                {
+                    "Rank": "6",
+                    "Effect": "+35",
+                    "Cost": "10"
+                },
+                {
+                    "Rank": "7",
+                    "Effect": "+40%",
+                    "Cost": "11"
+                },
+                {
+                    "Rank": "8",
+                    "Effect": "+45%",
+                    "Cost": "12"
+                },
+                {
+                    "Rank": "9",
+                    "Effect": "+50%",
+                    "Cost": "13"
+                },
+                {
+                    "Rank": "10",
+                    "Effect": "+55%",
+                    "Cost": "14"
+                }
+            ]
+        },
+        {
+            "Name": "Primed Bane of Grineer",
+            "Type": "Rifle",
+            "Polarity": "Voidtraderplaceholdert",
+            "Stats": [
+                "Rank",
+                "Effect",
+                "Cost"
+            ],
+            "Mod": [
+                {
+                    "Rank": "0",
+                    "Effect": "+5%",
+                    "Cost": "4"
+                },
+                {
+                    "Rank": "1",
+                    "Effect": "+10%",
+                    "Cost": "5"
+                },
+                {
+                    "Rank": "2",
+                    "Effect": "+15%",
+                    "Cost": "6"
+                },
+                {
+                    "Rank": "3",
+                    "Effect": "+20%",
+                    "Cost": "7"
+                },
+                {
+                    "Rank": "4",
+                    "Effect": "+25%",
+                    "Cost": "8"
+                },
+                {
+                    "Rank": "5",
+                    "Effect": "+30%",
+                    "Cost": "9"
+                },
+                {
+                    "Rank": "6",
+                    "Effect": "+35",
+                    "Cost": "10"
+                },
+                {
+                    "Rank": "7",
+                    "Effect": "+40%",
+                    "Cost": "11"
+                },
+                {
+                    "Rank": "8",
+                    "Effect": "+45%",
+                    "Cost": "12"
+                },
+                {
+                    "Rank": "9",
+                    "Effect": "+50%",
+                    "Cost": "13"
+                },
+                {
+                    "Rank": "10",
+                    "Effect": "+55%",
+                    "Cost": "14"
+                }
+            ]
+        },
+        {
+            "Name": "Primed Bane of Infested",
+            "Type": "Rifle",
+            "Polarity": "Voidtraderplaceholdert",
+            "Stats": [
+                "Rank",
+                "Effect",
+                "Cost"
+            ],
+            "Mod": [
+                {
+                    "Rank": "0",
+                    "Effect": "+5%",
+                    "Cost": "4"
+                },
+                {
+                    "Rank": "1",
+                    "Effect": "+10%",
+                    "Cost": "5"
+                },
+                {
+                    "Rank": "2",
+                    "Effect": "+15%",
+                    "Cost": "6"
+                },
+                {
+                    "Rank": "3",
+                    "Effect": "+20%",
+                    "Cost": "7"
+                },
+                {
+                    "Rank": "4",
+                    "Effect": "+25%",
+                    "Cost": "8"
+                },
+                {
+                    "Rank": "5",
+                    "Effect": "+30%",
+                    "Cost": "9"
+                },
+                {
+                    "Rank": "6",
+                    "Effect": "+35",
+                    "Cost": "10"
+                },
+                {
+                    "Rank": "7",
+                    "Effect": "+40%",
+                    "Cost": "11"
+                },
+                {
+                    "Rank": "8",
+                    "Effect": "+45%",
+                    "Cost": "12"
+                },
+                {
+                    "Rank": "9",
+                    "Effect": "+50%",
+                    "Cost": "13"
+                },
+                {
+                    "Rank": "10",
+                    "Effect": "+55%",
+                    "Cost": "14"
+                }
+            ]
+        },
+        {
+            "Name": "Primed Cryo Rounds",
+            "Type": "Rifle",
+            "Polarity": "Voidtraderplaceholdert",
+            "Stats": [
+                "Rank",
+                "Effect",
+                "Cost"
+            ],
+            "Mod": [
+                {
+                    "Rank": "0",
+                    "Effect": "+15%",
+                    "Cost": "6"
+                },
+                {
+                    "Rank": "1",
+                    "Effect": "+30%",
+                    "Cost": "7"
+                },
+                {
+                    "Rank": "2",
+                    "Effect": "+45%",
+                    "Cost": "8"
+                },
+                {
+                    "Rank": "3",
+                    "Effect": "+60%",
+                    "Cost": "9"
+                },
+                {
+                    "Rank": "4",
+                    "Effect": "+75%",
+                    "Cost": "10"
+                },
+                {
+                    "Rank": "5",
+                    "Effect": "+90%",
+                    "Cost": "11"
+                },
+                {
+                    "Rank": "6",
+                    "Effect": "+105%",
+                    "Cost": "12"
+                },
+                {
+                    "Rank": "7",
+                    "Effect": "+120%",
+                    "Cost": "13"
+                },
+                {
+                    "Rank": "8",
+                    "Effect": "+135%",
+                    "Cost": "14"
+                },
+                {
+                    "Rank": "9",
+                    "Effect": "+150%",
+                    "Cost": "15"
+                },
+                {
+                    "Rank": "10",
+                    "Effect": "+165%",
+                    "Cost": "16"
+                }
+            ]
+        },
+        {
+            "Name": "Primed Fast Hands",
+            "Type": "Rifle",
+            "Polarity": "Voidtraderplaceholdert",
+            "Stats": [
+                "Rank",
+                "Effect",
+                "Cost"
+            ],
+            "Mod": [
+                {
+                    "Rank": "0",
+                    "Effect": "+5%",
+                    "Cost": "2"
+                },
+                {
+                    "Rank": "1",
+                    "Effect": "+10%",
+                    "Cost": "3"
+                },
+                {
+                    "Rank": "2",
+                    "Effect": "+15%",
+                    "Cost": "4"
+                },
+                {
+                    "Rank": "3",
+                    "Effect": "+20%",
+                    "Cost": "5"
+                },
+                {
+                    "Rank": "4",
+                    "Effect": "+25%",
+                    "Cost": "6"
+                },
+                {
+                    "Rank": "5",
+                    "Effect": "+30%",
+                    "Cost": "7"
+                },
+                {
+                    "Rank": "6",
+                    "Effect": "+35%",
+                    "Cost": "8"
+                },
+                {
+                    "Rank": "7",
+                    "Effect": "+40%",
+                    "Cost": "9"
+                },
+                {
+                    "Rank": "8",
+                    "Effect": "+45%",
+                    "Cost": "10"
+                },
+                {
+                    "Rank": "9",
+                    "Effect": "+50%",
+                    "Cost": "11"
+                },
+                {
+                    "Rank": "10",
+                    "Effect": "+55%",
+                    "Cost": "12"
+                }
+            ]
+        },
+        {
+            "Name": "Primed Rifle Ammo Mutation",
+            "Type": "Rifle",
+            "Polarity": "Voidtraderplaceholdert",
+            "Stats": [
+                "Rank",
+                "Efficiency(Pistol)",
+                "Efficiency(Shotgun/Sniper)",
+                "Cost"
+            ],
+            "Mod": [
+                {
+                    "Rank": "0",
+                    "Efficiency(Pistol)": "6.25%",
+                    "Efficiency(Shotgun/Sniper)": "25%",
+                    "Cost": "4"
+                },
+                {
+                    "Rank": "1",
+                    "Efficiency(Pistol)": "12.5%",
+                    "Efficiency(Shotgun/Sniper)": "50%",
+                    "Cost": "5"
+                },
+                {
+                    "Rank": "2",
+                    "Efficiency(Pistol)": "18.75%",
+                    "Efficiency(Shotgun/Sniper)": "75%",
+                    "Cost": "6"
+                },
+                {
+                    "Rank": "3",
+                    "Efficiency(Pistol)": "25%",
+                    "Efficiency(Shotgun/Sniper)": "100%",
+                    "Cost": "7"
+                },
+                {
+                    "Rank": "4",
+                    "Efficiency(Pistol)": "31.25%",
+                    "Efficiency(Shotgun/Sniper)": "125%",
+                    "Cost": "8"
+                },
+                {
+                    "Rank": "5",
+                    "Efficiency(Pistol)": "37.5%",
+                    "Efficiency(Shotgun/Sniper)": "150%",
+                    "Cost": "9"
+                },
+                {
+                    "Rank": "6",
+                    "Efficiency(Pistol)": "43.75%",
+                    "Efficiency(Shotgun/Sniper)": "175%",
+                    "Cost": "10"
+                },
+                {
+                    "Rank": "7",
+                    "Efficiency(Pistol)": "50%",
+                    "Efficiency(Shotgun/Sniper)": "200%",
+                    "Cost": "11"
+                },
+                {
+                    "Rank": "8",
+                    "Efficiency(Pistol)": "56.25%",
+                    "Efficiency(Shotgun/Sniper)": "225%",
+                    "Cost": "12"
+                },
+                {
+                    "Rank": "9",
+                    "Efficiency(Pistol)": "62.5%",
+                    "Efficiency(Shotgun/Sniper)": "250%",
+                    "Cost": "13"
+                },
+                {
+                    "Rank": "10",
+                    "Efficiency(Pistol)": "68.75%",
+                    "Efficiency(Shotgun/Sniper)": "275%",
+                    "Cost": "14"
+                }
+            ]
+        },
+        {
+            "Name": "Primed Shred",
+            "Type": "Rifle",
+            "Polarity": "Madurai",
+            "Stats": [
+                "Rank",
+                "Fire Rate (Rifles)",
+                "Fire Rate (Bows)",
+                "Punch Through (m)",
+                "Cost"
+            ],
+            "Mod": [
+                {
+                    "Rank": "0",
+                    "Fire Rate (Rifles)": "+5%",
+                    "Fire Rate (Bows)": "+10%",
+                    "Punch Through (m)": "+0.2m",
+                    "Cost": "6"
+                },
+                {
+                    "Rank": "1",
+                    "Fire Rate (Rifles)": "+10%",
+                    "Fire Rate (Bows)": "+20%",
+                    "Punch Through (m)": "+0.4m",
+                    "Cost": "7"
+                },
+                {
+                    "Rank": "2",
+                    "Fire Rate (Rifles)": "+15%",
+                    "Fire Rate (Bows)": "+30%",
+                    "Punch Through (m)": "+0.6m",
+                    "Cost": "8"
+                },
+                {
+                    "Rank": "3",
+                    "Fire Rate (Rifles)": "+20%",
+                    "Fire Rate (Bows)": "+40%",
+                    "Punch Through (m)": "+0.8m",
+                    "Cost": "9"
+                },
+                {
+                    "Rank": "4",
+                    "Fire Rate (Rifles)": "+25%",
+                    "Fire Rate (Bows)": "+50%",
+                    "Punch Through (m)": "+1.0m",
+                    "Cost": "10"
+                },
+                {
+                    "Rank": "5",
+                    "Fire Rate (Rifles)": "+30%",
+                    "Fire Rate (Bows)": "+60%",
+                    "Punch Through (m)": "+1.2m",
+                    "Cost": "11"
+                },
+                {
+                    "Rank": "",
+                    "Fire Rate (Rifles)": "35%",
+                    "Fire Rate (Bows)": "70%",
+                    "Punch Through (m)": "1.4m",
+                    "Cost": "2"
+                },
+                {
+                    "Rank": "",
+                    "Fire Rate (Rifles)": "40%",
+                    "Fire Rate (Bows)": "80%",
+                    "Punch Through (m)": "1.6m",
+                    "Cost": "3"
+                },
+                {
+                    "Rank": "",
+                    "Fire Rate (Rifles)": "45%",
+                    "Fire Rate (Bows)": "90%",
+                    "Punch Through (m)": "1.8m",
+                    "Cost": "4"
+                },
+                {
+                    "Rank": "",
+                    "Fire Rate (Rifles)": "50%",
+                    "Fire Rate (Bows)": "100%",
+                    "Punch Through (m)": "2.0m",
+                    "Cost": "5"
+                },
+                {
+                    "Rank": "0",
+                    "Fire Rate (Rifles)": "55%",
+                    "Fire Rate (Bows)": "110%",
+                    "Punch Through (m)": "2.2m",
+                    "Cost": "6"
+                }
+            ]
+        },
+        {
+            "Name": "Rifle Ammo Mutation",
+            "Type": "Rifle",
+            "Polarity": "Naramon",
+            "Stats": [
+                "Rank",
+                "Efficiency(Pistol)",
+                "Efficiency(Shotgun/Sniper)",
+                "Cost"
+            ],
+            "Mod": [
+                {
+                    "Rank": "0",
+                    "Efficiency(Pistol)": "6.25%",
+                    "Efficiency(Shotgun/Sniper)": "25%",
+                    "Cost": "4"
+                },
+                {
+                    "Rank": "1",
+                    "Efficiency(Pistol)": "12.5%",
+                    "Efficiency(Shotgun/Sniper)": "50%",
+                    "Cost": "5"
+                },
+                {
+                    "Rank": "2",
+                    "Efficiency(Pistol)": "18.75%",
+                    "Efficiency(Shotgun/Sniper)": "75%",
+                    "Cost": "6"
+                },
+                {
+                    "Rank": "3",
+                    "Efficiency(Pistol)": "25%",
+                    "Efficiency(Shotgun/Sniper)": "100%",
+                    "Cost": "7"
+                },
+                {
+                    "Rank": "4",
+                    "Efficiency(Pistol)": "31.25%",
+                    "Efficiency(Shotgun/Sniper)": "125%",
+                    "Cost": "8"
+                },
+                {
+                    "Rank": "5",
+                    "Efficiency(Pistol)": "37.5%",
+                    "Efficiency(Shotgun/Sniper)": "150%",
+                    "Cost": "9"
+                }
+            ]
+        },
+        {
+            "Name": "Rifle Aptitude",
+            "Type": "Rifle",
+            "Polarity": "Vazarin",
+            "Stats": [
+                "Rank",
+                "Effect",
+                "Cost"
+            ],
+            "Mod": [
+                {
+                    "Rank": "0",
+                    "Effect": "+2.5%",
+                    "Cost": "4"
+                },
+                {
+                    "Rank": "1",
+                    "Effect": "+5%",
+                    "Cost": "5"
+                },
+                {
+                    "Rank": "2",
+                    "Effect": "+7.5%",
+                    "Cost": "6"
+                },
+                {
+                    "Rank": "3",
+                    "Effect": "+10%",
+                    "Cost": "7"
+                },
+                {
+                    "Rank": "4",
+                    "Effect": "+12.5%",
+                    "Cost": "8"
+                },
+                {
+                    "Rank": "5",
+                    "Effect": "+15%",
+                    "Cost": "9"
+                }
+            ]
+        },
+        {
+            "Name": "Rime Rounds",
+            "Type": "Rifle",
+            "Polarity": "Madurai",
+            "Stats": [
+                "Rank",
+                "Cold Damage",
+                "Status Chance",
+                "Cost"
+            ],
+            "Mod": [
+                {
+                    "Rank": "0",
+                    "Cold Damage": "+15%",
+                    "Status Chance": "+15%",
+                    "Cost": "4"
+                },
+                {
+                    "Rank": "1",
+                    "Cold Damage": "+30%",
+                    "Status Chance": "+30%",
+                    "Cost": "5"
+                },
+                {
+                    "Rank": "2",
+                    "Cold Damage": "+45%",
+                    "Status Chance": "+45%",
+                    "Cost": "6"
+                },
+                {
+                    "Rank": "3",
+                    "Cold Damage": "+60%",
+                    "Status Chance": "+60%",
+                    "Cost": "7"
+                }
+            ]
+        },
+        {
+            "Name": "Rupture",
+            "Type": "Rifle",
+            "Polarity": "Naramon",
+            "Stats": [
+                "Rank",
+                "Effect",
+                "Cost"
+            ],
+            "Mod": [
+                {
+                    "Rank": "0",
+                    "Effect": "+5%",
+                    "Cost": "4"
+                },
+                {
+                    "Rank": "1",
+                    "Effect": "+10%",
+                    "Cost": "5"
+                },
+                {
+                    "Rank": "2",
+                    "Effect": "+15%",
+                    "Cost": "6"
+                },
+                {
+                    "Rank": "3",
+                    "Effect": "+20%",
+                    "Cost": "7"
+                },
+                {
+                    "Rank": "4",
+                    "Effect": "+25%",
+                    "Cost": "8"
+                },
+                {
+                    "Rank": "5",
+                    "Effect": "+30%",
+                    "Cost": "9"
+                }
+            ]
+        },
+        {
+            "Name": "Sawtooth Clip",
+            "Type": "Rifle",
+            "Polarity": "Naramon",
+            "Stats": [
+                "Rank",
+                "Effect",
+                "Cost"
+            ],
+            "Mod": [
+                {
+                    "Rank": "0",
+                    "Effect": "+5%",
+                    "Cost": "4"
+                },
+                {
+                    "Rank": "1",
+                    "Effect": "+10%",
+                    "Cost": "5"
+                },
+                {
+                    "Rank": "2",
+                    "Effect": "+15%",
+                    "Cost": "6"
+                },
+                {
+                    "Rank": "3",
+                    "Effect": "+20%",
+                    "Cost": "7"
+                },
+                {
+                    "Rank": "4",
+                    "Effect": "+25%",
+                    "Cost": "8"
+                },
+                {
+                    "Rank": "5",
+                    "Effect": "+30%",
+                    "Cost": "9"
+                }
+            ]
+        },
+        {
+            "Name": "Serration",
+            "Type": "Rifle",
+            "Polarity": "Madurai",
+            "Stats": [
+                "Rank",
+                "Effect",
+                "Cost"
+            ],
+            "Mod": [
+                {
+                    "Rank": "0",
+                    "Effect": "+15%",
+                    "Cost": "4"
+                },
+                {
+                    "Rank": "1",
+                    "Effect": "+30%",
+                    "Cost": "5"
+                },
+                {
+                    "Rank": "2",
+                    "Effect": "+45%",
+                    "Cost": "6"
+                },
+                {
+                    "Rank": "3",
+                    "Effect": "+60%",
+                    "Cost": "7"
+                },
+                {
+                    "Rank": "4",
+                    "Effect": "+75%",
+                    "Cost": "8"
+                },
+                {
+                    "Rank": "5",
+                    "Effect": "+90%",
+                    "Cost": "9"
+                },
+                {
+                    "Rank": "6",
+                    "Effect": "+105%",
+                    "Cost": "10"
+                },
+                {
+                    "Rank": "7",
+                    "Effect": "+120%",
+                    "Cost": "11"
+                },
+                {
+                    "Rank": "8",
+                    "Effect": "+135%",
+                    "Cost": "12"
+                },
+                {
+                    "Rank": "9",
+                    "Effect": "+150%",
+                    "Cost": "13"
+                },
+                {
+                    "Rank": "10",
+                    "Effect": "+165%",
+                    "Cost": "14"
+                }
+            ]
+        },
+        {
+            "Name": "Shred",
+            "Type": "Rifle",
+            "Polarity": "Madurai",
+            "Stats": [
+                "Rank",
+                "Fire Rate (Rifles)",
+                "Fire Rate (Bows)",
+                "Punch Through (m)",
+                "Cost"
+            ],
+            "Mod": [
+                {
+                    "Rank": "0",
+                    "Fire Rate (Rifles)": "+5%",
+                    "Fire Rate (Bows)": "+10%",
+                    "Punch Through (m)": "+0.2m",
+                    "Cost": "6"
+                },
+                {
+                    "Rank": "1",
+                    "Fire Rate (Rifles)": "+10%",
+                    "Fire Rate (Bows)": "+20%",
+                    "Punch Through (m)": "+0.4m",
+                    "Cost": "7"
+                },
+                {
+                    "Rank": "2",
+                    "Fire Rate (Rifles)": "+15%",
+                    "Fire Rate (Bows)": "+30%",
+                    "Punch Through (m)": "+0.6m",
+                    "Cost": "8"
+                },
+                {
+                    "Rank": "3",
+                    "Fire Rate (Rifles)": "+20%",
+                    "Fire Rate (Bows)": "+40%",
+                    "Punch Through (m)": "+0.8m",
+                    "Cost": "9"
+                },
+                {
+                    "Rank": "4",
+                    "Fire Rate (Rifles)": "+25%",
+                    "Fire Rate (Bows)": "+50%",
+                    "Punch Through (m)": "+1.0m",
+                    "Cost": "10"
+                },
+                {
+                    "Rank": "5",
+                    "Fire Rate (Rifles)": "+30%",
+                    "Fire Rate (Bows)": "+60%",
+                    "Punch Through (m)": "+1.2m",
+                    "Cost": "11"
+                }
+            ]
+        },
+        {
+            "Name": "Speed Trigger",
+            "Type": "Rifle",
+            "Polarity": "Madurai",
+            "Stats": [
+                "Rank",
+                "Fire Rate (Rifles)",
+                "Fire Rate (Bows)",
+                "Cost"
+            ],
+            "Mod": [
+                {
+                    "Rank": "0",
+                    "Fire Rate (Rifles)": "+10%",
+                    "Fire Rate (Bows)": "+20%",
+                    "Cost": "4"
+                },
+                {
+                    "Rank": "1",
+                    "Fire Rate (Rifles)": "+20%",
+                    "Fire Rate (Bows)": "+40%",
+                    "Cost": "5"
+                },
+                {
+                    "Rank": "2",
+                    "Fire Rate (Rifles)": "+30%",
+                    "Fire Rate (Bows)": "+60%",
+                    "Cost": "6"
+                },
+                {
+                    "Rank": "3",
+                    "Fire Rate (Rifles)": "+40%",
+                    "Fire Rate (Bows)": "+80%",
+                    "Cost": "7"
+                },
+                {
+                    "Rank": "4",
+                    "Fire Rate (Rifles)": "+50%",
+                    "Fire Rate (Bows)": "+100%",
+                    "Cost": "8"
+                },
+                {
+                    "Rank": "5",
+                    "Fire Rate (Rifles)": "+60%",
+                    "Fire Rate (Bows)": "+120%",
+                    "Cost": "9"
+                }
+            ]
+        },
+        {
+            "Name": "Split Chamber",
+            "Type": "Rifle",
+            "Polarity": "Madurai",
+            "Stats": [
+                "Rank",
+                "Effect",
+                "Cost"
+            ],
+            "Mod": [
+                {
+                    "Rank": "0",
+                    "Effect": "+15%",
+                    "Cost": "10"
+                },
+                {
+                    "Rank": "1",
+                    "Effect": "+30%",
+                    "Cost": "11"
+                },
+                {
+                    "Rank": "2",
+                    "Effect": "+45%",
+                    "Cost": "12"
+                },
+                {
+                    "Rank": "3",
+                    "Effect": "+60%",
+                    "Cost": "13"
+                },
+                {
+                    "Rank": "4",
+                    "Effect": "+75%",
+                    "Cost": "14"
+                },
+                {
+                    "Rank": "5",
+                    "Effect": "+90%",
+                    "Cost": "15"
+                }
+            ]
+        },
+        {
+            "Name": "Spring-Loaded Chamber",
+            "Type": "Rifle",
+            "Polarity": "Madurai",
+            "Stats": [
+                "Rank",
+                "Fire Rate",
+                "Duration",
+                "Cost"
+            ],
+            "Mod": [
+                {
+                    "Rank": "0",
+                    "Fire Rate": "+12.5%",
+                    "Duration": "1.5s",
+                    "Cost": "2"
+                },
+                {
+                    "Rank": "1",
+                    "Fire Rate": "+25%",
+                    "Duration": "3s",
+                    "Cost": "3"
+                },
+                {
+                    "Rank": "2",
+                    "Fire Rate": "+37.5%",
+                    "Duration": "4.5s",
+                    "Cost": "4"
+                },
+                {
+                    "Rank": "3",
+                    "Fire Rate": "+50%",
+                    "Duration": "6s",
+                    "Cost": "5"
+                },
+                {
+                    "Rank": "4",
+                    "Fire Rate": "+62.5%",
+                    "Duration": "7.5s",
+                    "Cost": "6"
+                },
+                {
+                    "Rank": "5",
+                    "Fire Rate": "+75%",
+                    "Duration": "9s",
+                    "Cost": "7"
+                }
+            ]
+        },
+        {
+            "Name": "Stabilizer",
+            "Type": "Rifle",
+            "Polarity": "Naramon",
+            "Stats": [
+                "Rank",
+                "Weapon Recoil",
+                "Cost"
+            ],
+            "Mod": [
+                {
+                    "Rank": "0",
+                    "Weapon Recoil": "-15%",
+                    "Cost": "6"
+                },
+                {
+                    "Rank": "1",
+                    "Weapon Recoil": "-30%",
+                    "Cost": "7"
+                },
+                {
+                    "Rank": "2",
+                    "Weapon Recoil": "-45%",
+                    "Cost": "8"
+                },
+                {
+                    "Rank": "3",
+                    "Weapon Recoil": "-60%",
+                    "Cost": "9"
+                }
+            ]
+        },
+        {
+            "Name": "Stormbringer",
+            "Type": "Rifle",
+            "Polarity": "Naramon",
+            "Stats": [
+                "Rank",
+                "Effect",
+                "Cost"
+            ],
+            "Mod": [
+                {
+                    "Rank": "0",
+                    "Effect": "+15%",
+                    "Cost": "6"
+                },
+                {
+                    "Rank": "1",
+                    "Effect": "+30%",
+                    "Cost": "7"
+                },
+                {
+                    "Rank": "2",
+                    "Effect": "+45%",
+                    "Cost": "8"
+                },
+                {
+                    "Rank": "3",
+                    "Effect": "+60%",
+                    "Cost": "9"
+                },
+                {
+                    "Rank": "4",
+                    "Effect": "+75%",
+                    "Cost": "10"
+                },
+                {
+                    "Rank": "5",
+                    "Effect": "+90%",
+                    "Cost": "11"
+                }
+            ]
+        },
+        {
+            "Name": "Tainted Mag",
+            "Type": "Rifle",
+            "Polarity": "Naramon",
+            "Stats": [
+                "Rank",
+                "Magazine Capacity",
+                "Reload Speed",
+                "Cost"
+            ],
+            "Mod": [
+                {
+                    "Rank": "0",
+                    "Magazine Capacity": "+6%",
+                    "Reload Speed": "-3%",
+                    "Cost": "4"
+                },
+                {
+                    "Rank": "1",
+                    "Magazine Capacity": "+12%",
+                    "Reload Speed": "-6%",
+                    "Cost": "5"
+                },
+                {
+                    "Rank": "2",
+                    "Magazine Capacity": "+18%",
+                    "Reload Speed": "-9%",
+                    "Cost": "6"
+                },
+                {
+                    "Rank": "3",
+                    "Magazine Capacity": "+24%",
+                    "Reload Speed": "-12%",
+                    "Cost": "7"
+                },
+                {
+                    "Rank": "4",
+                    "Magazine Capacity": "+30%",
+                    "Reload Speed": "-15%",
+                    "Cost": "8"
+                },
+                {
+                    "Rank": "5",
+                    "Magazine Capacity": "+36%",
+                    "Reload Speed": "-18%",
+                    "Cost": "9"
+                },
+                {
+                    "Rank": "6",
+                    "Magazine Capacity": "+42%",
+                    "Reload Speed": "-21%",
+                    "Cost": "10"
+                },
+                {
+                    "Rank": "7",
+                    "Magazine Capacity": "+48%",
+                    "Reload Speed": "-24%",
+                    "Cost": "11"
+                },
+                {
+                    "Rank": "8",
+                    "Magazine Capacity": "+54%",
+                    "Reload Speed": "-27%",
+                    "Cost": "12"
+                },
+                {
+                    "Rank": "9",
+                    "Magazine Capacity": "+60%",
+                    "Reload Speed": "-30%",
+                    "Cost": "13"
+                },
+                {
+                    "Rank": "10",
+                    "Magazine Capacity": "+66%",
+                    "Reload Speed": "-33%",
+                    "Cost": "14"
+                }
+            ]
+        },
+        {
+            "Name": "Terminal Velocity",
+            "Type": "Rifle",
+            "Polarity": "Madurai",
+            "Stats": [
+                "Rank",
+                "Effect",
+                "Cost"
+            ],
+            "Mod": [
+                {
+                    "Rank": "0",
+                    "Effect": "+15%",
+                    "Cost": "4"
+                },
+                {
+                    "Rank": "1",
+                    "Effect": "+30%",
+                    "Cost": "5"
+                },
+                {
+                    "Rank": "2",
+                    "Effect": "+45%",
+                    "Cost": "6"
+                },
+                {
+                    "Rank": "3",
+                    "Effect": "+60%",
+                    "Cost": "7"
+                }
+            ]
+        },
+        {
+            "Name": "Thermite Rounds",
+            "Type": "Rifle",
+            "Polarity": "Madurai",
+            "Stats": [
+                "Rank",
+                "Heat Damage",
+                "Status Chance",
+                "Cost"
+            ],
+            "Mod": [
+                {
+                    "Rank": "0",
+                    "Heat Damage": "+15%",
+                    "Status Chance": "+15%",
+                    "Cost": "4"
+                },
+                {
+                    "Rank": "1",
+                    "Heat Damage": "+30%",
+                    "Status Chance": "+30%",
+                    "Cost": "5"
+                },
+                {
+                    "Rank": "2",
+                    "Heat Damage": "+45%",
+                    "Status Chance": "+45%",
+                    "Cost": "6"
+                },
+                {
+                    "Rank": "3",
+                    "Heat Damage": "+60%",
+                    "Status Chance": "+60%",
+                    "Cost": "7"
+                }
+            ]
+        },
+        {
+            "Name": "Vile Acceleration",
+            "Type": "Rifle",
+            "Polarity": "Naramon",
+            "Stats": [
+                "Rank",
+                "Fire Rate (Rifles)",
+                "Fire Rate (Bows)",
+                "Damage",
+                "Cost"
+            ],
+            "Mod": [
+                {
+                    "Rank": "0",
+                    "Fire Rate (Rifles)": "+15%",
+                    "Fire Rate (Bows)": "+30%",
+                    "Damage": "-2.5%",
+                    "Cost": "4"
+                },
+                {
+                    "Rank": "1",
+                    "Fire Rate (Rifles)": "+30%",
+                    "Fire Rate (Bows)": "+60%",
+                    "Damage": "-5%",
+                    "Cost": "5"
+                },
+                {
+                    "Rank": "2",
+                    "Fire Rate (Rifles)": "+45%",
+                    "Fire Rate (Bows)": "+90%",
+                    "Damage": "-7.5%",
+                    "Cost": "6"
+                },
+                {
+                    "Rank": "3",
+                    "Fire Rate (Rifles)": "+60%",
+                    "Fire Rate (Bows)": "+120%",
+                    "Damage": "-10%",
+                    "Cost": "7"
+                },
+                {
+                    "Rank": "4",
+                    "Fire Rate (Rifles)": "+75%",
+                    "Fire Rate (Bows)": "+150%",
+                    "Damage": "-12.5%",
+                    "Cost": "8"
+                },
+                {
+                    "Rank": "5",
+                    "Fire Rate (Rifles)": "+90%",
+                    "Fire Rate (Bows)": "+180%",
+                    "Damage": "-15%",
+                    "Cost": "9"
+                }
+            ]
+        },
+        {
+            "Name": "Vile Precision",
+            "Type": "Rifle",
+            "Polarity": "Naramon",
+            "Stats": [
+                "Rank",
+                "Weapon Recoil",
+                "Fire Rate",
+                "Cost"
+            ],
+            "Mod": [
+                {
+                    "Rank": "0",
+                    "Weapon Recoil": "-10%",
+                    "Fire Rate": "-6%",
+                    "Cost": "6"
+                },
+                {
+                    "Rank": "1",
+                    "Weapon Recoil": "-20%",
+                    "Fire Rate": "-12%",
+                    "Cost": "7"
+                },
+                {
+                    "Rank": "2",
+                    "Weapon Recoil": "-30%",
+                    "Fire Rate": "-18%",
+                    "Cost": "8"
+                },
+                {
+                    "Rank": "3",
+                    "Weapon Recoil": "-40%",
+                    "Fire Rate": "-24%",
+                    "Cost": "9"
+                },
+                {
+                    "Rank": "4",
+                    "Weapon Recoil": "-50%",
+                    "Fire Rate": "-30%",
+                    "Cost": "10"
+                },
+                {
+                    "Rank": "5",
+                    "Weapon Recoil": "-60%",
+                    "Fire Rate": "-36%",
+                    "Cost": "11"
+                }
+            ]
+        },
+        {
+            "Name": "Vital Sense",
+            "Type": "Rifle",
+            "Polarity": "Madurai",
+            "Stats": [
+                "Rank",
+                "Effect",
+                "Cost"
+            ],
+            "Mod": [
+                {
+                    "Rank": "0",
+                    "Effect": "+20%",
+                    "Cost": "4"
+                },
+                {
+                    "Rank": "1",
+                    "Effect": "+40%",
+                    "Cost": "5"
+                },
+                {
+                    "Rank": "2",
+                    "Effect": "+60%",
+                    "Cost": "6"
+                },
+                {
+                    "Rank": "3",
+                    "Effect": "+80%",
+                    "Cost": "7"
+                },
+                {
+                    "Rank": "4",
+                    "Effect": "+100%",
+                    "Cost": "8"
+                },
+                {
+                    "Rank": "5",
+                    "Effect": "+120%",
+                    "Cost": "9"
+                }
+            ]
+        },
+        {
+            "Name": "Wildfire",
+            "Type": "Rifle",
+            "Polarity": "Madurai",
+            "Stats": [
+                "Rank",
+                "Magazine Capacity",
+                "Heat Damage",
+                "Cost"
+            ],
+            "Mod": [
+                {
+                    "Rank": "0",
+                    "Magazine Capacity": "+5%",
+                    "Heat Damage": "+15%",
+                    "Cost": "6"
+                },
+                {
+                    "Rank": "1",
+                    "Magazine Capacity": "+10%",
+                    "Heat Damage": "+30%",
+                    "Cost": "7"
+                },
+                {
+                    "Rank": "2",
+                    "Magazine Capacity": "+15%",
+                    "Heat Damage": "+45%",
+                    "Cost": "8"
+                },
+                {
+                    "Rank": "3",
+                    "Magazine Capacity": "+20%",
+                    "Heat Damage": "+60%",
+                    "Cost": "9"
+                }
+            ]
+        },
+        {
+            "Name": "Arrow Mutation",
+            "Type": "Bow",
+            "Polarity": "Naramon",
+            "Stats": [
+                "Rank",
+                "Efficiency(Pistol/Rifle)",
+                "Efficiency(Shotgun)",
+                "Cost"
+            ],
+            "Mod": [
+                {
+                    "Rank": "0",
+                    "Efficiency(Pistol/Rifle)": "6.25%",
+                    "Efficiency(Shotgun)": "25%",
+                    "Cost": "4"
+                },
+                {
+                    "Rank": "1",
+                    "Efficiency(Pistol/Rifle)": "12.5%",
+                    "Efficiency(Shotgun)": "50%",
+                    "Cost": "5"
+                },
+                {
+                    "Rank": "2",
+                    "Efficiency(Pistol/Rifle)": "18.75%",
+                    "Efficiency(Shotgun)": "75%",
+                    "Cost": "6"
+                },
+                {
+                    "Rank": "3",
+                    "Efficiency(Pistol/Rifle)": "25%",
+                    "Efficiency(Shotgun)": "100%",
+                    "Cost": "7"
+                },
+                {
+                    "Rank": "4",
+                    "Efficiency(Pistol/Rifle)": "31.25%",
+                    "Efficiency(Shotgun)": "125%",
+                    "Cost": "8"
+                },
+                {
+                    "Rank": "5",
+                    "Efficiency(Pistol/Rifle)": "37.5%",
+                    "Efficiency(Shotgun)": "150%",
+                    "Cost": "9"
+                }
+            ]
+        },
+        {
+            "Name": "Thunderbolt",
+            "Type": "Bow",
+            "Polarity": "Madurai",
+            "Stats": [
+                "Rank",
+                "Proc Chance",
+                "Cost"
+            ],
+            "Mod": [
+                {
+                    "Rank": "0",
+                    "Proc Chance": "+7.5%",
+                    "Cost": "6"
+                },
+                {
+                    "Rank": "1",
+                    "Proc Chance": "+15%",
+                    "Cost": "7"
+                },
+                {
+                    "Rank": "2",
+                    "Proc Chance": "+22.5%",
+                    "Cost": "8"
+                },
+                {
+                    "Rank": "3",
+                    "Proc Chance": "+30%",
+                    "Cost": "9"
+                }
+            ]
+        }
+    ]
+}

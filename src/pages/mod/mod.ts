@@ -1,14 +1,19 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import {NavController, NavParams} from 'ionic-angular';
+import {Mod} from "../../models/mod";
+
 
 @Component({
   selector: 'page-mod',
   templateUrl: 'mod.html'
 })
-export class TestPage {
 
-  constructor(public navCtrl: NavController) {
+export class ModPage {
+  mod: Mod;
 
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.mod = navParams.get("modObject");
+    console.log(this.mod.getName());
   }
 
 }

@@ -23,6 +23,10 @@ import { worldStateProvider } from '../providers/worldState/worldState';
 
 import { LocalNotifications } from '@ionic-native/local-notifications'
 
+import { ModsProvider } from '../providers/mods/mods';
+
+import {ModsPage} from "../pages/mods/mods";
+import {ModPage} from "../pages/mod/mod";
 
 @NgModule({
   declarations: [
@@ -35,6 +39,8 @@ import { LocalNotifications } from '@ionic-native/local-notifications'
     VoidTraderPage,
     RiflesPage,
     RiflePage,
+    ModsPage,
+    ModPage
   ],
   imports: [
     BrowserModule,
@@ -52,7 +58,9 @@ import { LocalNotifications } from '@ionic-native/local-notifications'
     InvasionPage,
     VoidTraderPage,
     RiflesPage,
-    RiflePage
+    RiflePage,
+    ModsPage,
+    ModPage
   ],
   providers: [
     StatusBar,
@@ -61,6 +69,7 @@ import { LocalNotifications } from '@ionic-native/local-notifications'
     RiflesProvider,
     worldStateProvider,
     LocalNotifications,
+    ModsProvider
   ]
 })
 export class AppModule {}
