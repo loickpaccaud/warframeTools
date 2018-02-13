@@ -11,8 +11,7 @@
 
   <ion-list inset>
     <ion-item *ngFor="let event of events">
-      <h2><a href={{event.url}}>{{event.name}}</a></h2>
-      <p>{{event.date}}</p>
+      <h2>{{event.date}} <a href={{event.url}}>{{event.name}}</a></h2>
     </ion-item>
   </ion-list>
 </ion-content>

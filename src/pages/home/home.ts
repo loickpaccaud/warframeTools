@@ -7,7 +7,7 @@ import { SortiePage } from '../sortie/sortie';
 import { InvasionPage } from '../invasion/invasion';
 import { VoidTraderPage } from '../voidTrader/voidTrader';
 
-import { HomeProvider} from '../../providers/home/home';
+import { WorldStateProvider} from '../../providers/worldState/worldState';
 
 import { LocalNotifications } from '@ionic-native/local-notifications';
 
@@ -19,7 +19,7 @@ export class HomePage {
   items;
   notifications: any[] = [];
 
-  constructor(public navCtrl: NavController, public homeProvider: HomeProvider, public localNotifications: LocalNotifications) {
+  constructor(public navCtrl: NavController, public worldStateProvider: WorldStateProvider, public localNotifications: LocalNotifications) {
     this.items = [
       {
         title: 'Events',
@@ -43,17 +43,17 @@ export class HomePage {
       }
     ];
 
-    this.localNotifications.schedule({
-      id: 1,
-      title: 'Event',
-      text: 'this is a notification bayou',
-      led: 'FF0000',
-      at: new Date(new Date().getTime() + 5 * 1000)
-    });
+    this.checkNewEvent();
 
   }
 
   openNavDetailsPage(page) {
     this.navCtrl.push(page);
+  }
+
+  checkNewEvent() {
+    console.log("event checked");
+
+
   }
 }
