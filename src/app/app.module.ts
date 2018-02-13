@@ -21,7 +21,10 @@ import { RiflePage } from '../pages/rifle/rifle';
 import { RiflesProvider } from '../providers/rifles/rifles';
 import { HomeProvider } from '../providers/home/home';
 
+import { ModsProvider } from '../providers/mods/mods';
+
 import { LocalNotifications } from '@ionic-native/local-notifications';
+import {ModsPage} from "../pages/mods/mods";
 
 @NgModule({
   declarations: [
@@ -33,7 +36,8 @@ import { LocalNotifications } from '@ionic-native/local-notifications';
     InvasionPage,
     VoidTraderPage,
     RiflesPage,
-    RiflePage
+    RiflePage,
+    ModsPage
   ],
   imports: [
     BrowserModule,
@@ -51,7 +55,8 @@ import { LocalNotifications } from '@ionic-native/local-notifications';
     InvasionPage,
     VoidTraderPage,
     RiflesPage,
-    RiflePage
+    RiflePage,
+    ModsPage
   ],
   providers: [
     StatusBar,
@@ -59,7 +64,8 @@ import { LocalNotifications } from '@ionic-native/local-notifications';
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     RiflesProvider,
     HomeProvider,
-    LocalNotifications
+    LocalNotifications,
+    ModsProvider
   ]
 })
 export class AppModule {}
