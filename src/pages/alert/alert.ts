@@ -1,14 +1,16 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import {WorldStateProvider} from "../../providers/worldState/worldState";
+import {Alert} from "../../models/alert";
 
 @Component({
   selector: 'page-alert',
   templateUrl: 'alert.html'
 })
 export class AlertPage {
+  alerts:Alert[]=[];
 
-  constructor(public navCtrl: NavController) {
-
+  constructor(public worldStateProvider: WorldStateProvider) {
+    this.alerts = this.worldStateProvider.alerts;
   }
 
 }
