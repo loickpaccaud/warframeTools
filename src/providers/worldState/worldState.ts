@@ -7,7 +7,7 @@ import {Invasion} from "../../models/invasion";
 import {voidTrader} from "../../models/voidTrader";
 
 @Injectable()
-export class worldStateProvider {
+export class WorldStateProvider {
   apiUrl = "https://warframetools.herokuapp.com";
   worldState: any;
   public events:Event[]=[];
@@ -17,10 +17,17 @@ export class worldStateProvider {
   public voidTrader:voidTrader[]=[];
 
   constructor(public http: HttpClient) {
+    console.log("new WorldStateProvider");
     this.getworldState();
   }
 
   getworldState() {
+    this.events = [];
+    this.alerts = [];
+    this.sorties = [];
+    this.invasions = [];
+    this.voidTrader = [];
+
     new Promise(resolve => {
       this.http.get(this.apiUrl)
       .subscribe(data => {
@@ -35,25 +42,7 @@ export class worldStateProvider {
       this.parseSorties(this.worldState.Sorties);
       this.parseInvasions(this.worldState.Invasions);
       this.parseVoidTrader(this.worldState.VoidTraders);
-
     });
-  }
-
-  parseDate(timeRequest:number, dateEvent:number){
-    if(timeRequest==null)
-      timeRequest = 2*dateEvent;
-    let date = (timeRequest - dateEvent)/60; // minutes
-    if(date < 60)
-      return "["+Math.floor(date)+"m]";
-    else {
-      date /= 60; // hours
-      if(date < 24)
-        return "["+Math.floor(date)+"h]";
-      else {
-        date /= 24; // days
-        return "["+Math.floor(date)+"d]";
-      }
-    }
   }
 
   parseEvents(events:any){
@@ -99,5 +88,22 @@ export class worldStateProvider {
 
   parseVoidTrader(voidTrader:any){
 
+  }
+
+  parseDate(timeRequest:number, dateEvent:number){
+    let date = dateEvent/60;
+    if(timeRequest!=null)
+      date = (timeRequest - dateEvent)/60; // minutes
+    if(date < 60)
+      return "["+Math.floor(date)+"m]";
+    else {
+      date /= 60; // hours
+      if(date < 24)
+        return "["+Math.floor(date)+"h]";
+      else {
+        date /= 24; // days
+        return "["+Math.floor(date)+"d]";
+      }
+    }
   }
 }

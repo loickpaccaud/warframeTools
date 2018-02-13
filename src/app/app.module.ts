@@ -19,7 +19,7 @@ import { RiflesPage } from '../pages/rifles/rifles';
 import { RiflePage } from '../pages/rifle/rifle';
 
 import { RiflesProvider } from '../providers/rifles/rifles';
-import { worldStateProvider } from '../providers/worldState/worldState';
+import { WorldStateProvider } from '../providers/worldState/worldState';
 
 import { LocalNotifications } from '@ionic-native/local-notifications'
 
@@ -67,7 +67,7 @@ import {ModPage} from "../pages/mod/mod";
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     RiflesProvider,
-    worldStateProvider,
+    WorldStateProvider,
     LocalNotifications,
     ModsProvider
   ]

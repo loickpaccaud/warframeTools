@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { worldStateProvider} from '../../providers/worldState/worldState';
+import { WorldStateProvider} from '../../providers/worldState/worldState';
 import { Event } from '../../models/event';
 
 @Component({
@@ -9,7 +9,7 @@ import { Event } from '../../models/event';
 export class EventPage {
   events:Event[]=[];
 
-  constructor(public worldStateProvider: worldStateProvider) {
+  constructor(public worldStateProvider: WorldStateProvider) {
     this.events = this.worldStateProvider.events;
   }
 

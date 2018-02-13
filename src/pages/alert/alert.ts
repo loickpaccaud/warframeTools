@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {worldStateProvider} from "../../providers/worldState/worldState";
+import {WorldStateProvider} from "../../providers/worldState/worldState";
 import {Alert} from "../../models/alert";
 
 @Component({
@@ -9,7 +9,7 @@ import {Alert} from "../../models/alert";
 export class AlertPage {
   alerts:Alert[]=[];
 
-  constructor(public worldStateProvider: worldStateProvider) {
+  constructor(public worldStateProvider: WorldStateProvider) {
     this.alerts = this.worldStateProvider.alerts;
   }
 
