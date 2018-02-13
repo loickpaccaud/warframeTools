@@ -1,23 +1,23 @@
 export class Event{
-	name:string;
-	date:string;
-	url:string;
+  name:String;
+  date:String;
+  url:String;
 
-	constructor(name:string, date:string, url:string){
-		this.name = name;
-		this.date = date;
-		this.url = url;
-	}
+  constructor(name:String, date:String, url:String){
+    this.name = name;
+    this.date = date;
+    this.url = url;
+  }
 
-	getName(){
-		return this.name;
-	}
+  getName(){
+    return this.name;
+  }
 
-	getDate(){
-		return this.date;
-	}
+  getDate(){
+    return this.date;
+  }
 
-	getUrl(){
-		return this.url;
-	}
+  getUrl(){
+    return this.url;
+  }
 }

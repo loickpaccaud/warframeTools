@@ -7,7 +7,7 @@ import { SortiePage } from '../sortie/sortie';
 import { InvasionPage } from '../invasion/invasion';
 import { VoidTraderPage } from '../voidTrader/voidTrader';
 
-import { HomeProvider} from '../../providers/home/home';
+import { worldStateProvider} from '../../providers/worldState/worldState';
 
 import { LocalNotifications } from '@ionic-native/local-notifications';
 
@@ -19,7 +19,7 @@ export class HomePage {
   items;
   notifications: any[] = [];
 
-  constructor(public navCtrl: NavController, public homeProvider: HomeProvider, public localNotifications: LocalNotifications) {
+  constructor(public navCtrl: NavController, public homeProvider: worldStateProvider, public localNotifications: LocalNotifications) {
     this.items = [
       {
         title: 'Events',
@@ -43,17 +43,35 @@ export class HomePage {
       }
     ];
 
-    this.localNotifications.schedule({
-      id: 1,
-      title: 'Event',
-      text: 'this is a notification bayou',
-      led: 'FF0000',
-      at: new Date(new Date().getTime() + 5 * 1000)
-    });
+    //this.checkNewEvent();
 
   }
 
   openNavDetailsPage(page) {
     this.navCtrl.push(page);
   }
+
+  checkNewEvent(){
+    //TODO check new event, alert, ....
+    this.localNotifications.schedule({
+      title: "test",
+      text: "test",
+      led: 'FF0000',
+      at: new Date(new Date().getTime()+1000)
+    });
+
+    console.log("event checked");
+    //setInterval(this.checkNewEvent(self),10000);
+  }
+
+  /*cordova.plugins.backgroundMode.onactivate = function () {
+    setTimeout(function () {
+      // Modify the currently displayed notification
+      cordova.plugins.backgroundMode.configure({
+        text:'Running in background for more than 5s now.'
+      });
+    }, 5000);
+  }*/
+
+
 }

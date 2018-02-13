@@ -19,9 +19,10 @@ import { RiflesPage } from '../pages/rifles/rifles';
 import { RiflePage } from '../pages/rifle/rifle';
 
 import { RiflesProvider } from '../providers/rifles/rifles';
-import { HomeProvider } from '../providers/home/home';
+import { worldStateProvider } from '../providers/worldState/worldState';
 
-import { LocalNotifications } from '@ionic-native/local-notifications';
+import { LocalNotifications } from '@ionic-native/local-notifications'
+
 
 @NgModule({
   declarations: [
@@ -33,7 +34,7 @@ import { LocalNotifications } from '@ionic-native/local-notifications';
     InvasionPage,
     VoidTraderPage,
     RiflesPage,
-    RiflePage
+    RiflePage,
   ],
   imports: [
     BrowserModule,
@@ -58,8 +59,8 @@ import { LocalNotifications } from '@ionic-native/local-notifications';
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     RiflesProvider,
-    HomeProvider,
-    LocalNotifications
+    worldStateProvider,
+    LocalNotifications,
   ]
 })
 export class AppModule {}
