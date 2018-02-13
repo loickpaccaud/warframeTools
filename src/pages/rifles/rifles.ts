@@ -28,7 +28,13 @@ export class RiflesPage {
 
     fillWeapons(){
       this.riflesJSON.Weapons.forEach(element => {
-        this.weaponsList.push(new Rifle(element));
+        let rifle:Rifle = new Rifle(element);
+        this.weaponsList.push(rifle);
+        this.weaponsList.sort(
+          function Comparator(a, b){
+            return (a.name > b.name) ? 1 : -1;
+          }
+        );
     });
   }
 
