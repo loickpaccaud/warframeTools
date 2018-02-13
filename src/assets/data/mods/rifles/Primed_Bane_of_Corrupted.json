@@ -1,0 +1,67 @@
+{
+    "Name": "Primed Bane of Corrupted",
+    "Type": "Rifle",
+    "Polarity": "Voidtraderplaceholdert",
+    "Stats": [
+        "Rank",
+        "Effect",
+        "Cost"
+    ],
+    "Mod": [
+        {
+            "Rank": "0",
+            "Effect": "+5%",
+            "Cost": "4"
+        },
+        {
+            "Rank": "1",
+            "Effect": "+10%",
+            "Cost": "5"
+        },
+        {
+            "Rank": "2",
+            "Effect": "+15%",
+            "Cost": "6"
+        },
+        {
+            "Rank": "3",
+            "Effect": "+20%",
+            "Cost": "7"
+        },
+        {
+            "Rank": "4",
+            "Effect": "+25%",
+            "Cost": "8"
+        },
+        {
+            "Rank": "5",
+            "Effect": "+30%",
+            "Cost": "9"
+        },
+        {
+            "Rank": "6",
+            "Effect": "+35",
+            "Cost": "10"
+        },
+        {
+            "Rank": "7",
+            "Effect": "+40%",
+            "Cost": "11"
+        },
+        {
+            "Rank": "8",
+            "Effect": "+45%",
+            "Cost": "12"
+        },
+        {
+            "Rank": "9",
+            "Effect": "+50%",
+            "Cost": "13"
+        },
+        {
+            "Rank": "10",
+            "Effect": "+55%",
+            "Cost": "14"
+        }
+    ]
+}

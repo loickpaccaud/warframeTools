@@ -1,0 +1,49 @@
+{
+    "Name": "Laser Sight",
+    "Type": "Shotgun",
+    "Polarity": "Madurai",
+    "Stats": [
+        "Rank",
+        "Critical Chance",
+        "Duration",
+        "Cost"
+    ],
+    "Mod": [
+        {
+            "Rank": "0",
+            "Critical Chance": "+20%",
+            "Duration": "1.5s",
+            "Cost": "4"
+        },
+        {
+            "Rank": "1",
+            "Critical Chance": "+40%",
+            "Duration": "3s",
+            "Cost": "5"
+        },
+        {
+            "Rank": "2",
+            "Critical Chance": "+60%",
+            "Duration": "4.5s",
+            "Cost": "6"
+        },
+        {
+            "Rank": "3",
+            "Critical Chance": "+80%",
+            "Duration": "6s",
+            "Cost": "7"
+        },
+        {
+            "Rank": "4",
+            "Critical Chance": "+100%",
+            "Duration": "7.5s",
+            "Cost": "8"
+        },
+        {
+            "Rank": "5",
+            "Critical Chance": "+120%",
+            "Duration": "9s",
+            "Cost": "9"
+        }
+    ]
+}

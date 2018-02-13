@@ -1,0 +1,49 @@
+{
+    "Name": "Hollow Point",
+    "Type": "Pistol",
+    "Polarity": "Naramon",
+    "Stats": [
+        "Rank",
+        "Critical Damage",
+        "Damage",
+        "Cost"
+    ],
+    "Mod": [
+        {
+            "Rank": "0",
+            "Critical Damage": "+10%",
+            "Damage": "-2.5%",
+            "Cost": "4"
+        },
+        {
+            "Rank": "1",
+            "Critical Damage": "+20%",
+            "Damage": "-5%",
+            "Cost": "5"
+        },
+        {
+            "Rank": "2",
+            "Critical Damage": "+30%",
+            "Damage": "-7.5%",
+            "Cost": "6"
+        },
+        {
+            "Rank": "3",
+            "Critical Damage": "+40%",
+            "Damage": "-10%",
+            "Cost": "7"
+        },
+        {
+            "Rank": "4",
+            "Critical Damage": "+50%",
+            "Damage": "-12.5%",
+            "Cost": "8"
+        },
+        {
+            "Rank": "5",
+            "Critical Damage": "+60%",
+            "Damage": "-15%",
+            "Cost": "9"
+        }
+    ]
+}

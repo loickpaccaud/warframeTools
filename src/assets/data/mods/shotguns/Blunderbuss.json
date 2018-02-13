@@ -1,0 +1,42 @@
+{
+    "Name": "Blunderbuss",
+    "Type": "Shotgun",
+    "Polarity": "Madurai",
+    "Stats": [
+        "Rank",
+        "Effect",
+        "Cost"
+    ],
+    "Mod": [
+        {
+            "Rank": "0",
+            "Effect": "+15%",
+            "Cost": "4"
+        },
+        {
+            "Rank": "1",
+            "Effect": "+30%",
+            "Cost": "5"
+        },
+        {
+            "Rank": "2",
+            "Effect": "+45%",
+            "Cost": "6"
+        },
+        {
+            "Rank": "3",
+            "Effect": "+60%",
+            "Cost": "7"
+        },
+        {
+            "Rank": "4",
+            "Effect": "+75%",
+            "Cost": "8"
+        },
+        {
+            "Rank": "5",
+            "Effect": "+90%",
+            "Cost": "9"
+        }
+    ]
+}

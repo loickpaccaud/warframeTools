@@ -1,0 +1,32 @@
+{
+    "Name": "Hawk Eye",
+    "Type": "Pistol",
+    "Polarity": "Naramon",
+    "Stats": [
+        "Rank",
+        "Effect",
+        "Cost"
+    ],
+    "Mod": [
+        {
+            "Rank": "0",
+            "Effect": "+20%",
+            "Cost": "4"
+        },
+        {
+            "Rank": "1",
+            "Effect": "+40%",
+            "Cost": "5"
+        },
+        {
+            "Rank": "2",
+            "Effect": "+60%",
+            "Cost": "6"
+        },
+        {
+            "Rank": "3",
+            "Effect": "+80%",
+            "Cost": "7"
+        }
+    ]
+}

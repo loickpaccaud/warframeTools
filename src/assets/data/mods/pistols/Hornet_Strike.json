@@ -1,0 +1,67 @@
+{
+    "Name": "Hornet Strike",
+    "Type": "Pistol",
+    "Polarity": "Madurai",
+    "Stats": [
+        "Rank",
+        "Effect",
+        "Cost"
+    ],
+    "Mod": [
+        {
+            "Rank": "0",
+            "Effect": "+20%",
+            "Cost": "4"
+        },
+        {
+            "Rank": "1",
+            "Effect": "+40%",
+            "Cost": "5"
+        },
+        {
+            "Rank": "2",
+            "Effect": "+60%",
+            "Cost": "6"
+        },
+        {
+            "Rank": "3",
+            "Effect": "+80%",
+            "Cost": "7"
+        },
+        {
+            "Rank": "4",
+            "Effect": "+100%",
+            "Cost": "8"
+        },
+        {
+            "Rank": "5",
+            "Effect": "+120%",
+            "Cost": "9"
+        },
+        {
+            "Rank": "6",
+            "Effect": "+140%",
+            "Cost": "10"
+        },
+        {
+            "Rank": "7",
+            "Effect": "+160%",
+            "Cost": "11"
+        },
+        {
+            "Rank": "8",
+            "Effect": "+180%",
+            "Cost": "12"
+        },
+        {
+            "Rank": "9",
+            "Effect": "+200%",
+            "Cost": "13"
+        },
+        {
+            "Rank": "10",
+            "Effect": "+220%",
+            "Cost": "14"
+        }
+    ]
+}

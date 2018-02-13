@@ -1,0 +1,42 @@
+{
+    "Name": "No Return",
+    "Type": "Pistol",
+    "Polarity": "Naramon",
+    "Stats": [
+        "Rank",
+        "Effect",
+        "Cost"
+    ],
+    "Mod": [
+        {
+            "Rank": "0",
+            "Effect": "+10%",
+            "Cost": "2"
+        },
+        {
+            "Rank": "1",
+            "Effect": "+20%",
+            "Cost": "3"
+        },
+        {
+            "Rank": "2",
+            "Effect": "+30%",
+            "Cost": "4"
+        },
+        {
+            "Rank": "3",
+            "Effect": "+40%",
+            "Cost": "5"
+        },
+        {
+            "Rank": "4",
+            "Effect": "+50%",
+            "Cost": "6"
+        },
+        {
+            "Rank": "5",
+            "Effect": "+60%",
+            "Cost": "7"
+        }
+    ]
+}

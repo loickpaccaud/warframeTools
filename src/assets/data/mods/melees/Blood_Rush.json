@@ -1,0 +1,67 @@
+{
+    "Name": "Blood Rush",
+    "Type": "Melee",
+    "Polarity": "Madurai",
+    "Stats": [
+        "ank",
+        "ffect",
+        "ost"
+    ],
+    "Mod": [
+        {
+            "ank": "",
+            "ffect": "+15%",
+            "ost": "4"
+        },
+        {
+            "ank": "",
+            "ffect": "+30%",
+            "ost": "5"
+        },
+        {
+            "ank": "",
+            "ffect": "+45%",
+            "ost": "6"
+        },
+        {
+            "ank": "",
+            "ffect": "+60%",
+            "ost": "7"
+        },
+        {
+            "ank": "",
+            "ffect": "+75%",
+            "ost": "8"
+        },
+        {
+            "ank": "",
+            "ffect": "+90%",
+            "ost": "9"
+        },
+        {
+            "ank": "",
+            "ffect": "+105%",
+            "ost": "10"
+        },
+        {
+            "ank": "",
+            "ffect": "+120%",
+            "ost": "11"
+        },
+        {
+            "ank": "",
+            "ffect": "+135%",
+            "ost": "12"
+        },
+        {
+            "ank": "",
+            "ffect": "+150%",
+            "ost": "13"
+        },
+        {
+            "ank": "0",
+            "ffect": "+165%",
+            "ost": "14"
+        }
+    ]
+}

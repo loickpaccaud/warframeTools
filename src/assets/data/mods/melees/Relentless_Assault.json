@@ -1,0 +1,37 @@
+{
+    "Name": "Relentless Assault",
+    "Type": "Melee",
+    "Polarity": "Te",
+    "Stats": [
+        "Rank",
+        "Attack Speed",
+        "Damage Block",
+        "Cost"
+    ],
+    "Mod": [
+        {
+            "Rank": "0",
+            "Attack Speed": "+5%",
+            "Damage Block": "-12.5%",
+            "Cost": "10"
+        },
+        {
+            "Rank": "1",
+            "Attack Speed": "+10%",
+            "Damage Block": "-25%",
+            "Cost": "11"
+        },
+        {
+            "Rank": "2",
+            "Attack Speed": "+15%",
+            "Damage Block": "-37.5%",
+            "Cost": "12"
+        },
+        {
+            "Rank": "3",
+            "Attack Speed": "+20%",
+            "Damage Block": "-50%",
+            "Cost": "13"
+        }
+    ]
+}

@@ -1,0 +1,49 @@
+{
+    "Name": "Pressurized Magazine",
+    "Type": "Pistol",
+    "Polarity": "Madurai",
+    "Stats": [
+        "Rank",
+        "Fire Rate",
+        "Duration",
+        "Cost"
+    ],
+    "Mod": [
+        {
+            "Rank": "0",
+            "Fire Rate": "+15%",
+            "Duration": "1.5s",
+            "Cost": "4"
+        },
+        {
+            "Rank": "1",
+            "Fire Rate": "+30%",
+            "Duration": "3s",
+            "Cost": "5"
+        },
+        {
+            "Rank": "2",
+            "Fire Rate": "+45%",
+            "Duration": "4.5s",
+            "Cost": "6"
+        },
+        {
+            "Rank": "3",
+            "Fire Rate": "+60%",
+            "Duration": "6s",
+            "Cost": "7"
+        },
+        {
+            "Rank": "4",
+            "Fire Rate": "+75%",
+            "Duration": "7.5s",
+            "Cost": "8"
+        },
+        {
+            "Rank": "5",
+            "Fire Rate": "+90%",
+            "Duration": "9s",
+            "Cost": "9"
+        }
+    ]
+}

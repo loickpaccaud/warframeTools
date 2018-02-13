@@ -1,0 +1,42 @@
+{
+    "Name": "Metal Auger",
+    "Type": "Rifle",
+    "Polarity": "Naramon",
+    "Stats": [
+        "Rank",
+        "Effect",
+        "Cost"
+    ],
+    "Mod": [
+        {
+            "Rank": "0",
+            "Effect": "0.4",
+            "Cost": "10"
+        },
+        {
+            "Rank": "1",
+            "Effect": "0.7",
+            "Cost": "11"
+        },
+        {
+            "Rank": "2",
+            "Effect": "1.1",
+            "Cost": "12"
+        },
+        {
+            "Rank": "3",
+            "Effect": "1.4",
+            "Cost": "13"
+        },
+        {
+            "Rank": "4",
+            "Effect": "1.8",
+            "Cost": "14"
+        },
+        {
+            "Rank": "5",
+            "Effect": "2.1",
+            "Cost": "15"
+        }
+    ]
+}

@@ -1,0 +1,49 @@
+{
+    "Name": "Narrow Barrel",
+    "Type": "Shotgun",
+    "Polarity": "Madurai",
+    "Stats": [
+        "Rank",
+        "Accuracy",
+        "Duration(Seconds)",
+        "Cost"
+    ],
+    "Mod": [
+        {
+            "Rank": "0",
+            "Accuracy": "+5%",
+            "Duration(Seconds)": "1.5",
+            "Cost": "2"
+        },
+        {
+            "Rank": "1",
+            "Accuracy": "+10%",
+            "Duration(Seconds)": "3",
+            "Cost": "3"
+        },
+        {
+            "Rank": "2",
+            "Accuracy": "+15%",
+            "Duration(Seconds)": "4.5",
+            "Cost": "4"
+        },
+        {
+            "Rank": "3",
+            "Accuracy": "+20%",
+            "Duration(Seconds)": "6",
+            "Cost": "5"
+        },
+        {
+            "Rank": "4",
+            "Accuracy": "+25%",
+            "Duration(Seconds)": "7.5",
+            "Cost": "6"
+        },
+        {
+            "Rank": "5",
+            "Accuracy": "+30%",
+            "Duration(Seconds)": "9",
+            "Cost": "7"
+        }
+    ]
+}

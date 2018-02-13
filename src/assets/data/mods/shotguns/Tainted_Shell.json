@@ -1,0 +1,79 @@
+{
+    "Name": "Tainted Shell",
+    "Type": "Shotgun",
+    "Polarity": "Vazarin",
+    "Stats": [
+        "Rank",
+        "Spread",
+        "Fire Rate",
+        "Cost"
+    ],
+    "Mod": [
+        {
+            "Rank": "0",
+            "Spread": "-7%",
+            "Fire Rate": "-5%",
+            "Cost": "4"
+        },
+        {
+            "Rank": "1",
+            "Spread": "-14%",
+            "Fire Rate": "-10%",
+            "Cost": "5"
+        },
+        {
+            "Rank": "2",
+            "Spread": "-21%",
+            "Fire Rate": "-15%",
+            "Cost": "6"
+        },
+        {
+            "Rank": "3",
+            "Spread": "-28%",
+            "Fire Rate": "-20%",
+            "Cost": "7"
+        },
+        {
+            "Rank": "4",
+            "Spread": "-35%",
+            "Fire Rate": "-25%",
+            "Cost": "8"
+        },
+        {
+            "Rank": "5",
+            "Spread": "-42%",
+            "Fire Rate": "-30%",
+            "Cost": "9"
+        },
+        {
+            "Rank": "6",
+            "Spread": "-49%",
+            "Fire Rate": "-35%",
+            "Cost": "10"
+        },
+        {
+            "Rank": "7",
+            "Spread": "-56%",
+            "Fire Rate": "-40%",
+            "Cost": "11"
+        },
+        {
+            "Rank": "8",
+            "Spread": "-63%",
+            "Fire Rate": "-45%",
+            "Cost": "12"
+        },
+        {
+            "Rank": "9",
+            "Spread": "-70%",
+            "Fire Rate": "-50%",
+            "Cost": "13"
+        },
+        {
+            "Rank": "10",
+            "Spread": "-77%",
+            "Fire Rate": "-55%",
+            "Cost": "14"
+        }
+    ]
+}

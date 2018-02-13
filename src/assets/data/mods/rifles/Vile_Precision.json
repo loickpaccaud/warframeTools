@@ -1,0 +1,49 @@
+{
+    "Name": "Vile Precision",
+    "Type": "Rifle",
+    "Polarity": "Naramon",
+    "Stats": [
+        "Rank",
+        "Weapon Recoil",
+        "Fire Rate",
+        "Cost"
+    ],
+    "Mod": [
+        {
+            "Rank": "0",
+            "Weapon Recoil": "-10%",
+            "Fire Rate": "-6%",
+            "Cost": "6"
+        },
+        {
+            "Rank": "1",
+            "Weapon Recoil": "-20%",
+            "Fire Rate": "-12%",
+            "Cost": "7"
+        },
+        {
+            "Rank": "2",
+            "Weapon Recoil": "-30%",
+            "Fire Rate": "-18%",
+            "Cost": "8"
+        },
+        {
+            "Rank": "3",
+            "Weapon Recoil": "-40%",
+            "Fire Rate": "-24%",
+            "Cost": "9"
+        },
+        {
+            "Rank": "4",
+            "Weapon Recoil": "-50%",
+            "Fire Rate": "-30%",
+            "Cost": "10"
+        },
+        {
+            "Rank": "5",
+            "Weapon Recoil": "-60%",
+            "Fire Rate": "-36%",
+            "Cost": "11"
+        }
+    ]
+}

@@ -1,0 +1,37 @@
+{
+    "Name": "Mortal Conduct",
+    "Type": "Melee",
+    "Polarity": "Te",
+    "Stats": [
+        "Rank",
+        "Channeling Efficiency",
+        "Duration",
+        "Cost"
+    ],
+    "Mod": [
+        {
+            "Rank": "0",
+            "Channeling Efficiency": "+15%",
+            "Duration": "8s",
+            "Cost": "10"
+        },
+        {
+            "Rank": "1",
+            "Channeling Efficiency": "+30%",
+            "Duration": "8s",
+            "Cost": "11"
+        },
+        {
+            "Rank": "2",
+            "Channeling Efficiency": "+45%",
+            "Duration": "8s",
+            "Cost": "12"
+        },
+        {
+            "Rank": "3",
+            "Channeling Efficiency": "+60%",
+            "Duration": "8s",
+            "Cost": "13"
+        }
+    ]
+}

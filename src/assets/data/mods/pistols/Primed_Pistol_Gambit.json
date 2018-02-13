@@ -1,0 +1,67 @@
+{
+    "Name": "Primed Pistol Gambit",
+    "Type": "Pistol",
+    "Polarity": "Voidtraderplaceholdert",
+    "Stats": [
+        "Rank",
+        "Effect",
+        "Cost"
+    ],
+    "Mod": [
+        {
+            "Rank": "0",
+            "Effect": "+17%",
+            "Cost": "2"
+        },
+        {
+            "Rank": "1",
+            "Effect": "+34%",
+            "Cost": "3"
+        },
+        {
+            "Rank": "2",
+            "Effect": "+51%",
+            "Cost": "4"
+        },
+        {
+            "Rank": "3",
+            "Effect": "+68%",
+            "Cost": "5"
+        },
+        {
+            "Rank": "4",
+            "Effect": "+85%",
+            "Cost": "6"
+        },
+        {
+            "Rank": "5",
+            "Effect": "+102%",
+            "Cost": "7"
+        },
+        {
+            "Rank": "6",
+            "Effect": "+119%",
+            "Cost": "8"
+        },
+        {
+            "Rank": "7",
+            "Effect": "+136%",
+            "Cost": "9"
+        },
+        {
+            "Rank": "8",
+            "Effect": "+153%",
+            "Cost": "10"
+        },
+        {
+            "Rank": "9",
+            "Effect": "+170%",
+            "Cost": "11"
+        },
+        {
+            "Rank": "10",
+            "Effect": "+187%",
+            "Cost": "12"
+        }
+    ]
+}

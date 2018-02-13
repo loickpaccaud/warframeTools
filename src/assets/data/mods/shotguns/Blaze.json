@@ -1,0 +1,37 @@
+{
+    "Name": "Blaze",
+    "Type": "Shotgun",
+    "Polarity": "Madurai",
+    "Stats": [
+        "ank",
+        "amage",
+        "eat Damage",
+        "ost"
+    ],
+    "Mod": [
+        {
+            "ank": "0",
+            "amage": "+15%",
+            "eat Damage": "+15%",
+            "ost": "6"
+        },
+        {
+            "ank": "1",
+            "amage": "+30%",
+            "eat Damage": "+30%",
+            "ost": "7"
+        },
+        {
+            "ank": "2",
+            "amage": "+45%",
+            "eat Damage": "+45%",
+            "ost": "8"
+        },
+        {
+            "ank": "3",
+            "amage": "+60%",
+            "eat Damage": "+60%",
+            "ost": "9"
+        }
+    ]
+}

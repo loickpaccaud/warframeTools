@@ -1,0 +1,67 @@
+{
+    "Name": "Healing Return",
+    "Type": "Melee",
+    "Polarity": "Vazarin",
+    "Stats": [
+        "Rank",
+        "Effect",
+        "Cost"
+    ],
+    "Mod": [
+        {
+            "Rank": "0",
+            "Effect": "+",
+            "Cost": "6"
+        },
+        {
+            "Rank": "1",
+            "Effect": "+",
+            "Cost": "7"
+        },
+        {
+            "Rank": "2",
+            "Effect": "+",
+            "Cost": "8"
+        },
+        {
+            "Rank": "3",
+            "Effect": "+",
+            "Cost": "9"
+        },
+        {
+            "Rank": "4",
+            "Effect": "+",
+            "Cost": "10"
+        },
+        {
+            "Rank": "5",
+            "Effect": "+",
+            "Cost": "11"
+        },
+        {
+            "Rank": "6",
+            "Effect": "+",
+            "Cost": "12"
+        },
+        {
+            "Rank": "7",
+            "Effect": "+",
+            "Cost": "13"
+        },
+        {
+            "Rank": "8",
+            "Effect": "+",
+            "Cost": "14"
+        },
+        {
+            "Rank": "9",
+            "Effect": "+1",
+            "Cost": "15"
+        },
+        {
+            "Rank": "10",
+            "Effect": "+11",
+            "Cost": "16"
+        }
+    ]
+}

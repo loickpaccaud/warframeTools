@@ -1,0 +1,32 @@
+{
+    "Name": "Hush",
+    "Type": "Rifle",
+    "Polarity": "Naramon",
+    "Stats": [
+        "Rank",
+        "Noise Reduction",
+        "Cost"
+    ],
+    "Mod": [
+        {
+            "Rank": "0",
+            "Noise Reduction": "+25%",
+            "Cost": "2"
+        },
+        {
+            "Rank": "1",
+            "Noise Reduction": "+50%",
+            "Cost": "3"
+        },
+        {
+            "Rank": "2",
+            "Noise Reduction": "+75%",
+            "Cost": "4"
+        },
+        {
+            "Rank": "3",
+            "Noise Reduction": "+100%",
+            "Cost": "5"
+        }
+    ]
+}

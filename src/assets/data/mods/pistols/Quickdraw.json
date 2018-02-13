@@ -1,0 +1,49 @@
+{
+    "Name": "Quickdraw",
+    "Type": "Pistol",
+    "Polarity": "Naramon",
+    "Stats": [
+        "Rank",
+        "Effect",
+        "Cost",
+        "Conclave"
+    ],
+    "Mod": [
+        {
+            "Rank": "0",
+            "Effect": " +8% ",
+            "Cost": " 2 ",
+            "Conclave": "C3"
+        },
+        {
+            "Rank": "1",
+            "Effect": " +16% ",
+            "Cost": " 3 ",
+            "Conclave": "C3"
+        },
+        {
+            "Rank": "2",
+            "Effect": " +24% ",
+            "Cost": " 4 ",
+            "Conclave": "C3"
+        },
+        {
+            "Rank": "3",
+            "Effect": " +32% ",
+            "Cost": " 5 ",
+            "Conclave": "C4"
+        },
+        {
+            "Rank": "4",
+            "Effect": " +40% ",
+            "Cost": " 6 ",
+            "Conclave": "C4"
+        },
+        {
+            "Rank": "5",
+            "Effect": " +48% ",
+            "Cost": " 7 ",
+            "Conclave": "C5"
+        }
+    ]
+}

@@ -1,0 +1,42 @@
+{
+    "Name": "Maiming Strike",
+    "Type": "Melee",
+    "Polarity": "Madurai",
+    "Stats": [
+        "Rank",
+        "Critical Chance",
+        "Cost"
+    ],
+    "Mod": [
+        {
+            "Rank": "0",
+            "Critical Chance": "+15%",
+            "Cost": "2"
+        },
+        {
+            "Rank": "1",
+            "Critical Chance": "+30%",
+            "Cost": "3"
+        },
+        {
+            "Rank": "2",
+            "Critical Chance": "+45%",
+            "Cost": "4"
+        },
+        {
+            "Rank": "3",
+            "Critical Chance": "+60%",
+            "Cost": "5"
+        },
+        {
+            "Rank": "4",
+            "Critical Chance": "+75%",
+            "Cost": "6"
+        },
+        {
+            "Rank": "5",
+            "Critical Chance": "+90%",
+            "Cost": "7"
+        }
+    ]
+}

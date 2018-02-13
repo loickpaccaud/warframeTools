@@ -1,0 +1,37 @@
+{
+    "Name": "Accelerated Blast",
+    "Type": "Shotgun",
+    "Polarity": "Madurai",
+    "Stats": [
+        "Rank",
+        "Fire Rate",
+        "Puncture Damage",
+        "Cost"
+    ],
+    "Mod": [
+        {
+            "Rank": "0",
+            "Fire Rate": "+15%",
+            "Puncture Damage": "+15%",
+            "Cost": "6"
+        },
+        {
+            "Rank": "1",
+            "Fire Rate": "+30%",
+            "Puncture Damage": "+30%",
+            "Cost": "7"
+        },
+        {
+            "Rank": "2",
+            "Fire Rate": "+45%",
+            "Puncture Damage": "+45%",
+            "Cost": "8"
+        },
+        {
+            "Rank": "3",
+            "Fire Rate": "+60%",
+            "Puncture Damage": "+60%",
+            "Cost": "9"
+        }
+    ]
+}

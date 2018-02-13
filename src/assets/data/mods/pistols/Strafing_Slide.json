@@ -1,0 +1,32 @@
+{
+    "Name": "Strafing Slide",
+    "Type": "Pistol",
+    "Polarity": "Madurai",
+    "Stats": [
+        "Rank",
+        " Recoil and Spread",
+        "Cost"
+    ],
+    "Mod": [
+        {
+            "Rank": "0",
+            " Recoil and Spread": "-5%",
+            "Cost": "6"
+        },
+        {
+            "Rank": "1",
+            " Recoil and Spread": "-10%",
+            "Cost": "7"
+        },
+        {
+            "Rank": "2",
+            " Recoil and Spread": "-15%",
+            "Cost": "8"
+        },
+        {
+            "Rank": "3",
+            " Recoil and Spread": "-20%",
+            "Cost": "9"
+        }
+    ]
+}

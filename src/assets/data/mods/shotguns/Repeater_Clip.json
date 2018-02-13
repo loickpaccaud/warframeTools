@@ -1,0 +1,49 @@
+{
+    "Name": "Repeater Clip",
+    "Type": "Shotgun",
+    "Polarity": "Madurai",
+    "Stats": [
+        "Rank",
+        "Fire Rate",
+        "Duration(Seconds)",
+        "Cost"
+    ],
+    "Mod": [
+        {
+            "Rank": "0",
+            "Fire Rate": "+17.5",
+            "Duration(Seconds)": "1.5",
+            "Cost": "4"
+        },
+        {
+            "Rank": "1",
+            "Fire Rate": "+35",
+            "Duration(Seconds)": "3",
+            "Cost": "5"
+        },
+        {
+            "Rank": "2",
+            "Fire Rate": "+52.5",
+            "Duration(Seconds)": "4.5",
+            "Cost": "6"
+        },
+        {
+            "Rank": "3",
+            "Fire Rate": "+70%",
+            "Duration(Seconds)": "6",
+            "Cost": "7"
+        },
+        {
+            "Rank": "",
+            "Fire Rate": "+87.5%",
+            "Duration(Seconds)": "7.5",
+            "Cost": "8"
+        },
+        {
+            "Rank": "",
+            "Fire Rate": "+105%",
+            "Duration(Seconds)": "9",
+            "Cost": "9"
+        }
+    ]
+}

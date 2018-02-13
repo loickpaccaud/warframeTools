@@ -1,0 +1,37 @@
+{
+    "Name": "Impenetrable Offense",
+    "Type": "Melee",
+    "Polarity": "Te",
+    "Stats": [
+        "Rank",
+        "Damage Block",
+        "Melee Damage",
+        "Cost"
+    ],
+    "Mod": [
+        {
+            "Rank": "0",
+            "Damage Block": "+7.5%",
+            "Melee Damage": "-2.5%",
+            "Cost": "10"
+        },
+        {
+            "Rank": "1",
+            "Damage Block": "+15%",
+            "Melee Damage": "-5%",
+            "Cost": "11"
+        },
+        {
+            "Rank": "2",
+            "Damage Block": "+22.5%",
+            "Melee Damage": "-7.5%",
+            "Cost": "12"
+        },
+        {
+            "Rank": "3",
+            "Damage Block": "+30%",
+            "Melee Damage": "-10%",
+            "Cost": "13"
+        }
+    ]
+}

@@ -1,0 +1,79 @@
+{
+    "Name": "Heavy Caliber",
+    "Type": "Rifle",
+    "Polarity": "Madurai",
+    "Stats": [
+        "Rank",
+        "Damage",
+        "Accuracy",
+        "Cost"
+    ],
+    "Mod": [
+        {
+            "Rank": "0",
+            "Damage": "+15%",
+            "Accuracy": "-5%",
+            "Cost": "6"
+        },
+        {
+            "Rank": "1",
+            "Damage": "+30%",
+            "Accuracy": "-10%",
+            "Cost": "7"
+        },
+        {
+            "Rank": "2",
+            "Damage": "+45%",
+            "Accuracy": "-15%",
+            "Cost": "8"
+        },
+        {
+            "Rank": "3",
+            "Damage": "+60%",
+            "Accuracy": "-20%",
+            "Cost": "9"
+        },
+        {
+            "Rank": "4",
+            "Damage": "+75%",
+            "Accuracy": "-25%",
+            "Cost": "10"
+        },
+        {
+            "Rank": "5",
+            "Damage": "+90%",
+            "Accuracy": "-30%",
+            "Cost": "11"
+        },
+        {
+            "Rank": "6",
+            "Damage": "+105%",
+            "Accuracy": "-35%",
+            "Cost": "12"
+        },
+        {
+            "Rank": "7",
+            "Damage": "+120%",
+            "Accuracy": "-40%",
+            "Cost": "13"
+        },
+        {
+            "Rank": "8",
+            "Damage": "+135%",
+            "Accuracy": "-45%",
+            "Cost": "14"
+        },
+        {
+            "Rank": "9",
+            "Damage": "+150%",
+            "Accuracy": "-50%",
+            "Cost": "15"
+        },
+        {
+            "Rank": "10",
+            "Damage": "+165%",
+            "Accuracy": "-55%",
+            "Cost": "16"
+        }
+    ]
+}

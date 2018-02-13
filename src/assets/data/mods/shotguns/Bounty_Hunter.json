@@ -1,0 +1,42 @@
+{
+    "Name": "Bounty Hunter",
+    "Type": "Shotgun",
+    "Polarity": "Te",
+    "Stats": [
+        "Rank",
+        "Seconds",
+        "Cost"
+    ],
+    "Mod": [
+        {
+            "Rank": "0",
+            "Seconds": "+1",
+            "Cost": "1"
+        },
+        {
+            "Rank": "1",
+            "Seconds": "+2",
+            "Cost": "3"
+        },
+        {
+            "Rank": "2",
+            "Seconds": "+3",
+            "Cost": "4"
+        },
+        {
+            "Rank": "3",
+            "Seconds": "+4",
+            "Cost": "5"
+        },
+        {
+            "Rank": "4",
+            "Seconds": "+5",
+            "Cost": "6"
+        },
+        {
+            "Rank": "5",
+            "Seconds": "+6",
+            "Cost": "7"
+        }
+    ]
+}

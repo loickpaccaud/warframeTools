@@ -1,0 +1,42 @@
+{
+    "Name": "Smite Corpus",
+    "Type": "Melee",
+    "Polarity": "Madurai",
+    "Stats": [
+        "Rank",
+        "Effect",
+        "Cost"
+    ],
+    "Mod": [
+        {
+            "Rank": "0",
+            "Effect": "+5%",
+            "Cost": "4"
+        },
+        {
+            "Rank": "1",
+            "Effect": "+10%",
+            "Cost": "5"
+        },
+        {
+            "Rank": "2",
+            "Effect": "+15%",
+            "Cost": "6"
+        },
+        {
+            "Rank": "3",
+            "Effect": "+20%",
+            "Cost": "7"
+        },
+        {
+            "Rank": "4",
+            "Effect": "+25%",
+            "Cost": "8"
+        },
+        {
+            "Rank": "5",
+            "Effect": "+30%",
+            "Cost": "9"
+        }
+    ]
+}

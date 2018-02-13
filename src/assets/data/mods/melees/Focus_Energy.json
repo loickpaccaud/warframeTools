@@ -1,0 +1,37 @@
+{
+    "Name": "Focus Energy",
+    "Type": "Melee",
+    "Polarity": "Madurai",
+    "Stats": [
+        "Rank",
+        "Channeling Efficiency",
+        "Electrical Damage",
+        "Cost"
+    ],
+    "Mod": [
+        {
+            "Rank": "0",
+            "Channeling Efficiency": "+10%",
+            "Electrical Damage": "+15%",
+            "Cost": "6"
+        },
+        {
+            "Rank": "1",
+            "Channeling Efficiency": "+20%",
+            "Electrical Damage": "+30%",
+            "Cost": "7"
+        },
+        {
+            "Rank": "2",
+            "Channeling Efficiency": "+30%",
+            "Electrical Damage": "+45%",
+            "Cost": "8"
+        },
+        {
+            "Rank": "3",
+            "Channeling Efficiency": "+40%",
+            "Electrical Damage": "+60%",
+            "Cost": "9"
+        }
+    ]
+}

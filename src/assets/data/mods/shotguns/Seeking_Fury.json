@@ -1,0 +1,49 @@
+{
+    "Name": "Seeking Fury",
+    "Type": "Shotgun",
+    "Polarity": "Madurai",
+    "Stats": [
+        "Rank",
+        "Reload Speed",
+        "Punch Through",
+        "Cost"
+    ],
+    "Mod": [
+        {
+            "Rank": "0",
+            "Reload Speed": "+2.5%",
+            "Punch Through": "+0.2m",
+            "Cost": "6"
+        },
+        {
+            "Rank": "1",
+            "Reload Speed": "+5.0%",
+            "Punch Through": "+0.4m",
+            "Cost": "7"
+        },
+        {
+            "Rank": "2",
+            "Reload Speed": "+7.5%",
+            "Punch Through": "+0.6m",
+            "Cost": "8"
+        },
+        {
+            "Rank": "3",
+            "Reload Speed": "+10%",
+            "Punch Through": "+0.8m",
+            "Cost": "9"
+        },
+        {
+            "Rank": "4",
+            "Reload Speed": "+12.5%",
+            "Punch Through": "+1.0m",
+            "Cost": "10"
+        },
+        {
+            "Rank": "5",
+            "Reload Speed": "+15%",
+            "Punch Through": "+1.2m",
+            "Cost": "11"
+        }
+    ]
+}

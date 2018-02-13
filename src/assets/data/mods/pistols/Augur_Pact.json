@@ -1,0 +1,42 @@
+{
+    "Name": "Augur Pact",
+    "Type": "Pistol",
+    "Polarity": "Naramon",
+    "Stats": [
+        "Rank",
+        "Damage",
+        "Cost"
+    ],
+    "Mod": [
+        {
+            "Rank": "0",
+            "Damage": "+15%",
+            "Cost": "2"
+        },
+        {
+            "Rank": "1",
+            "Damage": "+30%",
+            "Cost": "3"
+        },
+        {
+            "Rank": "2",
+            "Damage": "+45%",
+            "Cost": "4"
+        },
+        {
+            "Rank": "3",
+            "Damage": "+60%",
+            "Cost": "5"
+        },
+        {
+            "Rank": "4",
+            "Damage": "+75%",
+            "Cost": "6"
+        },
+        {
+            "Rank": "5",
+            "Damage": "+90%",
+            "Cost": "7"
+        }
+    ]
+}

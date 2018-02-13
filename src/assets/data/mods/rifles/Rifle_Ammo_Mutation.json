@@ -1,0 +1,49 @@
+{
+    "Name": "Rifle Ammo Mutation",
+    "Type": "Rifle",
+    "Polarity": "Naramon",
+    "Stats": [
+        "Rank",
+        "Efficiency(Pistol)",
+        "Efficiency(Shotgun/Sniper)",
+        "Cost"
+    ],
+    "Mod": [
+        {
+            "Rank": "0",
+            "Efficiency(Pistol)": "6.25%",
+            "Efficiency(Shotgun/Sniper)": "25%",
+            "Cost": "4"
+        },
+        {
+            "Rank": "1",
+            "Efficiency(Pistol)": "12.5%",
+            "Efficiency(Shotgun/Sniper)": "50%",
+            "Cost": "5"
+        },
+        {
+            "Rank": "2",
+            "Efficiency(Pistol)": "18.75%",
+            "Efficiency(Shotgun/Sniper)": "75%",
+            "Cost": "6"
+        },
+        {
+            "Rank": "3",
+            "Efficiency(Pistol)": "25%",
+            "Efficiency(Shotgun/Sniper)": "100%",
+            "Cost": "7"
+        },
+        {
+            "Rank": "4",
+            "Efficiency(Pistol)": "31.25%",
+            "Efficiency(Shotgun/Sniper)": "125%",
+            "Cost": "8"
+        },
+        {
+            "Rank": "5",
+            "Efficiency(Pistol)": "37.5%",
+            "Efficiency(Shotgun/Sniper)": "150%",
+            "Cost": "9"
+        }
+    ]
+}

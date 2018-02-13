@@ -1,0 +1,42 @@
+{
+    "Name": "Body Count",
+    "Type": "Melee",
+    "Polarity": "Naramon",
+    "Stats": [
+        "Rank",
+        "Combo Duration",
+        "Cost"
+    ],
+    "Mod": [
+        {
+            "Rank": "0",
+            "Combo Duration": "+2 Sec",
+            "Cost": "4"
+        },
+        {
+            "Rank": "1",
+            "Combo Duration": "+4 Sec",
+            "Cost": "5"
+        },
+        {
+            "Rank": "2",
+            "Combo Duration": "+6 Sec",
+            "Cost": "6"
+        },
+        {
+            "Rank": "3",
+            "Combo Duration": "+8 Sec",
+            "Cost": "7"
+        },
+        {
+            "Rank": "4",
+            "Combo Duration": "+10 Sec",
+            "Cost": "8"
+        },
+        {
+            "Rank": "5",
+            "Combo Duration": "+12 Sec",
+            "Cost": "9"
+        }
+    ]
+}

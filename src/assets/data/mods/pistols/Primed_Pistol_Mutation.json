@@ -1,0 +1,79 @@
+{
+    "Name": "Primed Pistol Mutation",
+    "Type": "Pistol",
+    "Polarity": "Voidtraderplaceholdert",
+    "Stats": [
+        "Rank",
+        "Efficiency(Rifle)",
+        "Efficiency(Shotgun/Sniper)",
+        "Cost"
+    ],
+    "Mod": [
+        {
+            "Rank": "0",
+            "Efficiency(Rifle)": "6.25%",
+            "Efficiency(Shotgun/Sniper)": "25%",
+            "Cost": "4"
+        },
+        {
+            "Rank": "1",
+            "Efficiency(Rifle)": "12.5%",
+            "Efficiency(Shotgun/Sniper)": "50%",
+            "Cost": "5"
+        },
+        {
+            "Rank": "2",
+            "Efficiency(Rifle)": "18.75%",
+            "Efficiency(Shotgun/Sniper)": "75%",
+            "Cost": "6"
+        },
+        {
+            "Rank": "3",
+            "Efficiency(Rifle)": "25%",
+            "Efficiency(Shotgun/Sniper)": "100%",
+            "Cost": "7"
+        },
+        {
+            "Rank": "4",
+            "Efficiency(Rifle)": "31.25%",
+            "Efficiency(Shotgun/Sniper)": "125%",
+            "Cost": "8"
+        },
+        {
+            "Rank": "5",
+            "Efficiency(Rifle)": "37.5%",
+            "Efficiency(Shotgun/Sniper)": "150%",
+            "Cost": "9"
+        },
+        {
+            "Rank": "6",
+            "Efficiency(Rifle)": "43.75%",
+            "Efficiency(Shotgun/Sniper)": "175%",
+            "Cost": "10"
+        },
+        {
+            "Rank": "7",
+            "Efficiency(Rifle)": "50%",
+            "Efficiency(Shotgun/Sniper)": "200%",
+            "Cost": "11"
+        },
+        {
+            "Rank": "8",
+            "Efficiency(Rifle)": "56.25%",
+            "Efficiency(Shotgun/Sniper)": "225%",
+            "Cost": "12"
+        },
+        {
+            "Rank": "9",
+            "Efficiency(Rifle)": "62.5%",
+            "Efficiency(Shotgun/Sniper)": "250%",
+            "Cost": "13"
+        },
+        {
+            "Rank": "10",
+            "Efficiency(Rifle)": "68.75%",
+            "Efficiency(Shotgun/Sniper)": "275%",
+            "Cost": "14"
+        }
+    ]
+}

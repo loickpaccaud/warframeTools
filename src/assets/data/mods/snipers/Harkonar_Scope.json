@@ -1,0 +1,42 @@
+{
+    "Name": "Harkonar Scope",
+    "Type": "Sniper",
+    "Polarity": "Pho",
+    "Stats": [
+        "Rank",
+        "Combo Duration",
+        "Cost"
+    ],
+    "Mod": [
+        {
+            "Rank": "0",
+            "Combo Duration": "+2s",
+            "Cost": "4"
+        },
+        {
+            "Rank": "1",
+            "Combo Duration": "+4s",
+            "Cost": "5"
+        },
+        {
+            "Rank": "2",
+            "Combo Duration": "+6s",
+            "Cost": "6"
+        },
+        {
+            "Rank": "3",
+            "Combo Duration": "+8s",
+            "Cost": "7"
+        },
+        {
+            "Rank": "4",
+            "Combo Duration": "+10s",
+            "Cost": "8"
+        },
+        {
+            "Rank": "5",
+            "Combo Duration": "+12s",
+            "Cost": "9"
+        }
+    ]
+}

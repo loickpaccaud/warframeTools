@@ -1,0 +1,42 @@
+{
+    "Name": "Gladiator Might",
+    "Type": "Melee",
+    "Polarity": "Madurai",
+    "Stats": [
+        "Rank",
+        "Critical Damage",
+        "Cost"
+    ],
+    "Mod": [
+        {
+            "Rank": "0",
+            "Critical Damage": "+10%",
+            "Cost": "4"
+        },
+        {
+            "Rank": "1",
+            "Critical Damage": "+20%",
+            "Cost": "5"
+        },
+        {
+            "Rank": "2",
+            "Critical Damage": "+30%",
+            "Cost": "6"
+        },
+        {
+            "Rank": "3",
+            "Critical Damage": "+40%",
+            "Cost": "7"
+        },
+        {
+            "Rank": "4",
+            "Critical Damage": "+50%",
+            "Cost": "8"
+        },
+        {
+            "Rank": "5",
+            "Critical Damage": "+60%",
+            "Cost": "9"
+        }
+    ]
+}

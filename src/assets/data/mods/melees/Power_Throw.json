@@ -1,0 +1,42 @@
+{
+    "Name": "Power Throw",
+    "Type": "Melee",
+    "Polarity": "Madurai",
+    "Stats": [
+        "Rank",
+        "Effect",
+        "Cost"
+    ],
+    "Mod": [
+        {
+            "Rank": "0",
+            "Effect": "+0.1m",
+            "Cost": "4"
+        },
+        {
+            "Rank": "1",
+            "Effect": "+0.2m",
+            "Cost": "5"
+        },
+        {
+            "Rank": "2",
+            "Effect": "+0.3m",
+            "Cost": "6"
+        },
+        {
+            "Rank": "3",
+            "Effect": "+0.4m",
+            "Cost": "7"
+        },
+        {
+            "Rank": "4",
+            "Effect": "+0.5m",
+            "Cost": "8"
+        },
+        {
+            "Rank": "5",
+            "Effect": "+0.6m",
+            "Cost": "9"
+        }
+    ]
+}

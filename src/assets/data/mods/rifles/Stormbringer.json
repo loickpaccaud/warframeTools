@@ -1,0 +1,42 @@
+{
+    "Name": "Stormbringer",
+    "Type": "Rifle",
+    "Polarity": "Naramon",
+    "Stats": [
+        "Rank",
+        "Effect",
+        "Cost"
+    ],
+    "Mod": [
+        {
+            "Rank": "0",
+            "Effect": "+15%",
+            "Cost": "6"
+        },
+        {
+            "Rank": "1",
+            "Effect": "+30%",
+            "Cost": "7"
+        },
+        {
+            "Rank": "2",
+            "Effect": "+45%",
+            "Cost": "8"
+        },
+        {
+            "Rank": "3",
+            "Effect": "+60%",
+            "Cost": "9"
+        },
+        {
+            "Rank": "4",
+            "Effect": "+75%",
+            "Cost": "10"
+        },
+        {
+            "Rank": "5",
+            "Effect": "+90%",
+            "Cost": "11"
+        }
+    ]
+}

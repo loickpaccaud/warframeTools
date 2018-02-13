@@ -1,0 +1,32 @@
+{
+    "Name": "Reflex Draw",
+    "Type": "Pistol",
+    "Polarity": "Naramon",
+    "Stats": [
+        "Rank",
+        "Effect",
+        "Cost"
+    ],
+    "Mod": [
+        {
+            "Rank": "0",
+            "Effect": "+50%",
+            "Cost": "4"
+        },
+        {
+            "Rank": "1",
+            "Effect": "+100%",
+            "Cost": "5"
+        },
+        {
+            "Rank": "2",
+            "Effect": "+150%",
+            "Cost": "6"
+        },
+        {
+            "Rank": "3",
+            "Effect": "+200%",
+            "Cost": "7"
+        }
+    ]
+}
