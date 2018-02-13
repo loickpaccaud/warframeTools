@@ -27,6 +27,8 @@ import { LocalNotifications } from '@ionic-native/local-notifications';
 import {ModsPage} from "../pages/mods/mods";
 import {ModPage} from "../pages/mod/mod";
 
+import {BuilderPage} from "../pages/builder/builder";
+
 @NgModule({
   declarations: [
     MyApp,
@@ -39,7 +41,8 @@ import {ModPage} from "../pages/mod/mod";
     RiflesPage,
     RiflePage,
     ModsPage,
-    ModPage
+    ModPage,
+    BuilderPage
   ],
   imports: [
     BrowserModule,
@@ -59,7 +62,8 @@ import {ModPage} from "../pages/mod/mod";
     RiflesPage,
     RiflePage,
     ModsPage,
-    ModPage
+    ModPage,
+    BuilderPage
   ],
   providers: [
     StatusBar,
