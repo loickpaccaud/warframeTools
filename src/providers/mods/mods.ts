@@ -24,6 +24,6 @@ export class ModsProvider {
   }
 
   getData(): Observable<any> {
-    return this.http.get('assets/data/mods/rifles/Metal_Auger.json', this.headers);
+    return this.http.get('assets/data/mods/rifles.json', this.headers);
   }
 }

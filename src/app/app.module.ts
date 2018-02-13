@@ -25,6 +25,7 @@ import { ModsProvider } from '../providers/mods/mods';
 
 import { LocalNotifications } from '@ionic-native/local-notifications';
 import {ModsPage} from "../pages/mods/mods";
+import {ModPage} from "../pages/mod/mod";
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import {ModsPage} from "../pages/mods/mods";
     VoidTraderPage,
     RiflesPage,
     RiflePage,
-    ModsPage
+    ModsPage,
+    ModPage
   ],
   imports: [
     BrowserModule,
@@ -56,7 +58,8 @@ import {ModsPage} from "../pages/mods/mods";
     VoidTraderPage,
     RiflesPage,
     RiflePage,
-    ModsPage
+    ModsPage,
+    ModPage
   ],
   providers: [
     StatusBar,

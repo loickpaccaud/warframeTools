@@ -27,18 +27,18 @@ export class ModsPage {
   }
 
   fillMods(){
-    //this.modsJSON.forEach(element => {
+    this.modsJSON.Mods.forEach(element => {
 
       var m = new Mod();
-      m.setName(this.modsJSON['Name']);
-      m.setPolarity(this.modsJSON['Polarity']);
-      m.setType(this.modsJSON['Type']);
-      m.setStats(this.modsJSON['Stats']);
-      m.setMod(this.modsJSON['Mod']);
+      m.setName(element['Name']);
+      m.setPolarity(element['Polarity']);
+      m.setType(element['Type']);
+      m.setStats(element['Stats']);
+      m.setMod(element['Mod']);
 
       this.modsList.push(m);
       console.log(m);
-    //});
+    });
   }
 
   openModPage(mod: Mod){
