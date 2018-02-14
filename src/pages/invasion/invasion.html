@@ -8,8 +8,11 @@
 </ion-header>
 
 <ion-content padding>
-  <h2>This is a Invasion</h2>
-  <p>
-    Invasion Bayou !
-  </p>
+
+  <ion-list inset>
+    <ion-item *ngFor="let invasion of invasions">
+     Atk : {{invasion.factionAtk}} / Def : {{invasion.factionDef}}
+     Progression :{{invasion.count}} / {{invasion.goal}}
+    </ion-item>
+  </ion-list>
 </ion-content>

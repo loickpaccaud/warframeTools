@@ -35,7 +35,7 @@ export class WorldStateProvider {
       this.worldState = data;
       this.parseEvents(this.worldState.Events);
       this.parseAlerts(this.worldState.Alerts);
-      this.parseSorties(this.worldState.Sorties);
+      this.parseSorties(this.worldState.Sorties[0]);
       this.parseInvasions(this.worldState.Invasions);
     });
   }
@@ -52,7 +52,7 @@ export class WorldStateProvider {
 
     alerts.sort(
       function Comparator(a, b) {
-        return ((a.Expiry.$date.$numberLong - a.Activation.$date.$numberLong) >= (b.Expiry.$date.$numberLong - b.Activation.$date.$numberLong)) ? 1 : -1;
+        return (a.Expiry.$date.$numberLong >= b.Expiry.$date.$numberLong) ? 1 : -1;
       });
 
     alerts.forEach((alert)=>{
@@ -68,18 +68,33 @@ export class WorldStateProvider {
     });
   }
 
-  parseSorties(sorties:any){
-    sorties.forEach((sortie)=>{
-
-    });
-    this.sorties.reverse();
+  parseSorties(sortie:any){
+    for(let i=0; i<3; i++){
+      let sortieDate = this.parseDate(sortie.Expiry.$date.$numberLong/1000, this.worldState.Time);
+      this.sorties.push(new Sortie(
+        sortie.Boss,
+        sortie.Variants[i].missionType,
+        sortie.Variants[i].modifierType,
+        sortie.Variants[i].node,
+        sortieDate
+      ));
+    }
   }
 
   parseInvasions(invasions:any){
     invasions.forEach((invasion)=>{
-
+      if(invasion.Completed === false) {
+        let invasionDate = this.parseDate(this.worldState.Time, invasion.Activation.$date.$numberLong / 1000);
+        this.invasions.push(new Invasion(
+          invasion.AttackerMissionInfo.faction,
+          invasion.DefenderMissionInfo.faction,
+          invasion.Node,
+          invasionDate,
+          invasion.Count,
+          invasion.Goal
+        ));
+      }
     });
-    this.invasions.reverse();
   }
 
   parseDate(timeRequest:number, dateEvent:number){

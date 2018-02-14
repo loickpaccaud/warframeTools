@@ -57,7 +57,6 @@ export class HomePage {
   checkNewEvent(self: any) {
     window.setInterval(function(){
       if(self.worldStateProvider != null) {
-        console.log("event checked");
 
         self.oldEvents = self.worldStateProvider.events;
         self.oldAlerts = self.worldStateProvider.alerts;
@@ -116,7 +115,7 @@ export class HomePage {
         }
 
       }
-    }, 60000);
+    }, 10000);
   }
 
   compareNewEvent(oldTab: any[], newTab: any[]){
