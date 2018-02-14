@@ -17,7 +17,6 @@ export class WorldStateProvider {
   public voidTrader:voidTrader[]=[];
 
   constructor(public http: HttpClient) {
-    console.log("new WorldStateProvider");
     this.getworldState();
   }
 

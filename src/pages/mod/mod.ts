@@ -13,7 +13,6 @@ export class ModPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     this.mod = navParams.get("modObject");
-    console.log(this.mod.getName());
   }
 
 }

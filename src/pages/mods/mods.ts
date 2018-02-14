@@ -21,7 +21,6 @@ export class ModsPage {
       data => {
         this.jsonResponse = JSON.stringify(data);
         this.modsJSON = JSON.parse(this.jsonResponse);
-        console.log("Parsed JSON : " + this.modsJSON['Name']);
         this.fillMods();
       });
   }
@@ -37,7 +36,6 @@ export class ModsPage {
       m.setMod(element['Mod']);
 
       this.modsList.push(m);
-      console.log(m);
     });
     this.modsList.sort(
       function Comparator(a, b){

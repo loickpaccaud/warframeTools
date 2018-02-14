@@ -21,7 +21,6 @@ export class RiflePage {
     for(i=0 ; i<this.rifle.zenurik ; i++) this.polarities.push("zenurik");
     for(i=0 ; i<this.rifle.penjaga ; i++) this.polarities.push("penjaga");
     for(i=0 ; i<this.rifle.unairu ; i++) this.polarities.push("unairu");
-    console.log(this.rifle.getName());
   }
 
 }

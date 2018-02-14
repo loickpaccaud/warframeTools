@@ -18,7 +18,6 @@ export class ModsProvider {
   options: any;
 
   constructor(public http: HttpClient) {
-    console.log('Hello ModsProvider Provider');
     this.headers = new Headers();
     this.headers.append('Content-Type', 'application/json');
   }
