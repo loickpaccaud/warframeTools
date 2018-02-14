@@ -4,7 +4,6 @@ import {Event} from "../../models/event";
 import {Alert} from "../../models/alert";
 import {Sortie} from "../../models/sortie";
 import {Invasion} from "../../models/invasion";
-import {voidTrader} from "../../models/voidTrader";
 
 @Injectable()
 export class WorldStateProvider {
@@ -14,18 +13,16 @@ export class WorldStateProvider {
   public alerts:Alert[]=[];
   public sorties:Sortie[]=[];
   public invasions:Invasion[]=[];
-  public voidTrader:voidTrader[]=[];
 
   constructor(public http: HttpClient) {
     this.getworldState();
   }
 
   getworldState() {
-    this.events = [];
-    this.alerts = [];
-    this.sorties = [];
-    this.invasions = [];
-    this.voidTrader = [];
+    this.events.length = 0;
+    this.alerts.length = 0;
+    this.sorties.length = 0;
+    this.invasions.length = 0;
 
     new Promise(resolve => {
       this.http.get(this.apiUrl)
@@ -40,7 +37,6 @@ export class WorldStateProvider {
       this.parseAlerts(this.worldState.Alerts);
       this.parseSorties(this.worldState.Sorties);
       this.parseInvasions(this.worldState.Invasions);
-      this.parseVoidTrader(this.worldState.VoidTraders);
     });
   }
 
@@ -84,10 +80,6 @@ export class WorldStateProvider {
 
     });
     this.invasions.reverse();
-  }
-
-  parseVoidTrader(voidTrader:any){
-
   }
 
   parseDate(timeRequest:number, dateEvent:number){
