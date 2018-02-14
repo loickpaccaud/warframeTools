@@ -8,8 +8,14 @@
 </ion-header>
 
 <ion-content padding>
-  <h2>This is a Sortie</h2>
-  <p>
-    Sortie Bayou !
-  </p>
+
+  <ion-list inset>
+    <ion-item *ngFor="let sortie of sorties">
+      Boss : {{sortie.boss}}
+
+      {{sortie.date}}
+      {{sortie.missionType}} - {{sortie.node}} / {{sortie.modifierType}}
+
+    </ion-item>
+  </ion-list>
 </ion-content>

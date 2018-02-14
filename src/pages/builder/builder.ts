@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
 import {ModsProvider} from "../../providers/mods/mods";
 import {Mod} from "../../models/mod";
 import {RiflesProvider} from "../../providers/rifles/rifles";
@@ -22,10 +21,17 @@ export class BuilderPage {
   selectedMod:any;
   polarityList:String[] = [];
   count:number=60;
-  previousMod:Mod;
+  selectedMods:Mod[] = [];
 
-  constructor(public navCtrl: NavController, public modsProvider: ModsProvider, public riflesProvider: RiflesProvider) {
+  weaponData:Rifle = null;
+  modDataTable:Mod[][] = null;
 
+  constructor(public modsProvider: ModsProvider, public riflesProvider: RiflesProvider) {
+    this.collectData();
+    this.initializeModsLists();
+  }
+
+  collectData(){
     this.modsProvider.getData().subscribe(
 
       data => {
@@ -46,7 +52,7 @@ export class BuilderPage {
   fillMods(){
     this.modsJSON.Mods.forEach(element => {
 
-      var m = new Mod();
+      let m = new Mod();
       m.setName(element['Name']);
       m.setPolarity(element['Polarity']);
       m.setType(element['Type']);
@@ -62,28 +68,38 @@ export class BuilderPage {
     this.riflesJSON.Weapons.forEach(element => {
       this.weaponsList.push(new Rifle(element));
     });
-    //console.log(this.weaponsList);
   }
 
   weaponSelected(selectedValue: any){
     let index = this.indexWeapon;
     this.selectedWeapon = this.weaponsList[index];
-    console.log(this.selectedWeapon);
+
+    console.log("Selected Weapon : " + this.selectedWeapon);
+
     this.initializePolarities();
+    this.initializeSelectedModsList();
   }
 
-  modSelected(selectedValue: any){
+  modSelected(selectedValue: any, pos:number){
     let index = this.indexMod;
     this.selectedMod = this.modsList[index];
-    console.log(this.selectedMod);
+    console.log("Mod selected : " + this.selectedMod);
+
+    if(this.selectedMods[pos].getName() != "empty"){
+      this.addModToLists(pos, this.selectedMods[pos]);
+    }
+
+    this.selectedMods[pos] = this.selectedMod;
+    this.removeModFromLists(pos,index);
 
     this.updateCount();
-    this.previousMod = this.selectedMod;
 
     //Add calculation methods
   }
 
   initializePolarities(){
+
+    console.log("Init polarities");
 
     let i;
     this.polarityList = [];
@@ -103,17 +119,74 @@ export class BuilderPage {
         this.polarityList.push("Vazarin");
       }
     }
+  }
 
-    console.log(this.polarityList);
+
+  initializeSelectedModsList(){
+    console.log("Init mods lists");
+    for(let i=0; i<8; i++){
+      let m = new Mod();
+      m.setName("empty");
+      this.selectedMods.push(m);
+    }
+  }
+
+  private initializeModsLists() {
+    this.modDataTable = [];
+    for(let i=0; i<8; i++){
+      this.modDataTable.push(this.modsList);
+    }
+  }
+
+  resetWeapon(){
+    this.weaponData = null;
+
+
+    this.initializeModsLists();
+    this.clearSelectedMods();
+    this.clearPolarities();
+  }
+
+  clearSelectedMods(){
+    this.selectedMods = [];
+  }
+
+  private clearPolarities() {
+    this.polarityList = [];
   }
 
   updateCount(){
-    if(this.previousMod != null){
-      this.count = this.count + this.previousMod['Mod'][this.previousMod['Mod'].length-1]['Cost'];
-    }
-    if(this.selectedMod != null){
-      this.count = this.count - this.selectedMod['Mod'][this.selectedMod['Mod'].length-1]['Cost'];
+    console.log("Counting mod score");
+    let value = 60;
 
+    for(let i=0; i<8; i++){
+      let temp = this.selectedMods[i];
+
+      if(temp['Name'] != "empty"){
+        value = value - temp['Mod'][temp['Mod'].length-1]['Cost'];
+      }
     }
+    this.count = value;
+    console.log("Count value :" + this.count);
+  }
+
+  removeModFromLists(selectNumber:number, selectMod:number){
+    console.log("Removing new mod from lists");
+    let temp = [];
+    for(let i=0; i<8; i++){
+      if(i!= selectNumber){
+        temp = this.modDataTable[i].splice(selectMod, 1);
+        this.modDataTable[i] = temp;
+      }
+    }
+    //console.log("Mods Lists :" + this.modDataTable.toString());
+  }
+
+  addModToLists(pos: number, mod: Mod) {
+    console.log("Re adding previous mod to lists");
+    for(let i=0; i<8; i++){
+      this.modDataTable[i].push(mod);
+    }
+    //console.log("Mods lists :" + this.modDataTable.toString());
   }
 }

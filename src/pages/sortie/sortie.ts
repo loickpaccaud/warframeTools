@@ -1,14 +1,17 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import {Sortie} from "../../models/sortie";
+import {WorldStateProvider} from "../../providers/worldState/worldState";
 
 @Component({
   selector: 'page-sortie',
   templateUrl: 'sortie.html'
 })
 export class SortiePage {
+  sorties:Sortie[]=[];
 
-  constructor(public navCtrl: NavController) {
-
+  constructor(public worldStateProvider: WorldStateProvider) {
+    this.sorties = this.worldStateProvider.sorties;
+    console.log(this.sorties);
   }
 
 }
