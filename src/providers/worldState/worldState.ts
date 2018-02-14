@@ -57,17 +57,18 @@ export class WorldStateProvider {
     alerts.sort(
       function Comparator(a, b) {
         return ((a.Expiry.$date.$numberLong - a.Activation.$date.$numberLong) >= (b.Expiry.$date.$numberLong - b.Activation.$date.$numberLong)) ? 1 : -1;
-      })
+      });
 
     alerts.forEach((alert)=>{
-      let alertDate = this.parseDate(null,(alert.Expiry.$date.$numberLong - alert.Activation.$date.$numberLong)/1000);
+      let alertDate = this.parseDate(alert.Expiry.$date.$numberLong/1000, this.worldState.Time);
       this.alerts.push(new Alert(
         alert.MissionInfo.missionType,
         alert.MissionInfo.faction,
         alert.MissionInfo.location,
         alertDate,
         alert.MissionInfo.minEnemyLevel,
-        alert.MissionInfo.maxEnemyLevel));
+        alert.MissionInfo.maxEnemyLevel,
+        alert.MissionInfo.missionReward.credits));
     });
   }
 

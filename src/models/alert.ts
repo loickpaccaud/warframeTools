@@ -5,14 +5,16 @@ export class Alert{
   date:String;
   minEnemyLevel:String;
   maxEnemyLevel:String;
+  creditsReward:number;
 
-  constructor(missionType:String, faction:String, location:String, date:String, minEnemyLevel:String, maxEnemyLevel:String){
+  constructor(missionType:String, faction:String, location:String, date:String, minEnemyLevel:String, maxEnemyLevel:String, creditsReward:number){
     this.missionType = missionType;
     this.faction = faction;
     this.location = location;
     this.date = date;
     this.minEnemyLevel = minEnemyLevel;
     this.maxEnemyLevel = maxEnemyLevel;
+    this.creditsReward = creditsReward;
   }
 
   getMissionType(){
