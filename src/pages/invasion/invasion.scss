@@ -1,0 +1,42 @@
+page-invasion{
+  h2, p{
+    text-transform: capitalize;
+    text-align: center;
+  }
+
+  .invasion-title{
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+
+  ion-item{
+    padding-left: 0 !important;
+  }
+
+  .defgrineer{
+    background-color: #D9534F;
+  }
+  .atkgrineer{
+    .progress-bar {
+      background-color: #D9534F;
+    }
+  }
+
+  .defcorpus{
+    background-color: #337AB7;
+  }
+  .atkcorpus{
+    .progress-bar {
+      background-color: #337AB7;
+    }
+  }
+
+  .definfestation{
+    background-color: #5CB85C;
+  }
+  .atkinfestation{
+    .progress-bar {
+      background-color: #5CB85C;
+    }
+  }
+}

@@ -7,15 +7,22 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content>
 
   <ion-list inset>
     <ion-item *ngFor="let sortie of sorties">
-      Boss : {{sortie.boss}}
+      <div>
+        <h2>
+          <span class="sortie-title">{{sortie.missionType.replace("MT_", "").replace("_", " ") | lowercase}}</span>
+          | {{sortie.modifierType.replace("SORTIE_MODIFIER_","").replace("_", " ") | lowercase}}
+        </h2>
+        <h4>Location : {{sortie.node}}</h4>
+        <p>Boss : {{sortie.boss.replace("SORTIE_BOSS_", "")}}</p>
+      </div>
 
-      {{sortie.date}}
-      {{sortie.missionType}} - {{sortie.node}} / {{sortie.modifierType}}
-
+      <div item-end>
+        <ion-badge color="primary">{{sortie.date.replace("[","").replace("]", "")}}</ion-badge>
+      </div>
     </ion-item>
   </ion-list>
 </ion-content>

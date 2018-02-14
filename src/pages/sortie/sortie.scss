@@ -1,0 +1,14 @@
+page-sortie{
+  h2, p{
+    text-transform: capitalize;
+  }
+
+  .sortie-title{
+    font-size: 1.4em;
+    font-weight: bold;
+  }
+
+  ion-item{
+    padding-left: 0 !important;
+  }
+}

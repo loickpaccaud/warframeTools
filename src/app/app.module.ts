@@ -28,6 +28,7 @@ import {ModsPage} from "../pages/mods/mods";
 import {ModPage} from "../pages/mod/mod";
 
 import {BuilderPage} from "../pages/builder/builder";
+import { ProgressbarModule } from 'ngx-bootstrap/progressbar';
 
 @NgModule({
   declarations: [
@@ -47,6 +48,7 @@ import {BuilderPage} from "../pages/builder/builder";
     BrowserModule,
     IonicModule.forRoot(MyApp),
     HttpClientModule,
+    ProgressbarModule.forRoot(),
     HttpModule
   ],
   bootstrap: [IonicApp],

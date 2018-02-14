@@ -11,8 +11,14 @@
 
   <ion-list inset>
     <ion-item *ngFor="let invasion of invasions">
-     Atk : {{invasion.factionAtk}} / Def : {{invasion.factionDef}}
-     Progression :{{invasion.count}} / {{invasion.goal}}
+      <h2 class="invasion-title">{{invasion.factionAtk.replace("FC_", "") | lowercase}} vs {{invasion.factionDef.replace("FC_", "") | lowercase}}</h2>
+      <h2>{{invasion.node}}</h2>
+      <p>{{invasion.progression}} %</p>
+
+      <progressbar
+        class='atk{{invasion.factionAtk.replace("FC_", "") | lowercase}} def{{invasion.factionDef.replace("FC_", "") | lowercase}}'
+        [value]="invasion.progression">
+      </progressbar>
     </ion-item>
   </ion-list>
 </ion-content>
