@@ -7,15 +7,23 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content>
 
   <ion-list inset>
     <ion-item *ngFor="let alert of alerts">
-      <h2>{{alert.date}} {{alert.missionType}}</h2>
-      <p>Faction : {{alert.faction}}</p>
-      <p>Location : {{alert.location}}</p>
-      <p>Level : {{alert.minEnemyLevel}} - {{alert.maxEnemyLevel}}</p>
-      <p>Credits : {{alert.creditsReward}} cr</p>
+      <div>
+        <h2>
+          <span class="alert-title">{{alert.missionType.replace("MT_", "").replace("_"," ") | lowercase}}</span>
+           | {{alert.faction.replace("FC_", "") | lowercase}}
+        </h2>
+        <h4>Location : {{alert.location}}</h4>
+        <p>Level : {{alert.minEnemyLevel}} - {{alert.maxEnemyLevel}}</p>
+      </div>
+
+      <div item-end>
+      <ion-badge color="dark">{{alert.creditsReward}}cr</ion-badge>
+      <ion-badge color="primary">{{alert.date.replace("[","").replace("]", "")}}</ion-badge>
+      </div>
     </ion-item>
   </ion-list>
 </ion-content>
