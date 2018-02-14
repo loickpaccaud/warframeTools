@@ -17,6 +17,26 @@
           <img class="card-img-top" src="../../assets/imgs/weapons/{{rifle.name | lowercase}}.png">
           <div class="card-body">
             <h1 class="card-title">{{rifle.name.replace('_', ' ') | lowercase}}</h1>
+            <p class="polarities">
+              <ion-icon *ngIf="rifle.madurai>0">
+                {{rifle.madurai}}<img src="../../assets/imgs/polarities/Madurai_Pol.png" alt="" title="">
+              </ion-icon>
+              <ion-icon *ngIf="rifle.naramon>0">
+                {{rifle.naramon}}<img src="../../assets/imgs/polarities/Naramon_Pol.png" alt="" title="">
+              </ion-icon>
+              <ion-icon *ngIf="rifle.vazarin>0">
+                {{rifle.vazarin}}<img src="../../assets/imgs/polarities/Vazarin_Pol.png" alt="" title="">
+              </ion-icon>
+              <ion-icon *ngIf="rifle.zenurik>0">
+                {{rifle.zenurik}}<img src="../../assets/imgs/polarities/Zenurik_Pol.png" alt="" title="">
+              </ion-icon>
+              <ion-icon *ngIf="rifle.penjaga>0">
+                {{rifle.penjaga}}<img src="../../assets/imgs/polarities/Penjaga_Pol.png" alt="" title="">
+              </ion-icon>
+              <ion-icon *ngIf="rifle.unairu>0">
+                {{rifle.unairu}}<img src="../../assets/imgs/polarities/Unairu_Pol.png" alt="" title="">
+              </ion-icon>
+            </p>
             <table class="table">
               <tbody>
                 <tr *ngIf="rifle.impact>0">

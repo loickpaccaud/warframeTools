@@ -7,16 +7,31 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <ion-grid>
-    <ion-row>
-      <ion-col col-auto *ngFor="let item of modsList">
-        <div style="text-align: center; cursor: pointer;" (click)="openModPage(item)">
-          <img src="../../assets/imgs/mods/{{item.Name | lowercase}}.png" width="100" height="70"/>
-          <br/>
-          <small>{{item.Name}}</small>
+<ion-content id="mods-list" padding>
+  <div class="container" *ngIf="modsList">
+    <div class="row">
+      <div class="col-lg-2 col-md-3 col-sm-4 col-6" *ngFor="let mod of modsList">
+        <div class="card">
+          <div class="rifle-link" (click)="openModPage(mod)">
+            <img class="card-img-top" src="../../assets/imgs/mods/{{mod.Name.replace('Primed ', '').replace(' ', '_').replace(' ', '_') | lowercase}}.jpeg"/>
+            <div class="card-body">
+              <p>{{mod.Name}}</p>
+            </div>
+          </div>
         </div>
-      </ion-col>
-    </ion-row>
-  </ion-grid>
+      </div>
+    </div>
+  </div>
+
+  <!--<ion-grid>-->
+    <!--<ion-row>-->
+      <!--<ion-col col-auto *ngFor="let mod of modsList">-->
+        <!--<div style="text-align: center; cursor: pointer;" (click)="openModPage(mod)">-->
+          <!--<img src="../../assets/imgs/mods/{{mod.Name.replace('Primed ', '').replace(' ', '_').replace(' ', '_') | lowercase}}.jpeg"/>-->
+          <!--<br/>-->
+          <!--<small>{{mod.Name}}</small>-->
+        <!--</div>-->
+      <!--</ion-col>-->
+    <!--</ion-row>-->
+  <!--</ion-grid>-->
 </ion-content>

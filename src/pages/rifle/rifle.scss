@@ -12,7 +12,7 @@
     transition: box-shadow 0.2s;
     border-width: 1.5px;
 
-    img{
+    .card-img-top{
       border-radius: 20px 0 0 0;
     }
   }
@@ -20,6 +20,9 @@
   h1{
     text-transform: capitalize;
     text-align: center;
-    margin-bottom: 0.4em;
+  }
+
+  .polarities{
+    text-align: center;
   }
 }

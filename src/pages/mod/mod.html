@@ -9,7 +9,7 @@
 
 <ion-content padding>
 
-  <img src="../../assets/imgs/mods/{{mod.Name | lowercase}}.png">
+  <img src="../../assets/imgs/mods/{{mod.Name.replace('Primed ', '').replace(' ', '_').replace(' ', '_') | lowercase}}.jpeg"/>
 
   <div id="stats_arme">
 

@@ -17,46 +17,6 @@
             <img class="card-img-top" src="../../assets/imgs/weapons/{{rifle.name | lowercase}}.png"/>
             <div class="card-body">
               <p>{{rifle.name.replace('_', ' ') | lowercase}}</p>
-
-              <ion-icon small *ngIf="rifle.impact>0">
-                <img src="../../assets/imgs/elements/icone_impact.png" alt="" title="">&nbsp;
-              </ion-icon>
-              <ion-icon *ngIf="rifle.puncture>0">
-                <img src="../../assets/imgs/elements/icone_penetration.png" alt="" title="">
-              </ion-icon>
-              <ion-icon *ngIf="rifle.slash>0">
-                <img src="../../assets/imgs/elements/icone_tranchant.png" alt="" title="">
-              </ion-icon>
-              <ion-icon *ngIf="rifle.blast>0">
-                <img src="../../assets/imgs/elements/icone_explosif.png" alt="" title="">
-              </ion-icon>
-              <ion-icon *ngIf="rifle.corrosive>0">
-                <img src="../../assets/imgs/elements/icone_corrosif.png" alt="" title="">
-              </ion-icon>
-              <ion-icon *ngIf="rifle.gas>0">
-                <img src="../../assets/imgs/elements/icone_gaz.png" alt="" title="">
-              </ion-icon>
-              <ion-icon *ngIf="rifle.magnetic>0">
-                <img src="../../assets/imgs/elements/icone_magnetique.png" alt="" title="">
-              </ion-icon>
-              <ion-icon *ngIf="rifle.radiation>0">
-                <img src="../../assets/imgs/elements/icone_radiation.png" alt="" title="">
-              </ion-icon>
-              <ion-icon *ngIf="rifle.viral>0">
-                <img src="../../assets/imgs/elements/icone_viral.png" alt="" title="">
-              </ion-icon>
-              <ion-icon *ngIf="rifle.fire>0">
-                <img src="../../assets/imgs/elements/icone_feu.png" alt="" title="">
-              </ion-icon>
-              <ion-icon *ngIf="rifle.ice>0">
-                <img src="../../assets/imgs/elements/icone_glace.png" alt="" title="">
-              </ion-icon>
-              <ion-icon *ngIf="rifle.electricity>0">
-                <img src="../../assets/imgs/elements/icone_electrique.png" alt="" title="">
-              </ion-icon>
-              <ion-icon *ngIf="rifle.toxin>0">
-                <img src="../../assets/imgs/elements/icone_poison.png" alt="" title="">
-              </ion-icon>
             </div>
           </div>
         </div>
