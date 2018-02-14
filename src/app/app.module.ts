@@ -13,7 +13,6 @@ import { EventPage } from '../pages/event/event';
 import { AlertPage } from '../pages/alert/alert';
 import { SortiePage } from '../pages/sortie/sortie';
 import { InvasionPage } from '../pages/invasion/invasion';
-import { VoidTraderPage } from '../pages/voidTrader/voidTrader';
 
 import { RiflesPage } from '../pages/rifles/rifles';
 import { RiflePage } from '../pages/rifle/rifle';
@@ -36,7 +35,6 @@ import {ModPage} from "../pages/mod/mod";
     AlertPage,
     SortiePage,
     InvasionPage,
-    VoidTraderPage,
     RiflesPage,
     RiflePage,
     ModsPage,
@@ -56,7 +54,6 @@ import {ModPage} from "../pages/mod/mod";
     AlertPage,
     SortiePage,
     InvasionPage,
-    VoidTraderPage,
     RiflesPage,
     RiflePage,
     ModsPage,
