@@ -7,31 +7,49 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content id="mod-details" padding>
 
-  <img src="../../assets/imgs/mods/{{mod.Name | lowercase}}.png">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-md-2 col-sm-1 col-"></div>
+      <div class="col-lg-6 col-md-8 col-sm-10 col-12">
+        <div class="card">
 
-  <div id="stats_arme">
+          <div class="mod-image">
+            <img class="mx-auto d-block" src="../../assets/imgs/mods/{{mod.Name.replace('Primed ', '').replace(' ', '_').replace(' ', '_') | lowercase}}.jpeg"/>
+          </div>
 
-    <div class="typediv">
-      Type : {{ mod.Type }}
+          <div class="card-body">
+
+            <div class="row">
+              <div class="col-6 type">
+                <h4><span class="badge badge-secondary">{{ mod.Type }}</span></h4>
+              </div>
+              <div class="col-6 polarity">
+                <ion-icon>
+                  <img src="../../assets/imgs/polarities/{{ mod.Polarity | lowercase }}.png" alt="" title="">
+                </ion-icon>
+              </div>
+            </div>
+
+            <h1 class="card-title">{{mod.Name}}</h1>
+
+            <table class="table table-bordered">
+              <thead class="thead-light">
+                <tr>
+                  <th *ngFor="let stat of mod.Stats">{{ stat }}</th>
+                </tr>
+              </thead>
+              <tr *ngFor="let modDetail of mod.Mod">
+                <td *ngFor="let modStatName of mod.Stats">{{ modDetail[modStatName] }}</td>
+              </tr>
+            </table>
+
+          </div>
+
+        </div>
+      </div>
     </div>
-
-    <div class="polaritydiv">
-      Polarity : {{ mod.Polarity }}
-    </div>
-
-    <br/>
-
-    <table style="width:100%">
-      <tr>
-        <th *ngFor="let stat of mod.Stats">{{ stat }}</th>
-      </tr>
-      <tr *ngFor="let modDetail of mod.Mod">
-        <td *ngFor="let modStatName of mod.Stats">{{ modDetail[modStatName] }}</td>
-      </tr>
-    </table>
-
   </div>
 
 </ion-content>

@@ -16,7 +16,6 @@ export class RiflesProvider {
   options: any;
 
   constructor(public http: HttpClient) {
-    console.log('Hello RiflesProvider Provider');
     this.headers = new Headers();
     this.headers.append('Content-Type', 'application/json');
   }

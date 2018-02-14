@@ -1206,7 +1206,7 @@
         {
             "Name": "Primed Bane of Corpus",
             "Type": "Rifle",
-            "Polarity": "Voidtraderplaceholdert",
+            "Polarity": "Madurai",
             "Stats": [
                 "Rank",
                 "Effect",
@@ -1273,7 +1273,7 @@
         {
             "Name": "Primed Bane of Corrupted",
             "Type": "Rifle",
-            "Polarity": "Voidtraderplaceholdert",
+            "Polarity": "Madurai",
             "Stats": [
                 "Rank",
                 "Effect",
@@ -1340,7 +1340,7 @@
         {
             "Name": "Primed Bane of Grineer",
             "Type": "Rifle",
-            "Polarity": "Voidtraderplaceholdert",
+            "Polarity": "Madurai",
             "Stats": [
                 "Rank",
                 "Effect",
@@ -1407,7 +1407,7 @@
         {
             "Name": "Primed Bane of Infested",
             "Type": "Rifle",
-            "Polarity": "Voidtraderplaceholdert",
+            "Polarity": "Madurai",
             "Stats": [
                 "Rank",
                 "Effect",
@@ -1474,7 +1474,7 @@
         {
             "Name": "Primed Cryo Rounds",
             "Type": "Rifle",
-            "Polarity": "Voidtraderplaceholdert",
+            "Polarity": "Vazarin",
             "Stats": [
                 "Rank",
                 "Effect",
@@ -1541,7 +1541,7 @@
         {
             "Name": "Primed Fast Hands",
             "Type": "Rifle",
-            "Polarity": "Voidtraderplaceholdert",
+            "Polarity": "Naramon",
             "Stats": [
                 "Rank",
                 "Effect",
@@ -1608,7 +1608,7 @@
         {
             "Name": "Primed Rifle Ammo Mutation",
             "Type": "Rifle",
-            "Polarity": "Voidtraderplaceholdert",
+            "Polarity": "Naramon",
             "Stats": [
                 "Rank",
                 "Efficiency(Pistol)",

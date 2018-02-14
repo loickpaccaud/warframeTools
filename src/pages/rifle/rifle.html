@@ -1,102 +1,123 @@
-<ion-header>
+<ion-header id="rifle-details-header">
   <ion-navbar>
   	<button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>{{rifle.name}}</ion-title>
+    <ion-title>{{rifle.name.replace('_', ' ') | lowercase}}</ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content id="rifle-details" padding>
 
-  <img src="../../assets/imgs/weapons/{{rifle.name | lowercase}}.png">
-
-  <div id="stats_arme">
-
-    <div class="ligne_stat impact" *ngIf="rifle.impact>0">
-      {{rifle.impact}}&nbsp;<img src="../../assets/imgs/elements/icone_impact.png" alt="" title="">&nbsp;impact
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-md-3 col-sm-2 col-1"></div>
+      <div class="col-lg-4 col-md-6 col-sm-8 col-10">
+        <div class="card">
+          <img class="card-img-top" src="../../assets/imgs/weapons/{{rifle.name | lowercase}}.png">
+          <div class="card-body">
+            <h1 class="card-title">{{rifle.name.replace('_', ' ') | lowercase}}</h1>
+            <p class="polarities" *ngIf="polarities">
+              <ion-icon *ngFor="let pol of polarities">
+                <img src="../../assets/imgs/polarities/{{pol}}.png" alt="" title="">
+              </ion-icon>
+            </p>
+            <table class="table">
+              <tbody>
+                <tr *ngIf="rifle.impact>0">
+                  <td><ion-icon><img src="../../assets/imgs/elements/icone_impact.png" alt="" title=""></ion-icon> Impact</td>
+                  <td>{{rifle.impact}}</td>
+                </tr>
+                <tr *ngIf="rifle.puncture>0">
+                  <td><ion-icon><img src="../../assets/imgs/elements/icone_penetration.png" alt="" title=""></ion-icon> Puncture</td>
+                  <td>{{rifle.puncture}}</td>
+                </tr>
+                <tr *ngIf="rifle.slash>0">
+                  <td><ion-icon><img src="../../assets/imgs/elements/icone_tranchant.png" alt="" title=""></ion-icon> Slash</td>
+                  <td>{{rifle.slash}}</td>
+                </tr>
+                <tr *ngIf="rifle.blast>0">
+                  <td><ion-icon><img src="../../assets/imgs/elements/icone_explosif.png" alt="" title=""></ion-icon> Blast</td>
+                  <td>{{rifle.blast}}</td>
+                </tr>
+                <tr *ngIf="rifle.corrosive>0">
+                  <td><ion-icon><img src="../../assets/imgs/elements/icone_corrosif.png" alt="" title=""></ion-icon> Corrosive</td>
+                  <td>{{rifle.corrosive}}</td>
+                </tr>
+                <tr *ngIf="rifle.gas>0">
+                  <td><ion-icon><img src="../../assets/imgs/elements/icone_gaz.png" alt="" title=""></ion-icon> Gas</td>
+                  <td>{{rifle.gas}}</td>
+                </tr>
+                <tr *ngIf="rifle.magnetic>0">
+                  <td><ion-icon><img src="../../assets/imgs/elements/icone_magnetique.png" alt="" title=""></ion-icon> Magnetic</td>
+                  <td>{{rifle.magnetic}}</td>
+                </tr>
+                <tr *ngIf="rifle.radiation>0">
+                  <td><ion-icon><img src="../../assets/imgs/elements/icone_radiation.png" alt="" title=""></ion-icon> Radiation</td>
+                  <td>{{rifle.radiation}}</td>
+                </tr>
+                <tr *ngIf="rifle.viral>0">
+                  <td><ion-icon><img src="../../assets/imgs/elements/icone_viral.png" alt="" title=""></ion-icon> Viral</td>
+                  <td>{{rifle.viral}}</td>
+                </tr>
+                <tr *ngIf="rifle.fire>0">
+                  <td><ion-icon><img src="../../assets/imgs/elements/icone_feu.png" alt="" title=""></ion-icon> Fire</td>
+                  <td>{{rifle.fire}}</td>
+                </tr>
+                <tr *ngIf="rifle.ice>0">
+                  <td><ion-icon><img src="../../assets/imgs/elements/icone_glace.png" alt="" title=""></ion-icon> Ice</td>
+                  <td>{{rifle.ice}}</td>
+                </tr>
+                <tr *ngIf="rifle.electricity>0">
+                  <td><ion-icon><img src="../../assets/imgs/elements/icone_electrique.png" alt="" title=""></ion-icon> Electricity</td>
+                  <td>{{rifle.electricity}}</td>
+                </tr>
+                <tr *ngIf="rifle.toxin>0">
+                  <td><ion-icon><img src="../../assets/imgs/elements/icone_poison.png" alt="" title=""></ion-icon> Toxin</td>
+                  <td>{{rifle.toxin}}</td>
+                </tr>
+                <tr *ngIf="rifle.crit_c>0">
+                  <td>Critical chance</td>
+                  <td>{{rifle.crit_c}} %</td>
+                </tr>
+                <tr *ngIf="rifle.crit_d>0">
+                  <td>Critical multiplier</td>
+                  <td>x {{rifle.crit_d}}</td>
+                </tr>
+                <tr *ngIf="rifle.status>0">
+                  <td>Status chance</td>
+                  <td>{{rifle.status}} %</td>
+                </tr>
+                <tr *ngIf="rifle.accuracy>0">
+                  <td>Accuracy</td>
+                  <td>{{rifle.accuracy}}</td>
+                </tr>
+                <tr *ngIf="rifle.fire_rate>0">
+                  <td>Fire rate</td>
+                  <td>{{rifle.fire_rate}}</td>
+                </tr>
+                <tr *ngIf="rifle.charge_speed>0">
+                  <td>Charge speed</td>
+                  <td>{{rifle.charge_speed}}</td>
+                </tr>
+                <tr *ngIf="rifle.mag_size>0">
+                  <td>Magazine size</td>
+                  <td>{{rifle.mag_size}}</td>
+                </tr>
+                <tr *ngIf="rifle.reload_time>0">
+                  <td>Reload time</td>
+                  <td>{{rifle.reload_time}}</td>
+                </tr>
+                <tr *ngIf="rifle.max_ammo>0">
+                  <td>Ammo max</td>
+                  <td>{{rifle.max_ammo}}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
     </div>
-
-    <div class="ligne_stat penetration" *ngIf="rifle.puncture>0">
-      {{rifle.puncture}}&nbsp;<img src="../../assets/imgs/elements/icone_penetration.png" alt="" title="">&nbsp;puncture
-    </div>
-
-    <div class="ligne_stat tranchant" *ngIf="rifle.slash>0">
-      {{rifle.slash}}&nbsp;<img src="../../assets/imgs/elements/icone_tranchant.png" alt="" title="">&nbsp;slash
-    </div>
-
-    <div class="ligne_stat explosif" *ngIf="rifle.blast>0">
-      {{rifle.blast}}&nbsp;<img src="../../assets/imgs/elements/icone_explosif.png" alt="" title="">&nbsp;blast&nbsp;(<img src="../../assets/imgs/elements/icone_feu.png" alt="" title="">+<img src="../../assets/imgs/elements/icone_glace.png" alt="" title="">)
-    </div>
-
-    <div class="ligne_stat corrosif" *ngIf="rifle.corrosive>0">
-      {{rifle.corrosive}}&nbsp;<img src="../../assets/imgs/elements/icone_corrosif.png" alt="" title="">&nbsp;corrosive&nbsp;(<img src="../../assets/imgs/elements/icone_electrique.png" alt="" title="">+<img src="../../assets/imgs/elements/icone_poison.png" alt="" title="">)
-    </div>
-
-    <div class="ligne_stat gaz" *ngIf="rifle.gas>0">
-      {{rifle.gas}}&nbsp;<img src="../../assets/imgs/elements/icone_gaz.png" alt="" title="">&nbsp;gas&nbsp;(<img src="../../assets/imgs/elements/icone_feu.png" alt="" title="">+<img src="../../assets/imgs/elements/icone_poison.png" alt="" title="">)
-    </div>
-
-    <div class="ligne_stat magnetique" *ngIf="rifle.magnetic>0">
-      {{rifle.magnetic}}&nbsp;<img src="../../assets/imgs/elements/icone_magnetique.png" alt="" title="">&nbsp;magnetic&nbsp;(<img src="../../assets/imgs/elements/icone_glace.png" alt="" title="">+<img src="../../assets/imgs/elements/icone_electrique.png" alt="" title="">)
-    </div>
-
-    <div class="ligne_stat radiation" *ngIf="rifle.radiation>0">
-      {{rifle.radiation}}&nbsp;<img src="../../assets/imgs/elements/icone_radiation.png" alt="" title="">&nbsp;radiation&nbsp;(<img src="../../assets/imgs/elements/icone_feu.png" alt="" title="">+<img src="../../assets/imgs/elements/icone_electrique.png" alt="" title="">)
-    </div>
-
-    <div class="ligne_stat viral" *ngIf="rifle.viral>0">
-      {{rifle.viral}}&nbsp;<img src="../../assets/imgs/elements/icone_viral.png" alt="" title="">&nbsp;viral&nbsp;(<img src="../../assets/imgs/elements/icone_glace.png" alt="" title="">+<img src="../../assets/imgs/elements/icone_poison.png" alt="" title="">)
-    </div>
-
-    <div class="ligne_stat feu" *ngIf="rifle.fire>0">
-      {{rifle.fire}}&nbsp;<img src="../../assets/imgs/elements/icone_feu.png" alt="" title="">&nbsp;heat
-    </div>
-
-    <div class="ligne_stat glace" *ngIf="rifle.ice>0">
-      {{rifle.ice}}&nbsp;<img src="../../assets/imgs/elements/icone_glace.png" alt="" title="">&nbsp;ice
-    </div>
-
-    <div class="ligne_stat electrique" *ngIf="rifle.electricity>0">
-      {{rifle.electricity}}&nbsp;<img src="../../assets/imgs/elements/icone_electrique.png" alt="" title="">&nbsp;electric
-    </div>
-
-    <div class="ligne_stat poison" *ngIf="rifle.toxin>0">
-      {{rifle.toxin}}&nbsp;<img src="../../assets/imgs/elements/icone_poison.png" alt="" title="">&nbsp;toxin
-    </div>
-
-    <div class="ligne_stat precision" *ngIf="rifle.accuracy>0">
-      {{rifle.accuracy}}&nbsp;accuracy
-    </div>
-
-    <div class="ligne_stat cadence_de_tir" *ngIf="rifle.fire_rate>0">
-      {{rifle.fire_rate}}&nbsp;fire rate
-    </div>
-
-    <div class="ligne_stat vitesse_de_charge" *ngIf="rifle.charge_speed>0">
-      {{rifle.charge_speed}}&nbsp;charge speed
-    </div>
-
-    <div class="ligne_stat critique" *ngIf="rifle.crit_d>0 || rifle.crit_c>0">
-      {{rifle.crit_d}}x|{{rifle.crit_c}}%&nbsp;critical multiplier / critical chance
-    </div>
-
-    <div class="ligne_stat" *ngIf="rifle.status>0">
-      {{rifle.status}}%&nbsp;status chance
-    </div>
-
-    <div class="ligne_stat chargeur" *ngIf="rifle.mag_size>0">
-      {{rifle.mag_size}}&nbsp;magazine size
-    </div>
-
-    <div class="ligne_stat recharger" *ngIf="rifle.reload_time>0">
-      {{rifle.reload_time}}&nbsp;reload time
-    </div>
-
-    <div class="ligne_stat munitions" *ngIf="rifle.max_ammo>0">
-      {{rifle.max_ammo}}&nbsp;ammo max
-    </div>
-
   </div>
 
 </ion-content>

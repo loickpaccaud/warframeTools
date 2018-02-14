@@ -1,0 +1,30 @@
+#mod-details{
+  .card{
+    margin-bottom: 1em;
+    border-radius: 50px 0 10px 10px;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-width: 1.5px;
+    overflow: hidden;
+
+    .mod-image{
+      background-color: #DFDFDF;
+      padding-bottom: 2px;
+    }
+
+    .type{
+      text-align: right;
+    }
+    .polarity{
+      text-align: left;
+    }
+  }
+
+  h1{
+    text-transform: capitalize;
+    text-align: center;
+  }
+
+  .polarities{
+    text-align: center;
+  }
+}

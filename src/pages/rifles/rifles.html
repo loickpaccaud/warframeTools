@@ -7,18 +7,21 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content id="rifles-list" padding>
 
-  <ion-grid>
-      <ion-row>
-        <ion-col col-auto *ngFor="let item of weaponsList">
-          <div style="text-align: center; cursor: pointer;" (click)="openRiflePage(item)">
-            <img src="../../assets/imgs/weapons/{{item.name | lowercase}}.png" width="120" height="84"/>
-            <br/>
-            <small>{{item.name}}</small>
+  <div class="container" *ngIf="weaponsList">
+    <div class="row">
+      <div class="col-lg-2 col-md-3 col-sm-4 col-6" *ngFor="let rifle of weaponsList">
+        <div class="card">
+          <div class="rifle-link" (click)="openRiflePage(rifle)">
+            <img class="card-img-top" src="../../assets/imgs/weapons/{{rifle.name | lowercase}}.png"/>
+            <div class="card-body">
+              <p>{{rifle.name.replace('_', ' ') | lowercase}}</p>
+            </div>
           </div>
-        </ion-col>
-      </ion-row>
-  </ion-grid>
+        </div>
+      </div>
+    </div>
+  </div>
 
 </ion-content>
