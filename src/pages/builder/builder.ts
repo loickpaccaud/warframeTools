@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
 import {ModsProvider} from "../../providers/mods/mods";
 import {Mod} from "../../models/mod";
 import {RiflesProvider} from "../../providers/rifles/rifles";
@@ -25,9 +24,9 @@ export class BuilderPage {
   selectedMods:Mod[] = [];
 
   weaponData:Rifle = null;
-  modDataTable:[][] = null;
+  modDataTable:Mod[][] = null;
 
-  constructor(public navCtrl: NavController, public modsProvider: ModsProvider, public riflesProvider: RiflesProvider) {
+  constructor(public modsProvider: ModsProvider, public riflesProvider: RiflesProvider) {
     this.collectData();
     this.initializeModsLists();
   }
@@ -53,7 +52,7 @@ export class BuilderPage {
   fillMods(){
     this.modsJSON.Mods.forEach(element => {
 
-      var m = new Mod();
+      let m = new Mod();
       m.setName(element['Name']);
       m.setPolarity(element['Polarity']);
       m.setType(element['Type']);
@@ -125,8 +124,8 @@ export class BuilderPage {
 
   initializeSelectedModsList(){
     console.log("Init mods lists");
-    for(var i=0; i<8; i++){
-      var m = new Mod();
+    for(let i=0; i<8; i++){
+      let m = new Mod();
       m.setName("empty");
       this.selectedMods.push(m);
     }
@@ -134,7 +133,7 @@ export class BuilderPage {
 
   private initializeModsLists() {
     this.modDataTable = [];
-    for(var i=0; i<8; i++){
+    for(let i=0; i<8; i++){
       this.modDataTable.push(this.modsList);
     }
   }
@@ -142,7 +141,7 @@ export class BuilderPage {
   resetWeapon(){
     this.weaponData = null;
 
-    console.log
+
     this.initializeModsLists();
     this.clearSelectedMods();
     this.clearPolarities();
@@ -158,10 +157,10 @@ export class BuilderPage {
 
   updateCount(){
     console.log("Counting mod score");
-    var value = 60;
+    let value = 60;
 
-    for(var i=0; i<8; i++){
-      var temp = this.selectedMods[i];
+    for(let i=0; i<8; i++){
+      let temp = this.selectedMods[i];
 
       if(temp['Name'] != "empty"){
         value = value - temp['Mod'][temp['Mod'].length-1]['Cost'];
@@ -173,8 +172,8 @@ export class BuilderPage {
 
   removeModFromLists(selectNumber:number, selectMod:number){
     console.log("Removing new mod from lists");
-    var temp = [];
-    for(var i=0; i<8; i++){
+    let temp = [];
+    for(let i=0; i<8; i++){
       if(i!= selectNumber){
         temp = this.modDataTable[i].splice(selectMod, 1);
         this.modDataTable[i] = temp;
@@ -185,7 +184,7 @@ export class BuilderPage {
 
   addModToLists(pos: number, mod: Mod) {
     console.log("Re adding previous mod to lists");
-    for(var i=0; i<8; i++){
+    for(let i=0; i<8; i++){
       this.modDataTable[i].push(mod);
     }
     //console.log("Mods lists :" + this.modDataTable.toString());
