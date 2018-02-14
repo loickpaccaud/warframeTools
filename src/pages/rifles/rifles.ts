@@ -30,12 +30,12 @@ export class RiflesPage {
       this.riflesJSON.Weapons.forEach(element => {
         let rifle:Rifle = new Rifle(element);
         this.weaponsList.push(rifle);
-        this.weaponsList.sort(
-          function Comparator(a, b){
-            return (a.name > b.name) ? 1 : -1;
-          }
-        );
-    });
+      });
+      this.weaponsList.sort(
+        function Comparator(a, b){
+          return (a.name > b.name) ? 1 : -1;
+        }
+      );
   }
 
   openRiflePage(rifle: Rifle){

@@ -39,6 +39,11 @@ export class ModsPage {
       this.modsList.push(m);
       console.log(m);
     });
+    this.modsList.sort(
+      function Comparator(a, b){
+        return (a.getName() > b.getName()) ? 1 : -1;
+      }
+    );
   }
 
   openModPage(mod: Mod){
