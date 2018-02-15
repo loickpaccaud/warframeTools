@@ -7,7 +7,7 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content>
 
   <ion-list inset>
     <ion-item *ngFor="let invasion of invasions">
@@ -16,7 +16,7 @@
       <p>{{invasion.progression}} %</p>
 
       <progressbar
-        class='atk{{invasion.factionAtk.replace("FC_", "") | lowercase}} def{{invasion.factionDef.replace("FC_", "") | lowercase}}'
+        class='progressbar atk{{invasion.factionAtk.replace("FC_", "") | lowercase}} def{{invasion.factionDef.replace("FC_", "") | lowercase}}'
         [value]="invasion.progression">
       </progressbar>
     </ion-item>
