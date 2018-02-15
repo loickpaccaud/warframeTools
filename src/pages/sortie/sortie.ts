@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import {Sortie} from "../../models/sortie";
-import {WorldStateProvider} from "../../providers/worldState/worldState";
+import {NavParams} from "ionic-angular";
 
 @Component({
   selector: 'page-sortie',
@@ -9,9 +9,8 @@ import {WorldStateProvider} from "../../providers/worldState/worldState";
 export class SortiePage {
   sorties:Sortie[]=[];
 
-  constructor(public worldStateProvider: WorldStateProvider) {
-    this.sorties = this.worldStateProvider.sorties;
-    console.log(this.sorties);
+  constructor(public navParams: NavParams) {
+    this.sorties = navParams.get("paramObject");
   }
 
 }
