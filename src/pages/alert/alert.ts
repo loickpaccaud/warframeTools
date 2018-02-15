@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import {WorldStateProvider} from "../../providers/worldState/worldState";
 import {Alert} from "../../models/alert";
+import {NavParams} from "ionic-angular";
 
 @Component({
   selector: 'page-alert',
@@ -9,8 +9,8 @@ import {Alert} from "../../models/alert";
 export class AlertPage {
   alerts:Alert[]=[];
 
-  constructor(public worldStateProvider: WorldStateProvider) {
-    this.alerts = this.worldStateProvider.alerts;
+  constructor(public navParams: NavParams) {
+    this.alerts = navParams.get("paramObject");
   }
 
 }

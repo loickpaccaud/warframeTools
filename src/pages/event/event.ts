@@ -1,17 +1,15 @@
-import { Component } from '@angular/core';
-import { WorldStateProvider} from '../../providers/worldState/worldState';
+import {Component} from '@angular/core';
 import { Event } from '../../models/event';
+import {NavParams} from "ionic-angular";
 
 @Component({
   selector: 'page-event',
   templateUrl: 'event.html'
 })
-export class EventPage {
+export class EventPage{
   events:Event[]=[];
 
-  constructor(public worldStateProvider: WorldStateProvider) {
-    this.events = this.worldStateProvider.events;
+  constructor(public navParams: NavParams) {
+    this.events = navParams.get("paramObject");
   }
-
-
 }

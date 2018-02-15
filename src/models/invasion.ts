@@ -1,4 +1,5 @@
 export class Invasion {
+  id:String;
   factionAtk:String;
   factionDef:String;
   node:String;
@@ -7,7 +8,8 @@ export class Invasion {
   goal:number;
   progression:number;
 
-  constructor(factionAtk:String, factionDef:String, node:String, date:String, count:number, goal:number) {
+  constructor(id:String, factionAtk:String, factionDef:String, node:String, date:String, count:number, goal:number) {
+    this.id
     this.factionAtk = factionAtk;
     this.factionDef = factionDef;
     this.node = node;
@@ -43,5 +45,14 @@ export class Invasion {
 
   public getProgression(){
     return this.progression;
+  }
+
+  compare(invasion:Invasion):boolean{
+    return this.getFactionAtk() === invasion.getFactionAtk() &&
+      this.getFactionDef() === invasion.getFactionDef() &&
+      this.getNode() === invasion.getNode() &&
+      this.getDate() === invasion.getDate() &&
+      this.getCount() === invasion.getCount() &&
+      this.getGoal() === invasion.getGoal();
   }
 }

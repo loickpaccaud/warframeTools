@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import {Invasion} from "../../models/invasion";
-import {WorldStateProvider} from "../../providers/worldState/worldState";
+import {NavParams} from "ionic-angular";
 
 @Component({
   selector: 'page-invasion',
@@ -9,8 +9,8 @@ import {WorldStateProvider} from "../../providers/worldState/worldState";
 export class InvasionPage {
   invasions:Invasion[]=[];
 
-  constructor(public worldStateProvider: WorldStateProvider) {
-    this.invasions = this.worldStateProvider.invasions;
+  constructor(public navParams: NavParams) {
+    this.invasions = navParams.get("paramObject");
   }
 
 }
