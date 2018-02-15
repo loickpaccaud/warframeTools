@@ -8,6 +8,9 @@
 </ion-header>
 
 <ion-content>
+  <div class="container">
+    <img src="../../assets/imgs/WarframeLogo.png" class="img-fluid mx-auto d-block" alt="Responsive image">
+  </div>
   <ion-list inset>
     <button ion-item *ngFor="let item of items" (click)="openNavDetailsPage(item.page, item.param)">
       {{ item.title }}
