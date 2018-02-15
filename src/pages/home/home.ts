@@ -173,15 +173,9 @@ export class HomePage implements OnInit{
       this.worldStateProvider.getAll().subscribe(all => {
         this.time = all.Time;
         this.parseEvents(all.Events);
-        this.events.push(new Event("12","event", "[12m]", "http://perdu.com"));
         this.parseAlerts(all.Alerts);
-        this.alerts.push(new Alert("12","","","","","","",0));
         this.parseSorties(all.Sorties[0]);
-        this.sorties.push(new Sortie("12","","","","",""));
         this.parseInvasions(all.Invasions);
-        this.invasions.push(new Invasion("12","","","","",0,0));
-
-        console.log(this.events);
 
         if(this.compareNew(this.oldEvents, this.events).length != 0){
           console.log('New event, check it out !');
@@ -229,7 +223,7 @@ export class HomePage implements OnInit{
 
       });
 
-    }, 10000);
+    }, 1000);
   }
 
   compareNew(oldTab: any[], newTab: any[]){
