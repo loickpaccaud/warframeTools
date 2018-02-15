@@ -223,7 +223,7 @@ export class HomePage implements OnInit{
 
       });
 
-    }, 1000);
+    }, 10000);
   }
 
   compareNew(oldTab: any[], newTab: any[]){
