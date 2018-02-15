@@ -37,7 +37,7 @@
             <table class="table table-bordered">
               <thead class="thead-light">
                 <tr>
-                  <th *ngFor="let stat of mod.Stats">{{ stat }}</th>
+                  <th *ngFor="let stat of mod.Stats">{{ stat.replace('_', ' ') | lowercase }}</th>
                 </tr>
               </thead>
               <tr *ngFor="let modDetail of mod.Mod">
