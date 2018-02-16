@@ -1074,33 +1074,33 @@
                 },
                 {
                     "Rank": "6",
-                    "FIRE_RATE": "35%",
-                    "Punch Through (m)": "1.4m",
-                    "Cost": "2"
+                    "FIRE_RATE": "+35%",
+                    "Punch Through (m)": "+1.4m",
+                    "Cost": "12"
                 },
                 {
                     "Rank": "7",
-                    "FIRE_RATE": "40%",
-                    "Punch Through (m)": "1.6m",
-                    "Cost": "3"
+                    "FIRE_RATE": "+40%",
+                    "Punch Through (m)": "+1.6m",
+                    "Cost": "13"
                 },
                 {
                     "Rank": "8",
-                    "FIRE_RATE": "45%",
-                    "Punch Through (m)": "1.8m",
-                    "Cost": "4"
+                    "FIRE_RATE": "+45%",
+                    "Punch Through (m)": "+1.8m",
+                    "Cost": "14"
                 },
                 {
                     "Rank": "9",
                     "FIRE_RATE": "50%",
-                    "Punch Through (m)": "2.0m",
-                    "Cost": "5"
+                    "Punch Through (m)": "+2.0m",
+                    "Cost": "15"
                 },
                 {
                     "Rank": "10",
                     "FIRE_RATE": "55%",
-                    "Punch Through (m)": "2.2m",
-                    "Cost": "6"
+                    "Punch Through (m)": "+2.2m",
+                    "Cost": "16"
                 }
             ]
         },
@@ -1422,55 +1422,6 @@
                     "Rank": "5",
                     "FIRE_RATE": "+60%",
                     "Cost": "9"
-                }
-            ]
-        },
-        {
-            "Name": "Spring-Loaded Chamber",
-            "Type": "Rifle",
-            "Polarity": "Madurai",
-            "Stats": [
-                "Rank",
-                "FIRE_RATE",
-                "Duration",
-                "Cost"
-            ],
-            "Mod": [
-                {
-                    "Rank": "0",
-                    "FIRE_RATE": "+12.5%",
-                    "Duration": "1.5s",
-                    "Cost": "2"
-                },
-                {
-                    "Rank": "1",
-                    "FIRE_RATE": "+25%",
-                    "Duration": "3s",
-                    "Cost": "3"
-                },
-                {
-                    "Rank": "2",
-                    "FIRE_RATE": "+37.5%",
-                    "Duration": "4.5s",
-                    "Cost": "4"
-                },
-                {
-                    "Rank": "3",
-                    "FIRE_RATE": "+50%",
-                    "Duration": "6s",
-                    "Cost": "5"
-                },
-                {
-                    "Rank": "4",
-                    "FIRE_RATE": "+62.5%",
-                    "Duration": "7.5s",
-                    "Cost": "6"
-                },
-                {
-                    "Rank": "5",
-                    "FIRE_RATE": "+75%",
-                    "Duration": "9s",
-                    "Cost": "7"
                 }
             ]
         },
