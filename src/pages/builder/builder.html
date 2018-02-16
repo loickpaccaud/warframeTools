@@ -9,19 +9,24 @@
 
 <ion-content padding>
 
-  <ion-item>
-    <ion-label>Weapons</ion-label>
-    <ion-select (ionChange)="weaponSelected(event)" multiple="false" id="selectWeapon" [(ngModel)]="weaponData">
-      <ion-option *ngFor="let item of weaponsList; let i = index" [value] = item.name (ionSelect)="indexWeapon = i"> {{ item.name }}</ion-option>
-    </ion-select>
-  </ion-item>
+  <div class="row">
+    <div class="col-12 col-sm-9">
+      <ion-item>
+        <ion-label>Weapons</ion-label>
+        <ion-select class="select" (ionChange)="weaponSelected(event)" multiple="false" id="selectWeapon" [(ngModel)]="weaponData">
+          <ion-option *ngFor="let item of weaponsList; let i = index" [value] = item.name (ionSelect)="indexWeapon = i"> {{ item.name.replace('_', ' ') }}</ion-option>
+        </ion-select>
+      </ion-item>
+    </div>
+    <div class="col-12 col-sm-3">
+      <button block ion-button color="light" (click)="clearWeapon()">Clear</button>
+    </div>
+  </div>
 
-  <button (click)="clearWeapon()">Clear</button>
-
-  <ion-item>
+  <ion-item *ngIf="displayStats && selectedWeapon != null">
     <h3>Stats</h3>
     <table class="table">
-      <tbody *ngIf="selectedWeapon != null">
+      <tbody>
       <tr *ngIf="selectedWeapon.impact>0">
         <td><ion-icon><img src="../../assets/imgs/elements/icone_impact.png" alt="" title=""></ion-icon> Impact</td>
         <td>{{selectedWeapon.impact}}</td>
@@ -118,71 +123,76 @@
    Remaining Points : {{ count }}
   </ion-item>
 
+  <ion-item *ngIf="count < 0">
+    <br/>
+    <h3>No points remaining - Clean and retry build</h3>
+  </ion-item>
+
   <br/>
   <ion-item>
     <ion-label>Mods</ion-label>
   </ion-item>
 
-  <div *ngIf="modDataTable != null">
+  <div *ngIf="availableMods != null">
     <ion-item>
-      <ion-select (ionChange)="modSelected(event,0)" multiple="false" [placeholder]="polarityList[0]" [(ngModel)]="modDataTable[0]">
-        <ion-option *ngFor="let item of modsList; let i = index" [value] = item.Name (ionSelect)="indexMod = i"> {{ item.Name }}</ion-option>
+      <ion-select (ionChange)="modSelected(event,0)" multiple="false" [placeholder]="polarityList[0]" [(ngModel)]="Mod">
+        <ion-option *ngFor="let item of availableMods; let i = index" [value] = item (ionSelect)="indexMod = i"> {{ item.Name }} </ion-option>
       </ion-select>
     </ion-item>
   </div>
 
-  <div *ngIf="modDataTable != null">
+  <div *ngIf="availableMods != null">
     <ion-item>
-      <ion-select (ionChange)="modSelected(event,1)" multiple="false" [placeholder]="polarityList[1]"[(ngModel)]="modDataTable[1]">
-        <ion-option *ngFor="let item of modsList; let i = index" [value] = item.Name (ionSelect)="indexMod = i"> {{ item.Name }}</ion-option>
+      <ion-select (ionChange)="modSelected(event,1)" multiple="false" [placeholder]="polarityList[1]"[(ngModel)]="Mod">
+        <ion-option *ngFor="let item of availableMods; let i = index" [value] = item (ionSelect)="indexMod = i"> {{ item.Name }}</ion-option>
       </ion-select>
     </ion-item>
   </div>
 
-  <div *ngIf="modDataTable != null">
+  <div *ngIf="availableMods != null">
     <ion-item>
-      <ion-select (ionChange)="modSelected(event,2)" multiple="false" [placeholder]="polarityList[2]" [(ngModel)]="modDataTable[2]">
-        <ion-option *ngFor="let item of modsList; let i = index" [value] = item.Name (ionSelect)="indexMod = i"> {{ item.Name }}</ion-option>
+      <ion-select (ionChange)="modSelected(event,2)" multiple="false" [placeholder]="polarityList[2]" [(ngModel)]="Mod">
+        <ion-option *ngFor="let item of availableMods; let i = index" [value] = item (ionSelect)="indexMod = i"> {{ item.Name }}</ion-option>
       </ion-select>
     </ion-item>
   </div>
 
-  <div *ngIf="modDataTable != null">
+  <div *ngIf="availableMods != null">
     <ion-item>
-      <ion-select (ionChange)="modSelected(event,3)" multiple="false" [placeholder]="polarityList[3]" [(ngModel)]="modDataTable[3]">
-        <ion-option *ngFor="let item of modsList; let i = index" [value] = item.Name (ionSelect)="indexMod = i"> {{ item.Name }}</ion-option>
+      <ion-select (ionChange)="modSelected(event,3)" multiple="false" [placeholder]="polarityList[3]" [(ngModel)]="Mod">
+        <ion-option *ngFor="let item of availableMods; let i = index" [value] = item (ionSelect)="indexMod = i"> {{ item.Name }}</ion-option>
       </ion-select>
     </ion-item>
   </div>
 
-  <div *ngIf="modDataTable != null">
+  <div *ngIf="availableMods != null">
     <ion-item>
-      <ion-select (ionChange)="modSelected(event,4)" multiple="false" [placeholder]="polarityList[4]" [(ngModel)]="modDataTable[4]">
-        <ion-option *ngFor="let item of modsList; let i = index" [value] = item.Name (ionSelect)="indexMod = i"> {{ item.Name }}</ion-option>
+      <ion-select (ionChange)="modSelected(event,4)" multiple="false" [placeholder]="polarityList[4]" [(ngModel)]="Mod">
+        <ion-option *ngFor="let item of availableMods; let i = index" [value] = item (ionSelect)="indexMod = i"> {{ item.Name }}</ion-option>
       </ion-select>
     </ion-item>
   </div>
 
-  <div *ngIf="modDataTable != null">
+  <div *ngIf="availableMods != null">
     <ion-item>
-      <ion-select (ionChange)="modSelected(event,5)" multiple="false" [placeholder]="polarityList[5]" [(ngModel)]="modDataTable[5]">
-        <ion-option *ngFor="let item of modsList; let i = index" [value] = item.Name (ionSelect)="indexMod = i"> {{ item.Name }}</ion-option>
+      <ion-select (ionChange)="modSelected(event,5)" multiple="false" [placeholder]="polarityList[5]" [(ngModel)]="Mod">
+        <ion-option *ngFor="let item of availableMods; let i = index" [value] = item (ionSelect)="indexMod = i"> {{ item.Name }}</ion-option>
       </ion-select>
     </ion-item>
   </div>
 
-  <div *ngIf="modDataTable != null">
+  <div *ngIf="availableMods != null">
     <ion-item>
-      <ion-select (ionChange)="modSelected(event,6)" multiple="false" [placeholder]="polarityList[6]" [(ngModel)]="modDataTable[6]">
-        <ion-option *ngFor="let item of modsList; let i = index" [value] = item.Name (ionSelect)="indexMod = i"> {{ item.Name }}</ion-option>
+      <ion-select (ionChange)="modSelected(event,6)" multiple="false" [placeholder]="polarityList[6]" [(ngModel)]="Mod">
+        <ion-option *ngFor="let item of availableMods; let i = index" [value] = item (ionSelect)="indexMod = i"> {{ item.Name }}</ion-option>
       </ion-select>
     </ion-item>
   </div>
 
-  <div *ngIf="modDataTable != null">
+  <div *ngIf="availableMods != null">
     <ion-item>
-      <ion-select (ionChange)="modSelected(event,7)" multiple="false" [placeholder]="polarityList[7]" [(ngModel)]="modDataTable[7]">
-        <ion-option *ngFor="let item of modsList; let i = index" [value] = item.Name (ionSelect)="indexMod = i"> {{ item.Name }}</ion-option>
+      <ion-select (ionChange)="modSelected(event,7)" multiple="false" [placeholder]="polarityList[7]" [(ngModel)]="Mod">
+        <ion-option *ngFor="let item of availableMods; let i = index" [value] = item (ionSelect)="indexMod = i"> {{ item.Name }}</ion-option>
       </ion-select>
     </ion-item>
   </div>

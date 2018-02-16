@@ -21,11 +21,13 @@ export class BuilderPage implements OnInit{
   selectedMod:any;
   polarityList:String[] = [];
   count:number=60;
-  selectedMods:Mod[] = [];
-  triggerCount:number = 1;
 
   weaponData:Rifle = null;
-  modDataTable:Mod[][] = null;
+  availableMods:Mod[] = null;
+  selectedMods:Mod[] = [];
+
+  counter:number = 0;
+  displayStats:boolean = false;
 
   constructor(public modsProvider: ModsProvider, public riflesProvider: RiflesProvider){}
 
@@ -47,13 +49,12 @@ export class BuilderPage implements OnInit{
             this.riflesJSON = JSON.parse(this.jsonResponse);
             this.fillWeapons();
 
-            this.initializeModsLists();
             this.initializeSelectedModsList();
+            this.initializeAvailableMods();
 
             //this.displayModListsStatus("main thread");
           });
       });
-
   }
 
   // Data fillers
@@ -81,46 +82,70 @@ export class BuilderPage implements OnInit{
   // Page events
 
   weaponSelected(selectedValue: any){
+    this.displayStats = true;
     let index = this.indexWeapon;
 
     if(this.selectedWeapon != null){
       this.clearPolarities();
       this.clearSelectedMods();
 
-      this.initializeModsLists();
       this.initializeSelectedModsList();
+      this.initializeAvailableMods();
 
       console.log("Selected Weapon : " + this.selectedWeapon['name']);
     }
 
     this.selectedWeapon = this.weaponsList[index];
     this.initializePolarities();
+    this.initializeAvailableMods();
   }
 
   modSelected(selectedValue: any, pos:number){
-    this.triggerCount = this.triggerCount + 1;
 
-    if(this.triggerCount % 2 == 0){
-      let index = this.indexMod;
-      this.selectedMod = this.modsList[index];
-      console.log("Mod selected : " + this.selectedMod['Name']);
+    this.counter++;
 
-      if(this.selectedMods[pos].getName() != "empty"){
-        this.addModToLists(pos, this.selectedMods[pos]);
-      }
+    console.log("----------------- Call " + this.counter + "------------------------")
 
-      this.modDataTable[pos] = this.modsList;
+    let index = this.indexMod;
+    this.selectedMod = this.modsList[index];
 
-      this.removeModFromLists(pos,index, this.modsList);
-      this.selectedMods[pos] = this.selectedMod;
+    console.log("Mod selected : " + this.selectedMod['Name']);
 
-      this.displayModListsStatus("after modification");
-      this.displaySelectedModsStatus("after modification");
+    this.displaySelectedModsStatus("start");
+    //this.displayAvailableModsStatus("start");
 
-      this.updateCount();
+    //Re adding mod to available list
 
-      //Add calculation methods
+    if(this.selectedMods[pos].getName() != "empty"){
+      console.log("Re adding mod : " + this.selectedMods[pos]['Name']);
+      this.availableMods.push(this.selectedMods[pos]);
     }
+
+    this.selectedMods[pos] = this.selectedMod;
+    this.displaySelectedModsStatus("after assign");
+    //this.displayAvailableModsStatus("after assign");
+
+    //Removing mod from available list
+
+    console.log("Removing mod : " + this.selectedMod['Name']);
+    var tempList = this.modsList;
+    tempList.splice(index,1);
+    this.availableMods = tempList;
+
+    this.displaySelectedModsStatus("update");
+    this.displayAvailableModsStatus("update");
+
+    //Updating mod points
+
+    this.updateCount();
+    //Add calculation methods
+  }
+
+  resetWeapon(){
+    this.clearWeapon();
+    this.clearPolarities();
+    this.clearSelectedMods();
+    this.initializeAvailableMods();
   }
 
   // Init methods
@@ -157,33 +182,20 @@ export class BuilderPage implements OnInit{
     }
   }
 
-  private initializeModsLists() {
-    console.log("Init mods lists");
-    this.modDataTable = [];
-    var tempList = [];
-
-    for(let j=0; j<this.modsList.length-1; j++){
-      tempList.push(this.modsList[j]);
-    }
-
-    for(let i=0; i<8; i++){
-      this.modDataTable.push(tempList);
-    }
+  private initializeAvailableMods() {
+    this.availableMods = this.modsList;
   }
 
   clearWeapon(){
     this.weaponData = null;
-
-    this.clearPolarities();
-    this.clearSelectedMods();
-    this.initializeModsLists();
+    this.displayStats = false;
   }
 
   clearSelectedMods(){
     this.selectedMods = [];
   }
 
-  private clearPolarities() {
+  clearPolarities() {
     this.polarityList = [];
   }
 
@@ -201,60 +213,26 @@ export class BuilderPage implements OnInit{
       }
     }
     this.count = value;
-    console.log("Count value :" + this.count);
-  }
-
-  // Select options update
-
-  removeModFromLists(selectNumber:number, selectMod:number, mods:Mod[]){
-    console.log("Removing new mod from lists");
-    var listTemp = [];
-
-    for(let j=0; j<this.modsList.length-1; j++){
-      if(j != selectMod){
-        listTemp.push(this.modsList[j]);
-      }
-    }
-
-    console.log("List temp size : " + listTemp.length);
-    console.log("DataTable size : " + this.modDataTable.length);
-
-    /*for(let i=0; i<8; i++){
-      if(i!= selectNumber){
-        this.modDataTable[i] = listTemp;
-      }
-    }*/
-  }
-
-  addModToLists(pos: number, mod: Mod) {
-    console.log("Re adding previous mod to lists");
-
-    for(let i=0; i<8; i++){
-      var listTemp = [];
-      if(i != pos){
-        for(let j=0; j<this.modDataTable[i].length-1; j++){
-          listTemp.push(this.modDataTable[i][j]);
-        }
-        listTemp.push(mod);
-        this.modDataTable[i] = listTemp;
-      }
-      //console.log("Mods lists :" + this.modDataTable.length);
-    }
+    console.log("Count value :" + this.count + "\n \n \n \n \n");
   }
 
   // Tests
 
-  displayModListsStatus(message:String){
-    for(let i=0; i<8; i++){
-      console.log("Length of list " + i + " : "+ this.modDataTable[i].length + "  | at : " + message);
-      for(var j=0; j<this.modDataTable[i].length-1; j++){
-        console.log("List " + i + " : " + this.modDataTable[i][j]);
-      }
+  displayAvailableModsStatus(message:String) {
+    console.log("Length of availableMods : " + this.availableMods.length + "  | at : " + message);
+    //console.log("availableMods : " + this.availableMods);
+
+    for(var i=0; i<this.availableMods.length; i++){
+      console.log("i : "+ i + "  |  " + this.availableMods[i]["Name"]);
     }
   }
 
   displaySelectedModsStatus(message:String) {
     console.log("Length of selectedMods : " + this.selectedMods.length + "  | at : " + message);
-    console.log("selectedMods : " + this.selectedMods);
+    //console.log("selectedMods : " + this.selectedMods);
+
+    for(var i=0; i<this.selectedMods.length; i++){
+      console.log("i : "+ i + "  |  " + this.selectedMods[i]["Name"]);
+    }
   }
 }
