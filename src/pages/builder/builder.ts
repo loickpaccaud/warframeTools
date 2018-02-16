@@ -146,6 +146,7 @@ export class BuilderPage implements OnInit{
     this.clearPolarities();
     this.clearSelectedMods();
     this.initializeAvailableMods();
+    this.clearScore();
   }
 
   // Init methods
@@ -197,6 +198,10 @@ export class BuilderPage implements OnInit{
 
   clearPolarities() {
     this.polarityList = [];
+  }
+
+  clearScore(){
+    this.count = 60;
   }
 
   // Score calculation methods
